@@ -337,6 +337,14 @@ h1, h2, h3, p { margin-top: 0; }
 .closing a, .primary-button, .secondary-button { display: inline-flex; justify-content: center; padding: .88rem 1.3rem; border: 1px solid var(--blue); border-radius: var(--pill-radius); font-family: var(--mono); font-size: .7rem; letter-spacing: .04em; text-transform: uppercase; transition: all .18s ease; }
 .closing a, .primary-button { color: var(--white); background: var(--blue); }
 .closing a:hover, .primary-button:hover { background: var(--blue-hover); border-color: var(--blue-hover); transform: translateY(-2px); box-shadow: 0 8px 20px rgba(15,98,254,.2); }
+.community-cta { display: grid; grid-template-columns: minmax(0,.85fr) minmax(420px,1.15fr); gap: clamp(3rem,8vw,9rem); align-items: end; padding: clamp(4.5rem,8vw,7rem) 6vw; background: var(--white); border-top: 1px solid var(--line); }
+.community-cta h2 { max-width: 680px; margin: 0 0 1.2rem; color: var(--navy); font-family: var(--display); font-size: clamp(2.4rem,4.5vw,4.5rem); font-weight: 500; line-height: 1; letter-spacing: -.045em; }
+.community-cta > div:first-child > p:last-child { max-width: 630px; margin-bottom: 0; color: var(--muted); font-size: 1.06rem; }
+.community-actions { display: grid; grid-template-columns: minmax(170px,.72fr) minmax(250px,1fr); gap: 1rem; }
+.community-actions a { min-height: 64px; display: inline-flex; align-items: center; justify-content: center; padding: 1rem 1.3rem; color: var(--blue); border: 2px solid var(--blue); border-radius: var(--pill-radius); font-family: var(--mono); font-size: .72rem; font-weight: 500; letter-spacing: .04em; text-align: center; text-transform: uppercase; transition: transform .18s ease, color .18s ease, background .18s ease, box-shadow .18s ease; }
+.community-actions a:hover { color: var(--white); background: var(--blue); transform: translateY(-2px); box-shadow: 0 10px 24px rgba(15,98,254,.18); }
+.community-actions .community-primary { color: var(--white); background: var(--blue); }
+.community-actions .community-primary:hover { background: var(--blue-hover); border-color: var(--blue-hover); }
 footer { display: flex; justify-content: space-between; align-items: end; gap: 3rem; padding: 3rem 5vw; color: #405570; background: var(--blue-pale); border-top: 1px solid var(--line); font-size: .86rem; }
 footer > div { display: flex; align-items: center; gap: 1rem; }
 footer p { margin: 0; }
@@ -429,7 +437,7 @@ footer a { color: var(--blue); text-decoration: underline; text-underline-offset
 @media (max-width: 1000px) {
   .plugin-grid { grid-template-columns: repeat(2,minmax(0,1fr)); }
   .hero-grid, .install, .detail-grid, .detail-content { grid-template-columns: 1fr; }
-  .platform-intro, .how-teaser, .implementation-bridge, .plans-hero-grid, .free-foundation, .plans-heading, .audit-offer, .how-hero-grid, .what-is-plugin, .how-flow, .prompt-example, .how-faq, .coverage-section, .ecosystem-section, .permission-section, .plugin-workflow-heading, .detail-architecture { grid-template-columns: 1fr; }
+  .platform-intro, .how-teaser, .implementation-bridge, .plans-hero-grid, .free-foundation, .plans-heading, .audit-offer, .how-hero-grid, .what-is-plugin, .how-flow, .prompt-example, .how-faq, .coverage-section, .ecosystem-section, .permission-section, .plugin-workflow-heading, .detail-architecture, .community-cta { grid-template-columns: 1fr; }
   .hero-stats { display: grid; grid-template-columns: repeat(3,1fr); }
   .hero-stats div { display: block; }
   .hero-stats span { display: block; }
@@ -460,7 +468,7 @@ footer a { color: var(--blue); text-decoration: underline; text-underline-offset
   .hero-copy { font-size: 1.06rem; }
   .hero-stats strong { font-size: 1.75rem; }
   .hero-action { left: 1.25rem; }
-  .catalog, .how-teaser, .implementation-bridge, .install, .closing, .detail-hero, .detail-content, .detail-install, .plans-hero, .free-foundation, .plans-section, .audit-offer, .plans-faq, .how-hero, .what-is-plugin, .package-anatomy, .how-flow, .prompt-example, .how-faq, .how-cta, .coverage-section, .ecosystem-section, .permission-section, .plugin-workflow, .detail-architecture { padding-left: 1.25rem; padding-right: 1.25rem; }
+  .catalog, .how-teaser, .implementation-bridge, .install, .closing, .detail-hero, .detail-content, .detail-install, .plans-hero, .free-foundation, .plans-section, .audit-offer, .plans-faq, .how-hero, .what-is-plugin, .package-anatomy, .how-flow, .prompt-example, .how-faq, .how-cta, .coverage-section, .ecosystem-section, .permission-section, .plugin-workflow, .detail-architecture, .community-cta { padding-left: 1.25rem; padding-right: 1.25rem; }
   .section-heading { grid-template-columns: 1fr; gap: 2rem; }
   .filter-row { grid-template-columns: 1fr; gap: .5rem; }
   .filter-row > p { margin-top: 0; }
@@ -486,6 +494,7 @@ footer a { color: var(--blue); text-decoration: underline; text-underline-offset
   .plugin-workflow-heading { grid-template-columns: 1fr; }
   .detail-architecture { grid-template-columns: 1fr; }
   .architecture-mini { padding-left: 3rem; }
+  .community-actions { grid-template-columns: 1fr; }
   .anatomy-grid article { min-height: 0; }
   .anatomy-grid h3 { margin-top: 2rem; }
   .control-grid .cannot-card { border-top: 1px solid var(--line); border-left: 0; }
