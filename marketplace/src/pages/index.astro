@@ -4,6 +4,11 @@ import plugins from "../data/plugins.json";
 
 const categories = ["All", ...Array.from(new Set(plugins.map((plugin) => plugin.category)))];
 const departments = ["All departments", "Sales & BDC", "Fixed Operations", "Marketing", "Customer Experience", "Executive & Operations", "Analytics & Technology"];
+const departmentCoverage = departments.slice(1).map((department) => ({
+  name: department,
+  count: plugins.filter((plugin) => plugin.departments.includes(department)).length,
+}));
+const maxDepartmentCoverage = Math.max(...departmentCoverage.map((department) => department.count));
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -80,6 +85,23 @@ const structuredData = {
     <div>
       <p>Choose a dealership job, install the focused workflow, and ask in plain English. The plugin guides ChatGPT or Codex through the right questions, checks, and deliverable—while you review the result and stay in control.</p>
       <a class="text-arrow" href="/how-it-works/">See how plugins work <span>→</span></a>
+    </div>
+  </section>
+
+  <section class="coverage-section" aria-labelledby="coverage-title">
+    <div class="coverage-heading">
+      <p class="kicker">Coverage across the dealership</p>
+      <h2 id="coverage-title">Built for more than marketing.</h2>
+      <p>Plugins can support more than one department, so the coverage counts overlap. Use the department filters below to find the workflows relevant to each team.</p>
+    </div>
+    <div class="coverage-chart" role="img" aria-label={departmentCoverage.map((department) => `${department.name}: ${department.count} plugins`).join("; ")}>
+      {departmentCoverage.map((department) => (
+        <div>
+          <span>{department.name}</span>
+          <i style={`--coverage:${(department.count / maxDepartmentCoverage) * 100}%`}></i>
+          <strong>{String(department.count).padStart(2, "0")}</strong>
+        </div>
+      ))}
     </div>
   </section>
 

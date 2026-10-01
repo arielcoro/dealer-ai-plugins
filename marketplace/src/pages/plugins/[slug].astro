@@ -8,6 +8,13 @@ export function getStaticPaths() {
 
 const { plugin } = Astro.props;
 const related = plugins.filter((candidate) => candidate.category === plugin.category && candidate.slug !== plugin.slug).slice(0, 3);
+const architectureStage = plugin.slug === "muse-meta-assistant"
+  ? "muse"
+  : plugin.slug === "dots-assistant"
+    ? "dots"
+    : plugin.slug === "dealer-plugin-router"
+      ? "router"
+      : null;
 const canonical = `https://dealeraiplugins.com/plugins/${plugin.slug}/`;
 const seoDescription = `Use ${plugin.name} in ChatGPT and Codex to ${plugin.shortDescription.toLowerCase()} for a car dealership. Download the open-source plugin.`;
 const structuredData = {
@@ -80,6 +87,51 @@ const structuredData = {
       <div><span>Publisher</span><strong>Dealer Growth Hackers</strong></div>
     </aside>
   </section>
+
+  <section class="plugin-workflow" aria-labelledby="workflow-title">
+    <div class="plugin-workflow-heading">
+      <p class="kicker">The job at a glance</p>
+      <h2 id="workflow-title">From evidence to action.</h2>
+      <p>This plugin turns the context you approve into a structured dealership deliverable. It does not take external action by itself.</p>
+    </div>
+    <div class="io-diagram" role="img" aria-label={`Workflow for ${plugin.name}: provide ${plugin.workflow.input}; the plugin checks ${plugin.workflow.process}; receive ${plugin.workflow.output}.`}>
+      <article>
+        <span>Input</span>
+        <strong>What you provide</strong>
+        <p>{plugin.workflow.input}</p>
+      </article>
+      <i aria-hidden="true">→</i>
+      <article class="io-active">
+        <span>Process</span>
+        <strong>What it checks</strong>
+        <p>{plugin.workflow.process}</p>
+      </article>
+      <i aria-hidden="true">→</i>
+      <article>
+        <span>Output</span>
+        <strong>What you receive</strong>
+        <p>{plugin.workflow.output}</p>
+      </article>
+    </div>
+  </section>
+
+  {architectureStage && (
+    <section class="detail-architecture" aria-labelledby="architecture-title">
+      <div>
+        <p class="kicker">Where it fits</p>
+        <h2 id="architecture-title">One layer in the Dealer AI system.</h2>
+        <p>Muse plans and reviews. Dots coordinates. The Router selects the smallest suitable specialist. A person retains approval authority throughout.</p>
+        <a class="text-arrow" href="/how-it-works/#ecosystem">See the full architecture <span>→</span></a>
+      </div>
+      <div class="architecture-mini" role="img" aria-label="Dealer AI architecture: human approval, Muse, Dots, Plugin Router, and specialist plugins.">
+        <div class="human-node">Human approval</div>
+        <div class:list={["architecture-node", { active: architectureStage === "muse" }]}><span>Plan + review</span><strong>Muse</strong></div>
+        <div class:list={["architecture-node", { active: architectureStage === "dots" }]}><span>Coordinate</span><strong>Dots</strong></div>
+        <div class:list={["architecture-node", { active: architectureStage === "router" }]}><span>Select</span><strong>Plugin Router</strong></div>
+        <div class="specialist-node">29 specialist plugins</div>
+      </div>
+    </section>
+  )}
 
   {related.length > 0 && (
     <section class="related" aria-labelledby="related-title">

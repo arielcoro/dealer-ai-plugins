@@ -130,11 +130,46 @@ const structuredData = {
     </div>
   </section>
 
+  <section class="ecosystem-section" id="ecosystem" aria-labelledby="ecosystem-title">
+    <div class="ecosystem-copy">
+      <p class="kicker">The assistant system</p>
+      <h2 id="ecosystem-title">One team. Four distinct responsibilities.</h2>
+      <p>The coordination plugins do not compete with the specialist plugins. They help plan, organize, select, and review the work while a person keeps final authority.</p>
+      <div class="ecosystem-legend">
+        <span><i class="legend-blue"></i> Coordination layer</span>
+        <span><i class="legend-white"></i> Specialist layer</span>
+        <span><i class="legend-human"></i> Human authority</span>
+      </div>
+    </div>
+    <div class="ecosystem-diagram" role="img" aria-label="Dealer AI system: human approval oversees Muse, which plans and reviews; Dots coordinates work; the Plugin Router selects the right workflow; and 29 specialist plugins perform dealership jobs.">
+      <div class="ecosystem-human"><span>Authority</span><strong>Human approval</strong><small>Sets goals · grants access · approves action</small></div>
+      <div class="ecosystem-line" aria-hidden="true"></div>
+      <div class="ecosystem-layer"><span>01 · Plan + review</span><strong>Muse</strong><p>Frames complex work, sequences it, and reviews quality.</p></div>
+      <div class="ecosystem-arrow" aria-hidden="true">↓</div>
+      <div class="ecosystem-layer"><span>02 · Coordinate</span><strong>Dots</strong><p>Keeps tasks, dependencies, approvals, and handoffs visible.</p></div>
+      <div class="ecosystem-arrow" aria-hidden="true">↓</div>
+      <div class="ecosystem-layer"><span>03 · Select</span><strong>Plugin Router</strong><p>Chooses the smallest suitable workflow or bounded sequence.</p></div>
+      <div class="ecosystem-arrow" aria-hidden="true">↓</div>
+      <div class="specialist-cluster">
+        <div><span>04 · Execute</span><strong>29 specialist plugins</strong></div>
+        <div class="specialist-chips" aria-hidden="true"><i>SEO</i><i>BDC</i><i>Fixed Ops</i><i>Analytics</i><i>CX</i><i>Strategy</i></div>
+      </div>
+    </div>
+  </section>
+
   <section class="how-flow" aria-labelledby="flow-title">
     <div class="flow-heading">
       <p class="kicker">From download to useful work</p>
       <h2 id="flow-title">Five steps. One person stays in control.</h2>
       <p>You do not need to write code or learn a command language. The process is designed to feel like briefing a capable team member.</p>
+    </div>
+    <div class="workflow-rail" role="img" aria-label="Dealer AI plugin workflow: choose a dealership job, install a plugin, brief ChatGPT or Codex, apply the playbook, review the result, and receive a dealership deliverable.">
+      <div><span>01</span><strong>Choose a job</strong></div><i aria-hidden="true">→</i>
+      <div><span>02</span><strong>Install</strong></div><i aria-hidden="true">→</i>
+      <div><span>03</span><strong>Brief the AI</strong></div><i aria-hidden="true">→</i>
+      <div><span>04</span><strong>Apply playbook</strong></div><i aria-hidden="true">→</i>
+      <div class="approval-step"><span>05</span><strong>Human review</strong></div><i aria-hidden="true">→</i>
+      <div><span>06</span><strong>Deliverable</strong></div>
     </div>
     <ol class="flow-list">
       <li><span>01</span><div><strong>Choose the job</strong><p>Start with the outcome: audit local visibility, review VDP merchandising, classify calls, build an email flow, or another job in the catalog.</p></div></li>
@@ -156,6 +191,37 @@ const structuredData = {
       <div class="conversation-result">
         <span>The plugin helps ChatGPT or Codex</span>
         <p>Confirm the goal → check the required evidence → apply the merchandising framework → explain the highest-priority fixes → flag anything that needs human verification.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="permission-section" aria-labelledby="permission-title">
+    <div class="permission-heading">
+      <p class="kicker">Your data stays behind a gate</p>
+      <h2 id="permission-title">Installing a plugin does not grant automatic access.</h2>
+      <p>You choose which information, files, or approved connections enter the conversation. The workflow supplies instructions—not credentials or hidden permissions.</p>
+    </div>
+    <div class="permission-diagram" role="img" aria-label="Permission boundary: dealership systems remain private; only approved information crosses into ChatGPT or Codex, which applies plugin instructions; a human reviews recommended actions before anything changes.">
+      <div class="systems-node">
+        <span>Private dealership systems</span>
+        <div><i>CRM</i><i>GA4</i><i>Website</i><i>Call tracking</i></div>
+      </div>
+      <div class="permission-gate">
+        <strong>You approve what crosses</strong>
+        <span>No automatic access</span>
+      </div>
+      <div class="assistant-node">
+        <span>Workspace</span>
+        <strong>ChatGPT or Codex</strong>
+        <small>Applies the plugin’s instructions</small>
+      </div>
+      <div class="review-gate">
+        <strong>Human review</strong>
+        <span>Required before external action</span>
+      </div>
+      <div class="action-node">
+        <span>Result</span>
+        <strong>Analysis + recommended actions</strong>
       </div>
     </div>
   </section>

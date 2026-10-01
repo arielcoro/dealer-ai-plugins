@@ -11,6 +11,11 @@
     "departments": [
       "Marketing"
     ],
+    "workflow": {
+      "input": "Dealer website, market and priority services",
+      "process": "30 AEO and GEO visibility checks",
+      "output": "Prioritized findings and remediation plan"
+    },
     "tags": [
       "AEO/GEO",
       "30 checks"
@@ -32,6 +37,11 @@
     "departments": [
       "Marketing"
     ],
+    "workflow": {
+      "input": "Target topic, audience and dealership context",
+      "process": "Answer intent, entities, evidence and citations",
+      "output": "Structured AEO/GEO content brief"
+    },
     "tags": [
       "Content",
       "AEO brief"
@@ -53,6 +63,11 @@
     "departments": [
       "Executive & Operations"
     ],
+    "workflow": {
+      "input": "Current systems, processes and AI usage",
+      "process": "75 readiness controls across the dealership",
+      "output": "Scorecard, gaps and 90-day priorities"
+    },
     "tags": [
       "Diagnostic",
       "75-point audit"
@@ -75,6 +90,11 @@
       "Marketing",
       "Analytics & Technology"
     ],
+    "workflow": {
+      "input": "GA4, GSC and server-log exports",
+      "process": "AI referrers, landing pages and conversion paths",
+      "output": "Referral baseline and measurement fixes"
+    },
     "tags": [
       "GA4 + GSC",
       "AI referrals"
@@ -97,6 +117,11 @@
       "Marketing",
       "Customer Experience"
     ],
+    "workflow": {
+      "input": "Dealership identity, market and comparison set",
+      "process": "AI descriptions, claims, tone and hallucinations",
+      "output": "Sentiment findings and correction priorities"
+    },
     "tags": [
       "Sentiment",
       "Hallucination detection"
@@ -118,6 +143,11 @@
     "departments": [
       "Marketing"
     ],
+    "workflow": {
+      "input": "Brand, competitors, market and buyer questions",
+      "process": "Mentions, citations and answer-share patterns",
+      "output": "Visibility benchmark and opportunity map"
+    },
     "tags": [
       "Monitoring",
       "Citation share"
@@ -139,6 +169,11 @@
     "departments": [
       "Marketing"
     ],
+    "workflow": {
+      "input": "English and Spanish pages, market and audience",
+      "process": "Language quality, intent, hreflang and local signals",
+      "output": "Bilingual SEO remediation plan"
+    },
     "tags": [
       "Spanish SEO",
       "Hreflang"
@@ -162,6 +197,11 @@
       "Fixed Operations",
       "Analytics & Technology"
     ],
+    "workflow": {
+      "input": "Call-platform setup and analytics configuration",
+      "process": "Attribution, routing, integrations and data quality",
+      "output": "Tracking fixes and validation checklist"
+    },
     "tags": [
       "Call tracking",
       "Attribution"
@@ -184,6 +224,11 @@
       "Sales & BDC",
       "Fixed Operations"
     ],
+    "workflow": {
+      "input": "Call transcripts with approved identifiers removed",
+      "process": "Intent, outcome, quality and classification rules",
+      "output": "Consistent call labels and summary counts"
+    },
     "tags": [
       "Call classification",
       "Bilingual"
@@ -206,6 +251,11 @@
       "Marketing",
       "Sales & BDC"
     ],
+    "workflow": {
+      "input": "Dealer, named competitor and verifiable evidence",
+      "process": "Claims, differentiators, fairness and search intent",
+      "output": "Publishable comparison-page framework"
+    },
     "tags": [
       "Competitive content",
       "Fair-play"
@@ -229,6 +279,11 @@
       "Sales & BDC",
       "Fixed Operations"
     ],
+    "workflow": {
+      "input": "Priority pages, CTAs and business goals",
+      "process": "Clarity, placement, friction, mobile UX and tracking",
+      "output": "Ranked conversion recommendations"
+    },
     "tags": [
       "Conversion",
       "Mobile UX"
@@ -251,6 +306,11 @@
       "Customer Experience",
       "Fixed Operations"
     ],
+    "workflow": {
+      "input": "Customer reviews and review-source context",
+      "process": "Themes, sentiment, staff mentions and recurring issues",
+      "output": "Evidence-backed reputation summary"
+    },
     "tags": [
       "Reputation",
       "Review analysis"
@@ -274,6 +334,11 @@
       "Fixed Operations",
       "Sales & BDC"
     ],
+    "workflow": {
+      "input": "Lifecycle stage, audience, offers and policies",
+      "process": "Timing, message purpose, handoffs and compliance",
+      "output": "Complete dealership email-flow plan"
+    },
     "tags": [
       "17 email flows",
       "Year 1–5+"
@@ -295,6 +360,11 @@
     "departments": [
       "Sales & BDC"
     ],
+    "workflow": {
+      "input": "Eligible audience rules, offer and inventory context",
+      "process": "Segmentation, cadence, consent and handoffs",
+      "output": "Equity campaign with compliant messaging"
+    },
     "tags": [
       "Campaign builder",
       "TCPA-aware"
@@ -317,6 +387,11 @@
       "Marketing",
       "Analytics & Technology"
     ],
+    "workflow": {
+      "input": "GA4, Ads and website event configuration",
+      "process": "Events, conversions, attribution and data continuity",
+      "output": "Tracking defect log and repair plan"
+    },
     "tags": [
       "GA4 + Ads",
       "Attribution"
@@ -338,6 +413,11 @@
     "departments": [
       "Marketing"
     ],
+    "workflow": {
+      "input": "Google Business Profile and local market",
+      "process": "Categories, content, reviews, links and local signals",
+      "output": "Local visibility score and action list"
+    },
     "tags": [
       "Google Business Profile",
       "Local pack"
@@ -360,6 +440,11 @@
       "Marketing",
       "Analytics & Technology"
     ],
+    "workflow": {
+      "input": "Dealer website structure and priority resources",
+      "process": "Canonical pages, usefulness and crawler guidance",
+      "output": "Curated llms.txt draft"
+    },
     "tags": [
       "Generator",
       "llms.txt"
@@ -383,6 +468,11 @@
       "Sales & BDC",
       "Fixed Operations"
     ],
+    "workflow": {
+      "input": "Delivery process, channels and ownership rules",
+      "process": "First-90-day moments, handoffs and escalation",
+      "output": "Multi-channel onboarding program"
+    },
     "tags": [
       "90-day onboarding",
       "Multi-channel"
@@ -405,6 +495,11 @@
       "Marketing",
       "Executive & Operations"
     ],
+    "workflow": {
+      "input": "Business goals, market, competitors and baseline",
+      "process": "SEO, AEO, GEO, measurement and sequencing",
+      "output": "Integrated 90-day search roadmap"
+    },
     "tags": [
       "SEO + AEO + GEO",
       "90-day roadmap"
@@ -426,6 +521,11 @@
     "departments": [
       "Marketing"
     ],
+    "workflow": {
+      "input": "Dealer website, market and search priorities",
+      "process": "Technical, on-page, local and authority signals",
+      "output": "100-point audit and remediation backlog"
+    },
     "tags": [
       "Traditional SEO",
       "100-point audit"
@@ -448,6 +548,11 @@
       "Marketing",
       "Analytics & Technology"
     ],
+    "workflow": {
+      "input": "Website URL and representative page set",
+      "process": "Performance, accessibility, SEO and dealer UX",
+      "output": "Site score and prioritized fixes"
+    },
     "tags": [
       "Website grader",
       "Core Web Vitals"
@@ -470,6 +575,11 @@
       "Marketing",
       "Executive & Operations"
     ],
+    "workflow": {
+      "input": "Store story, market, customers and competitors",
+      "process": "Differentiation, proof, voice and claim strength",
+      "output": "Positioning and brand-content kit"
+    },
     "tags": [
       "Brand",
       "Positioning"
@@ -492,6 +602,11 @@
       "Sales & BDC",
       "Marketing"
     ],
+    "workflow": {
+      "input": "Representative VDP sample and inventory goals",
+      "process": "Photos, pricing, descriptions, trust and CTAs",
+      "output": "Merchandising score and top fixes"
+    },
     "tags": [
       "Inventory",
       "VDP review"
@@ -514,6 +629,11 @@
       "Executive & Operations",
       "Analytics & Technology"
     ],
+    "workflow": {
+      "input": "AI use cases, roles, systems and risk tolerance",
+      "process": "Approvals, evidence, privacy and escalation",
+      "output": "Governance policy and approval matrix"
+    },
     "tags": [
       "Governance",
       "Approvals"
@@ -536,6 +656,11 @@
       "Executive & Operations",
       "Analytics & Technology"
     ],
+    "workflow": {
+      "input": "Dealership request, goal and available inputs",
+      "process": "Scope, risk and smallest suitable workflow",
+      "output": "Plugin selection or bounded sequence"
+    },
     "tags": [
       "Routing",
       "Catalog"
@@ -558,6 +683,11 @@
       "Executive & Operations",
       "Analytics & Technology"
     ],
+    "workflow": {
+      "input": "Goal, current context and approved plugin access",
+      "process": "Task state, dependencies, approvals and handoffs",
+      "output": "Coordinated work with visible next steps"
+    },
     "tags": [
       "Assistant",
       "Coordination"
@@ -580,6 +710,11 @@
       "Marketing",
       "Sales & BDC"
     ],
+    "workflow": {
+      "input": "Website, inventory feeds and public shopping evidence",
+      "process": "Access, structure, comparability and accuracy",
+      "output": "100-point shopping-readiness plan"
+    },
     "tags": [
       "Shopping AI",
       "100-point audit"
@@ -601,6 +736,11 @@
     "departments": [
       "Sales & BDC"
     ],
+    "workflow": {
+      "input": "Lead records, timestamps, messages and outcomes",
+      "process": "Speed, quality, cadence, ownership and conversion",
+      "output": "Lead-response score and coaching priorities"
+    },
     "tags": [
       "Lead handling",
       "100-point audit"
@@ -623,6 +763,11 @@
       "Executive & Operations",
       "Analytics & Technology"
     ],
+    "workflow": {
+      "input": "Complex objective, constraints and available workflows",
+      "process": "Plan quality, sequencing, evidence and review gates",
+      "output": "Orchestrated plan and synthesized result"
+    },
     "tags": [
       "Orchestration",
       "Quality review"
