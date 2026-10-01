@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Plugin Router"
+  short_description: "Route dealer AI requests"
+  default_prompt: "Use $dealer-plugin-router to route this dealership request to the right plugin."

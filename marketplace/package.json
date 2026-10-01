@@ -1,0 +1,22 @@
+{
+  "name": "dealer-ai-plugins-marketplace",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "sync": "node scripts/sync-catalog.mjs",
+    "dev": "npm run sync && astro dev",
+    "build": "npm run sync && astro check && astro build",
+    "preview": "astro preview",
+    "deploy": "npm run build && wrangler deploy",
+    "typecheck": "astro check"
+  },
+  "dependencies": {
+    "@astrojs/check": "latest",
+    "astro": "latest",
+    "typescript": "latest"
+  },
+  "devDependencies": {
+    "wrangler": "latest"
+  }
+}

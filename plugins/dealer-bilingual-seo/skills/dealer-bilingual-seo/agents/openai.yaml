@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Bilingual SEO"
+  short_description: "Improve Spanish dealer SEO"
+  default_prompt: "Use $dealer-bilingual-seo to audit my dealership's Spanish-language SEO presence."

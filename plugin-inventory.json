@@ -1,0 +1,206 @@
+[
+  {
+    "pluginName": "dealer-aeo-audit",
+    "sourceName": "dealer-aeo-audit",
+    "displayName": "Dealer AEO Audit",
+    "prompt": "Audit my dealership website for AEO and GEO visibility."
+  },
+  {
+    "pluginName": "dealer-aeo-content-brief",
+    "sourceName": "dealer-aeo-content-brief",
+    "displayName": "Dealer AEO Content Brief",
+    "prompt": "Create an AEO content brief for a dealership page."
+  },
+  {
+    "pluginName": "dealer-ai-readiness-audit",
+    "sourceName": "dealer-ai-readiness-audit",
+    "displayName": "Dealer AI Readiness Audit",
+    "prompt": "Run an AI readiness audit for my dealership."
+  },
+  {
+    "pluginName": "dealer-ai-referral-analytics",
+    "sourceName": "dealer-ai-referral-analytics",
+    "displayName": "Dealer AI Referral Analytics",
+    "prompt": "Audit my dealership's traffic from AI search engines."
+  },
+  {
+    "pluginName": "dealer-ai-sentiment-monitor",
+    "sourceName": "dealer-ai-sentiment-monitor",
+    "displayName": "Dealer AI Sentiment",
+    "prompt": "Audit how AI assistants describe my dealership."
+  },
+  {
+    "pluginName": "dealer-ai-visibility",
+    "sourceName": "dealer-ai-visibility",
+    "displayName": "Dealer AI Visibility",
+    "prompt": "Measure my dealership's visibility across AI engines."
+  },
+  {
+    "pluginName": "dealer-bilingual-seo",
+    "sourceName": "dealer-bilingual-seo",
+    "displayName": "Dealer Bilingual SEO",
+    "prompt": "Audit my dealership's Spanish-language SEO presence."
+  },
+  {
+    "pluginName": "dealer-call-tracking-audit",
+    "sourceName": "dealer-call-tracking-audit",
+    "displayName": "Dealer Call Tracking Audit",
+    "prompt": "Audit my dealership's call tracking configuration."
+  },
+  {
+    "pluginName": "dealer-call-classifier",
+    "sourceName": "dealer-call-transcript-classifier",
+    "displayName": "Dealer Call Classifier",
+    "prompt": "Classify these dealership call transcripts honestly."
+  },
+  {
+    "pluginName": "dealer-comparison-page-builder",
+    "sourceName": "dealer-comparison-page-builder",
+    "displayName": "Dealer Comparison Builder",
+    "prompt": "Build a comparison page between my dealership and a competitor."
+  },
+  {
+    "pluginName": "dealer-cta-audit",
+    "sourceName": "dealer-cta-audit",
+    "displayName": "Dealer CTA Audit",
+    "prompt": "Audit the calls to action on my dealership website."
+  },
+  {
+    "pluginName": "dealer-customer-sentiment",
+    "sourceName": "dealer-customer-sentiment-analyzer",
+    "displayName": "Dealer Review Sentiment",
+    "prompt": "Analyze customer review sentiment for my dealership."
+  },
+  {
+    "pluginName": "dealer-email-flows",
+    "sourceName": "dealer-email-flows",
+    "displayName": "Dealer Email Flows",
+    "prompt": "Build the lifecycle email flows for my dealership."
+  },
+  {
+    "pluginName": "dealer-equity-mining",
+    "sourceName": "dealer-equity-mining-campaign-builder",
+    "displayName": "Dealer Equity Campaigns",
+    "prompt": "Build an equity mining campaign for my dealership."
+  },
+  {
+    "pluginName": "dealer-ga4-tracking-audit",
+    "sourceName": "dealer-ga4-tracking-audit",
+    "displayName": "Dealer GA4 Tracking Audit",
+    "prompt": "Audit my dealership's GA4 and Google Ads tracking."
+  },
+  {
+    "pluginName": "dealer-gbp-audit",
+    "sourceName": "dealer-gbp-audit",
+    "displayName": "Dealer GBP Audit",
+    "prompt": "Audit my dealership's Google Business Profile."
+  },
+  {
+    "pluginName": "dealer-llms-txt-generator",
+    "sourceName": "dealer-llms-txt-generator",
+    "displayName": "Dealer llms.txt Generator",
+    "prompt": "Generate an llms.txt file for my dealership website."
+  },
+  {
+    "pluginName": "dealer-new-customer-onboarding",
+    "sourceName": "dealer-new-customer-onboarding",
+    "displayName": "Dealer Customer Onboarding",
+    "prompt": "Design a 90-day onboarding program for new customers."
+  },
+  {
+    "pluginName": "dealer-search-strategy",
+    "sourceName": "dealer-search-strategy",
+    "displayName": "Dealer Search Strategy",
+    "prompt": "Build a unified search strategy for my dealership."
+  },
+  {
+    "pluginName": "dealer-seo-audit",
+    "sourceName": "dealer-seo-audit",
+    "displayName": "Dealer SEO Audit",
+    "prompt": "Run a traditional SEO audit on my dealership website."
+  },
+  {
+    "pluginName": "dealer-site-score",
+    "sourceName": "dealer-site-score",
+    "displayName": "Dealer Site Score",
+    "prompt": "Grade the technical health of my dealership website."
+  },
+  {
+    "pluginName": "dealer-store-positioning",
+    "sourceName": "dealer-store-positioning",
+    "displayName": "Dealer Store Positioning",
+    "prompt": "Create a positioning and brand content kit for my dealership."
+  },
+  {
+    "pluginName": "dealer-vdp-merchandising-review",
+    "sourceName": "dealer-vdp-merchandising-review",
+    "displayName": "Dealer VDP Review",
+    "prompt": "Review my dealership's VDP merchandising quality."
+  },
+  {
+    "pluginName": "dealer-agent-governance",
+    "sourceName": "dealer-agent-governance",
+    "displayName": "Dealer Agent Governance",
+    "prompt": "Create governance rules for our dealership AI assistants.",
+    "category": "Assistant Infrastructure",
+    "tags": [
+      "Governance",
+      "Approvals"
+    ]
+  },
+  {
+    "pluginName": "dealer-plugin-router",
+    "sourceName": "dealer-plugin-router",
+    "displayName": "Dealer Plugin Router",
+    "prompt": "Route this dealership request to the right plugin.",
+    "category": "Assistant Infrastructure",
+    "tags": [
+      "Routing",
+      "Catalog"
+    ]
+  },
+  {
+    "pluginName": "dots-assistant",
+    "sourceName": "dots-assistant",
+    "displayName": "Dots Assistant",
+    "prompt": "Use Dots to organize and complete this dealership task.",
+    "category": "Assistant Infrastructure",
+    "tags": [
+      "Assistant",
+      "Coordination"
+    ]
+  },
+  {
+    "pluginName": "dealer-shopping-readiness",
+    "sourceName": "dealer-ai-shopping-readiness-audit",
+    "displayName": "Dealer Shopping Readiness",
+    "prompt": "Audit my dealership for AI shopping readiness.",
+    "category": "AI Search",
+    "tags": [
+      "Shopping AI",
+      "100-point audit"
+    ]
+  },
+  {
+    "pluginName": "dealer-lead-response-auditor",
+    "sourceName": "dealer-lead-response-auditor",
+    "displayName": "Dealer Lead Response Audit",
+    "prompt": "Audit our dealership lead-response process.",
+    "category": "Sales Operations",
+    "tags": [
+      "Lead handling",
+      "100-point audit"
+    ]
+  },
+  {
+    "pluginName": "muse-meta-assistant",
+    "sourceName": "muse-meta-assistant",
+    "displayName": "Muse Meta Assistant",
+    "prompt": "Use Muse to plan and coordinate this multi-plugin project.",
+    "category": "Assistant Infrastructure",
+    "tags": [
+      "Orchestration",
+      "Quality review"
+    ]
+  }
+]

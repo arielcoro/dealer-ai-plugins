@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Call Classifier"
+  short_description: "Classify dealership calls"
+  default_prompt: "Use $dealer-call-transcript-classifier to classify these dealership call transcripts honestly."

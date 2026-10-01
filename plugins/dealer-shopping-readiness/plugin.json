@@ -1,0 +1,51 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dealer-shopping-readiness",
+  "version": "1.0.0",
+  "description": "Audit whether AI shopping systems can access, understand, compare, and accurately represent a dealership and its inventory.",
+  "author": {
+    "name": "Dealer Growth Hackers",
+    "url": "https://dealergrowthhackers.com/"
+  },
+  "homepage": "https://dealeraiplugins.com/plugins/dealer-shopping-readiness/",
+  "repository": "https://github.com/arielcoro/dealer-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "ChatGPT for car dealers",
+    "Codex for car dealers",
+    "car dealership",
+    "automotive retail",
+    "dealer AI",
+    "dealer shopping readiness",
+    "dealer-ai-shopping-readiness-audit"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Dealer Shopping Readiness",
+        "shortDescription": "Audit AI shopping readiness",
+        "longDescription": "Audit whether AI shopping systems can access, understand, compare, and accurately represent a dealership and its inventory. Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.",
+        "developerName": "Dealer Growth Hackers",
+        "category": "Business & Operations",
+        "capabilities": [
+          "Audit AI shopping readiness"
+        ],
+        "websiteURL": "https://dealeraiplugins.com/plugins/dealer-shopping-readiness/",
+        "supportURL": "https://dealeraiplugins.com/support/",
+        "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
+        "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
+        "defaultPrompt": [
+          "Audit my dealership for AI shopping readiness."
+        ],
+        "brandColor": "#0F62FE",
+        "brandColorDark": "#78A9FF",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg",
+        "screenshots": []
+      },
+      "publication": {
+        "release_notes": "Initial Dealer Growth Hackers release for ChatGPT and Codex."
+      }
+    }
+  }
+}

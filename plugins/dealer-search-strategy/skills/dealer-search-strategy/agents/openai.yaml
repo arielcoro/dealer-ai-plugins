@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Search Strategy"
+  short_description: "Plan SEO, AEO, and GEO for dealers"
+  default_prompt: "Use $dealer-search-strategy to build a unified search strategy for my dealership."

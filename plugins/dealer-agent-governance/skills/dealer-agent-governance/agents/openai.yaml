@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Agent Governance"
+  short_description: "Govern dealer AI actions"
+  default_prompt: "Use $dealer-agent-governance to create governance rules for our dealership AI assistants."

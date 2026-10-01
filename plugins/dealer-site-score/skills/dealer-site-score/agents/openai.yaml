@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Site Score"
+  short_description: "Grade a dealership website"
+  default_prompt: "Use $dealer-site-score to grade the technical health of my dealership website."

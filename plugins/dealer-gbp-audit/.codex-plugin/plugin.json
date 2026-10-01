@@ -1,0 +1,52 @@
+{
+  "name": "dealer-gbp-audit",
+  "version": "1.2.0",
+  "description": "Audit a car dealership's Google Business Profile (GBP) for local SEO and local pack performance.",
+  "author": {
+    "name": "Dealer Growth Hackers",
+    "url": "https://dealergrowthhackers.com/"
+  },
+  "homepage": "https://dealeraiplugins.com/plugins/dealer-gbp-audit/",
+  "repository": "https://github.com/arielcoro/dealer-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "ChatGPT for car dealers",
+    "Codex for car dealers",
+    "car dealership",
+    "automotive retail",
+    "dealer AI",
+    "dealer gbp audit",
+    "audit a dealer's gbp",
+    "dealer-gbp-audit"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dealer GBP Audit",
+    "shortDescription": "Audit a dealer's GBP",
+    "longDescription": "Audit a car dealership's Google Business Profile (GBP) for local SEO and local pack performance. Use when a dealership, dealer group, or automotive agency needs to audit a dealer's gbp. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+    "developerName": "Dealer Growth Hackers",
+    "category": "Business & Operations",
+    "capabilities": [
+      "Audit a dealer's GBP"
+    ],
+    "websiteURL": "https://dealeraiplugins.com/plugins/dealer-gbp-audit/",
+    "supportURL": "https://dealeraiplugins.com/support/",
+    "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
+    "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
+    "defaultPrompt": [
+      "Audit my dealership's Google Business Profile."
+    ],
+    "brandColor": "#0F62FE",
+    "brandColorDark": "#78A9FF",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "screenshots": []
+  },
+  "extensions": {
+    "com.openai": {
+      "publication": {
+        "release_notes": "Version 1.1 aligns Dealer GBP Audit with current OpenAI plugin packaging, provider-neutral tooling, and current SEO guidance."
+      }
+    }
+  }
+}

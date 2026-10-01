@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Customer Onboarding"
+  short_description: "Design a 90-day journey for dealers"
+  default_prompt: "Use $dealer-new-customer-onboarding to design a 90-day onboarding program for new customers."

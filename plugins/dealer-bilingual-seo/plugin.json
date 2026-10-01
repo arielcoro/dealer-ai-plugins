@@ -1,0 +1,52 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dealer-bilingual-seo",
+  "version": "1.2.0",
+  "description": "Build, audit, or remediate a Spanish-language SEO presence for a US car dealership targeting Hispanic buyers.",
+  "author": {
+    "name": "Dealer Growth Hackers",
+    "url": "https://dealergrowthhackers.com/"
+  },
+  "homepage": "https://dealeraiplugins.com/plugins/dealer-bilingual-seo/",
+  "repository": "https://github.com/arielcoro/dealer-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "ChatGPT for car dealers",
+    "Codex for car dealers",
+    "car dealership",
+    "automotive retail",
+    "dealer AI",
+    "dealer bilingual seo",
+    "improve spanish dealer seo",
+    "dealer-bilingual-seo"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Dealer Bilingual SEO",
+        "shortDescription": "Improve Spanish dealer SEO",
+        "longDescription": "Build, audit, or remediate a Spanish-language SEO presence for a US car dealership targeting Hispanic buyers. Use when a dealership, dealer group, or automotive agency needs to improve spanish dealer seo. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+        "developerName": "Dealer Growth Hackers",
+        "category": "Business & Operations",
+        "capabilities": [
+          "Improve Spanish dealer SEO"
+        ],
+        "websiteURL": "https://dealeraiplugins.com/plugins/dealer-bilingual-seo/",
+        "supportURL": "https://dealeraiplugins.com/support/",
+        "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
+        "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
+        "defaultPrompt": [
+          "Audit my dealership's Spanish-language SEO presence."
+        ],
+        "brandColor": "#0F62FE",
+        "brandColorDark": "#78A9FF",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg",
+        "screenshots": []
+      },
+      "publication": {
+        "release_notes": "Version 1.2 identifies Dealer Growth Hackers as the publisher and expands discovery metadata for ChatGPT and Codex."
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" role="img" aria-labelledby="title desc">
+  <title id="title">Dealer AI Plugins</title>
+  <desc id="desc">A geometric letter D with connected plugin nodes</desc>
+  <rect width="64" height="64" rx="10" fill="#0f62fe"/>
+  <path d="M15 16h15c12 0 20 6 20 16S42 48 30 48H15V16Zm9 8v16h6c7 0 11-3 11-8s-4-8-11-8h-6Z" fill="#fff"/>
+  <rect x="46" y="12" width="7" height="7" rx="1.5" fill="#8ab4f8"/>
+  <rect x="52" y="22" width="5" height="5" rx="1" fill="#fff"/>
+</svg>

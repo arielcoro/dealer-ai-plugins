@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer GBP Audit"
+  short_description: "Audit a dealer's GBP for dealers"
+  default_prompt: "Use $dealer-gbp-audit to audit my dealership's Google Business Profile."

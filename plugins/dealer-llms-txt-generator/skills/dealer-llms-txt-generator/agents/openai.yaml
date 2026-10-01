@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer llms.txt Generator"
+  short_description: "Generate dealer llms.txt for dealers"
+  default_prompt: "Use $dealer-llms-txt-generator to generate an llms.txt file for my dealership website."

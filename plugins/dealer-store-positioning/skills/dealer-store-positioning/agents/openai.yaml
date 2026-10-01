@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Store Positioning"
+  short_description: "Define dealer positioning"
+  default_prompt: "Use $dealer-store-positioning to create a positioning and brand content kit for my dealership."

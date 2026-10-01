@@ -1,0 +1,89 @@
+---
+import "../styles/global.css";
+
+interface Props {
+  title?: string;
+  description?: string;
+  image?: string;
+  structuredData?: Record<string, unknown> | Record<string, unknown>[];
+  noindex?: boolean;
+}
+
+const {
+  title = "Dealer AI Plugins for ChatGPT & Codex",
+  description = "Install 23 open-source ChatGPT and Codex plugins for dealership SEO, AI visibility, analytics, conversion, and customer lifecycle workflows.",
+  image = "/logo-mark.svg",
+  structuredData,
+  noindex = false,
+} = Astro.props;
+const pageTitle = title.includes("Dealer AI Plugins") ? title : `${title} | Dealer AI Plugins`;
+const canonicalURL = new URL(Astro.url.pathname, Astro.site ?? "https://dealeraiplugins.com");
+const imageURL = new URL(image, Astro.site ?? "https://dealeraiplugins.com");
+const metaDescription = description.length > 158
+  ? `${description.slice(0, 155).replace(/\s+\S*$/, "")}…`
+  : description;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <meta name="description" content={metaDescription} />
+    <meta name="robots" content={noindex ? "noindex, follow" : "index, follow, max-image-preview:large"} />
+    <meta name="theme-color" content="#0f62fe" />
+    <link rel="canonical" href={canonicalURL} />
+    <link rel="sitemap" type="application/xml" href="/sitemap.xml" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM site index" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600;700&family=IBM+Plex+Serif:wght@500;600&display=swap" rel="stylesheet" />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Dealer AI Plugins" />
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={metaDescription} />
+    <meta property="og:url" content={canonicalURL} />
+    <meta property="og:image" content={imageURL} />
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={metaDescription} />
+    <meta name="twitter:image" content={imageURL} />
+    {structuredData && <script type="application/ld+json" set:html={JSON.stringify(structuredData)} />}
+    <title>{pageTitle}</title>
+  </head>
+  <body>
+    <div class="site-shell">
+      <header class="topbar">
+        <a class="brand" href="/" aria-label="Dealer AI Plugins home">
+          <img class="brand-logo" src="/logo-mark.svg" alt="" width="42" height="42" />
+          <span>Dealer AI <strong>Plugins</strong></span>
+        </a>
+        <nav aria-label="Primary navigation">
+          <a href="/#catalog">Catalog</a>
+          <a href="/#install">Install</a>
+          <a href="https://github.com/arielcoro/dealer-ai-skills">GitHub</a>
+        </nav>
+      </header>
+      <main>
+        <slot />
+      </main>
+      <footer>
+        <div>
+          <img class="brand-logo small" src="/logo-mark.svg" alt="" width="38" height="38" />
+          <p><strong>Dealer AI Plugins</strong><br />Open-source ChatGPT and Codex workflows for modern dealerships.<br />Published by <a href="https://dealergrowthhackers.com/">Dealer Growth Hackers</a>.</p>
+        </div>
+        <div class="footer-links">
+          <a href="/about/">About</a>
+          <a href="/support/">Support</a>
+          <a href="/privacy/">Privacy</a>
+          <a href="/terms/">Terms</a>
+          <a href="/sitemap.xml">Sitemap</a>
+          <a href="/llms.txt">llms.txt</a>
+          <a href="https://dealergrowthhackers.com/">Publisher</a>
+        </div>
+      </footer>
+    </div>
+  </body>
+</html>

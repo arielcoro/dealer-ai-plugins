@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer AI Referral Analytics"
+  short_description: "Measure AI referral traffic"
+  default_prompt: "Use $dealer-ai-referral-analytics to audit my dealership's traffic from AI search engines."

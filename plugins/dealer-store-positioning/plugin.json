@@ -1,0 +1,52 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dealer-store-positioning",
+  "version": "1.2.0",
+  "description": "Generate a comprehensive positioning and brand content kit for a car dealership.",
+  "author": {
+    "name": "Dealer Growth Hackers",
+    "url": "https://dealergrowthhackers.com/"
+  },
+  "homepage": "https://dealeraiplugins.com/plugins/dealer-store-positioning/",
+  "repository": "https://github.com/arielcoro/dealer-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "ChatGPT for car dealers",
+    "Codex for car dealers",
+    "car dealership",
+    "automotive retail",
+    "dealer AI",
+    "dealer store positioning",
+    "define dealer positioning",
+    "dealer-store-positioning"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Dealer Store Positioning",
+        "shortDescription": "Define dealer positioning",
+        "longDescription": "Generate a comprehensive positioning and brand content kit for a car dealership. Use when a dealership, dealer group, or automotive agency needs to define dealer positioning. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+        "developerName": "Dealer Growth Hackers",
+        "category": "Business & Operations",
+        "capabilities": [
+          "Define dealer positioning"
+        ],
+        "websiteURL": "https://dealeraiplugins.com/plugins/dealer-store-positioning/",
+        "supportURL": "https://dealeraiplugins.com/support/",
+        "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
+        "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
+        "defaultPrompt": [
+          "Create a positioning and brand content kit for my dealership."
+        ],
+        "brandColor": "#0F62FE",
+        "brandColorDark": "#78A9FF",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg",
+        "screenshots": []
+      },
+      "publication": {
+        "release_notes": "Version 1.2 identifies Dealer Growth Hackers as the publisher and expands discovery metadata for ChatGPT and Codex."
+      }
+    }
+  }
+}

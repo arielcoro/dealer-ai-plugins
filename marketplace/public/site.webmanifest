@@ -1,0 +1,12 @@
+{
+  "name": "Dealer AI Plugins",
+  "short_name": "Dealer AI",
+  "description": "Open-source ChatGPT and Codex plugins for dealership operations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#0f62fe",
+  "icons": [
+    { "src": "/logo-mark.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }
+  ]
+}

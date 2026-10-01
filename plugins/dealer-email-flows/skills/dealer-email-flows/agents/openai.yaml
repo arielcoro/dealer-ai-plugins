@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Email Flows"
+  short_description: "Build dealer lifecycle email"
+  default_prompt: "Use $dealer-email-flows to build the lifecycle email flows for my dealership."

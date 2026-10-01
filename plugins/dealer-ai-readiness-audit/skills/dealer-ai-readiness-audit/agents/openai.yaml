@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer AI Readiness Audit"
+  short_description: "Score dealership AI readiness"
+  default_prompt: "Use $dealer-ai-readiness-audit to run an AI readiness audit for my dealership."

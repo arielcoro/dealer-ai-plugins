@@ -1,0 +1,21 @@
+{
+  "$schema": "./node_modules/wrangler/config-schema.json",
+  "name": "dealer-ai-plugins",
+  "account_id": "fc6bcc1dc61938faa5236929cb39a7a2",
+  "compatibility_date": "2026-10-01",
+  "workers_dev": true,
+  "assets": {
+    "directory": "./dist",
+    "not_found_handling": "404-page"
+  },
+  "routes": [
+    {
+      "pattern": "dealeraiplugins.com",
+      "custom_domain": true
+    },
+    {
+      "pattern": "www.dealeraiplugins.com",
+      "custom_domain": true
+    }
+  ]
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer AI Sentiment"
+  short_description: "Audit AI brand sentiment for dealers"
+  default_prompt: "Use $dealer-ai-sentiment-monitor to audit how AI assistants describe my dealership."

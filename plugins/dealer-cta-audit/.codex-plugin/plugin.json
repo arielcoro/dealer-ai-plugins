@@ -1,0 +1,52 @@
+{
+  "name": "dealer-cta-audit",
+  "version": "1.2.0",
+  "description": "Audit calls-to-action (CTAs) on car dealership website pages for conversion effectiveness.",
+  "author": {
+    "name": "Dealer Growth Hackers",
+    "url": "https://dealergrowthhackers.com/"
+  },
+  "homepage": "https://dealeraiplugins.com/plugins/dealer-cta-audit/",
+  "repository": "https://github.com/arielcoro/dealer-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "ChatGPT for car dealers",
+    "Codex for car dealers",
+    "car dealership",
+    "automotive retail",
+    "dealer AI",
+    "dealer cta audit",
+    "audit website calls to action",
+    "dealer-cta-audit"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dealer CTA Audit",
+    "shortDescription": "Audit website calls to action",
+    "longDescription": "Audit calls-to-action (CTAs) on car dealership website pages for conversion effectiveness. Use when a dealership, dealer group, or automotive agency needs to audit website calls to action. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+    "developerName": "Dealer Growth Hackers",
+    "category": "Business & Operations",
+    "capabilities": [
+      "Audit website calls to action"
+    ],
+    "websiteURL": "https://dealeraiplugins.com/plugins/dealer-cta-audit/",
+    "supportURL": "https://dealeraiplugins.com/support/",
+    "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
+    "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
+    "defaultPrompt": [
+      "Audit the calls to action on my dealership website."
+    ],
+    "brandColor": "#0F62FE",
+    "brandColorDark": "#78A9FF",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "screenshots": []
+  },
+  "extensions": {
+    "com.openai": {
+      "publication": {
+        "release_notes": "Version 1.1 aligns Dealer CTA Audit with current OpenAI plugin packaging, provider-neutral tooling, and current SEO guidance."
+      }
+    }
+  }
+}

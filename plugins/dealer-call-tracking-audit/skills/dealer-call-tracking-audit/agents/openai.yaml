@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Call Tracking Audit"
+  short_description: "Audit call attribution for dealers"
+  default_prompt: "Use $dealer-call-tracking-audit to audit my dealership's call tracking configuration."

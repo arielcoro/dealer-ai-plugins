@@ -1,0 +1,52 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dealer-equity-mining",
+  "version": "1.2.0",
+  "description": "Build a complete equity mining campaign for a car dealership.",
+  "author": {
+    "name": "Dealer Growth Hackers",
+    "url": "https://dealergrowthhackers.com/"
+  },
+  "homepage": "https://dealeraiplugins.com/plugins/dealer-equity-mining/",
+  "repository": "https://github.com/arielcoro/dealer-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "ChatGPT for car dealers",
+    "Codex for car dealers",
+    "car dealership",
+    "automotive retail",
+    "dealer AI",
+    "dealer equity campaigns",
+    "build an equity campaign",
+    "dealer-equity-mining-campaign-builder"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Dealer Equity Campaigns",
+        "shortDescription": "Build an equity campaign",
+        "longDescription": "Build a complete equity mining campaign for a car dealership. Use when a dealership, dealer group, or automotive agency needs to build an equity campaign. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+        "developerName": "Dealer Growth Hackers",
+        "category": "Business & Operations",
+        "capabilities": [
+          "Build an equity campaign"
+        ],
+        "websiteURL": "https://dealeraiplugins.com/plugins/dealer-equity-mining/",
+        "supportURL": "https://dealeraiplugins.com/support/",
+        "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
+        "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
+        "defaultPrompt": [
+          "Build an equity mining campaign for my dealership."
+        ],
+        "brandColor": "#0F62FE",
+        "brandColorDark": "#78A9FF",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg",
+        "screenshots": []
+      },
+      "publication": {
+        "release_notes": "Version 1.2 identifies Dealer Growth Hackers as the publisher and expands discovery metadata for ChatGPT and Codex."
+      }
+    }
+  }
+}

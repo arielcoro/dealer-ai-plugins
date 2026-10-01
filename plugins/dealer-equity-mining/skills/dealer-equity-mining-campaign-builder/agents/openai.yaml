@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Equity Campaigns"
+  short_description: "Build an equity campaign for dealers"
+  default_prompt: "Use $dealer-equity-mining-campaign-builder to build an equity mining campaign for my dealership."

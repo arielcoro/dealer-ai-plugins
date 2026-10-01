@@ -1,0 +1,117 @@
+---
+import Layout from "../../layouts/Layout.astro";
+import plugins from "../../data/plugins.json";
+
+export function getStaticPaths() {
+  return plugins.map((plugin) => ({ params: { slug: plugin.slug }, props: { plugin } }));
+}
+
+const { plugin } = Astro.props;
+const related = plugins.filter((candidate) => candidate.category === plugin.category && candidate.slug !== plugin.slug).slice(0, 3);
+const canonical = `https://dealeraiplugins.com/plugins/${plugin.slug}/`;
+const seoDescription = `Use ${plugin.name} in ChatGPT and Codex to ${plugin.shortDescription.toLowerCase()} for a car dealership. Download the open-source plugin.`;
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "SoftwareApplication",
+      "@id": `${canonical}#plugin`,
+      name: plugin.name,
+      description: plugin.description,
+      url: canonical,
+      downloadUrl: `https://dealeraiplugins.com${plugin.download}`,
+      applicationCategory: "BusinessApplication",
+      applicationSubCategory: "Automotive retail workflow",
+      operatingSystem: "ChatGPT and Codex",
+      softwareVersion: plugin.version,
+      isAccessibleForFree: true,
+      author: { "@type": "Organization", name: "Dealer Growth Hackers", url: "https://dealergrowthhackers.com/" },
+      offers: { "@type": "Offer", price: "0", priceCurrency: "USD", availability: "https://schema.org/InStock" },
+      license: "https://opensource.org/license/mit",
+    },
+    {
+      "@type": "BreadcrumbList",
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Plugin catalog", item: "https://dealeraiplugins.com/" },
+        { "@type": "ListItem", position: 2, name: plugin.name, item: canonical },
+      ],
+    },
+  ],
+};
+---
+
+<Layout title={`${plugin.name} for ChatGPT & Codex`} description={seoDescription} structuredData={structuredData}>
+  <section class="detail-hero">
+    <a class="back-link" href="/#catalog">← All plugins</a>
+    <div class="detail-grid">
+      <div>
+        <div class="eyebrow"><span></span> {plugin.category} · Version {plugin.version}</div>
+        <h1>{plugin.name}</h1>
+        <p>{plugin.description}</p>
+        <div class="tags large">{plugin.tags.map((tag: string) => <span>{tag}</span>)}</div>
+      </div>
+      <aside class="download-panel">
+        <span class="package-label">ChatGPT + Codex plugin</span>
+        <strong>{plugin.slug}.zip</strong>
+        <p>One open-source package for ChatGPT and Codex, with the complete workflow, references, manifests, and icon assets.</p>
+        <a class="primary-button" href={plugin.download} download>Download plugin ZIP</a>
+        <a class="secondary-button" href={plugin.source}>Read source on GitHub</a>
+      </aside>
+    </div>
+  </section>
+
+  <section class="detail-content">
+    <div class="detail-main">
+      <p class="kicker">What it does</p>
+      <h2>{plugin.shortDescription}</h2>
+      <p>{plugin.longDescription}</p>
+      <div class="prompt-box">
+        <span>Try this</span>
+        <blockquote>“{plugin.prompt}”</blockquote>
+        <button type="button" data-copy={plugin.prompt}>Copy prompt</button>
+      </div>
+      <p class="reviewed-note">Reviewed against OpenAI plugin guidance · October 1, 2026</p>
+    </div>
+    <aside class="spec-list">
+      <div><span>Works with</span><strong>ChatGPT + Codex</strong></div>
+      <div><span>License</span><strong>MIT</strong></div>
+      <div><span>Authentication</span><strong>None required</strong></div>
+      <div><span>Publisher</span><strong>Dealer Growth Hackers</strong></div>
+    </aside>
+  </section>
+
+  {related.length > 0 && (
+    <section class="related" aria-labelledby="related-title">
+      <p class="kicker">More in {plugin.category}</p>
+      <h2 id="related-title">Related dealership plugins</h2>
+      <div class="related-grid">
+        {related.map((item) => (
+          <a class="related-card" href={`/plugins/${item.slug}/`}>
+            <span>{item.category}</span>
+            <strong>{item.name}</strong>
+          </a>
+        ))}
+      </div>
+    </section>
+  )}
+
+  <section class="detail-install">
+    <p class="kicker">Package contents</p>
+    <h2>Transparent by design.</h2>
+    <div class="file-grid">
+      <div><code>plugin.json</code><p>Portable Agent Plugins identity and OpenAI listing metadata.</p></div>
+      <div><code>.codex-plugin/</code><p>Codex-compatible manifest for local and repository marketplaces.</p></div>
+      <div><code>skills/</code><p>The complete Dealer AI workflow and activation guidance.</p></div>
+      <div><code>references + templates</code><p>Dealer-specific scoring, checks, copy, and implementation material.</p></div>
+    </div>
+  </section>
+
+  <script>
+    document.querySelector<HTMLButtonElement>("[data-copy]")?.addEventListener("click", async (event) => {
+      const button = event.currentTarget as HTMLButtonElement;
+      await navigator.clipboard.writeText(button.dataset.copy ?? "");
+      button.textContent = "Copied";
+      window.setTimeout(() => { button.textContent = "Copy prompt"; }, 1500);
+    });
+  </script>
+</Layout>

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer GA4 Tracking Audit"
+  short_description: "Audit dealer conversion data"
+  default_prompt: "Use $dealer-ga4-tracking-audit to audit my dealership's GA4 and Google Ads tracking."

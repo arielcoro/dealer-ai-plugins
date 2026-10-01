@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer CTA Audit"
+  short_description: "Audit website calls to action"
+  default_prompt: "Use $dealer-cta-audit to audit the calls to action on my dealership website."

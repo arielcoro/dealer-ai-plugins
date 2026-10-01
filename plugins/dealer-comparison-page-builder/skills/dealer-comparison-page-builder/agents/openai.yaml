@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Comparison Builder"
+  short_description: "Build a fair comparison page"
+  default_prompt: "Use $dealer-comparison-page-builder to build a comparison page between my dealership and a competitor."

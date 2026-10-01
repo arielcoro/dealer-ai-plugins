@@ -1,0 +1,51 @@
+{
+  "name": "dots-assistant",
+  "version": "1.0.0",
+  "description": "Coordinate interactive dealership work across available Dealer AI plugins while preserving user control and explicit approvals.",
+  "author": {
+    "name": "Dealer Growth Hackers",
+    "url": "https://dealergrowthhackers.com/"
+  },
+  "homepage": "https://dealeraiplugins.com/plugins/dots-assistant/",
+  "repository": "https://github.com/arielcoro/dealer-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "ChatGPT for car dealers",
+    "Codex for car dealers",
+    "car dealership",
+    "automotive retail",
+    "dealer AI",
+    "dots assistant",
+    "dots-assistant"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dots Assistant",
+    "shortDescription": "Coordinate dealer AI work",
+    "longDescription": "Coordinate interactive dealership work across available Dealer AI plugins while preserving user control and explicit approvals. Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.",
+    "developerName": "Dealer Growth Hackers",
+    "category": "Business & Operations",
+    "capabilities": [
+      "Coordinate dealer AI work"
+    ],
+    "websiteURL": "https://dealeraiplugins.com/plugins/dots-assistant/",
+    "supportURL": "https://dealeraiplugins.com/support/",
+    "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
+    "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
+    "defaultPrompt": [
+      "Use Dots to organize and complete this dealership task."
+    ],
+    "brandColor": "#0F62FE",
+    "brandColorDark": "#78A9FF",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "screenshots": []
+  },
+  "extensions": {
+    "com.openai": {
+      "publication": {
+        "release_notes": "Initial Dealer Growth Hackers release for ChatGPT and Codex."
+      }
+    }
+  }
+}

@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer SEO Audit"
+  short_description: "Audit dealership SEO for dealers"
+  default_prompt: "Use $dealer-seo-audit to run a traditional SEO audit on my dealership website."

@@ -1,0 +1,52 @@
+{
+  "name": "dealer-llms-txt-generator",
+  "version": "1.2.0",
+  "description": "Generate a curated llms.txt file for a car dealership website to improve AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), and AI search visibility.",
+  "author": {
+    "name": "Dealer Growth Hackers",
+    "url": "https://dealergrowthhackers.com/"
+  },
+  "homepage": "https://dealeraiplugins.com/plugins/dealer-llms-txt-generator/",
+  "repository": "https://github.com/arielcoro/dealer-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "ChatGPT for car dealers",
+    "Codex for car dealers",
+    "car dealership",
+    "automotive retail",
+    "dealer AI",
+    "dealer llms.txt generator",
+    "generate dealer llms.txt",
+    "dealer-llms-txt-generator"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dealer llms.txt Generator",
+    "shortDescription": "Generate dealer llms.txt",
+    "longDescription": "Generate a curated llms.txt file for a car dealership website to improve AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), and AI search visibility. Use when a dealership, dealer group, or automotive agency needs to generate dealer llms.txt. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+    "developerName": "Dealer Growth Hackers",
+    "category": "Business & Operations",
+    "capabilities": [
+      "Generate dealer llms.txt"
+    ],
+    "websiteURL": "https://dealeraiplugins.com/plugins/dealer-llms-txt-generator/",
+    "supportURL": "https://dealeraiplugins.com/support/",
+    "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
+    "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
+    "defaultPrompt": [
+      "Generate an llms.txt file for my dealership website."
+    ],
+    "brandColor": "#0F62FE",
+    "brandColorDark": "#78A9FF",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "screenshots": []
+  },
+  "extensions": {
+    "com.openai": {
+      "publication": {
+        "release_notes": "Version 1.1 aligns Dealer llms.txt Generator with current OpenAI plugin packaging, provider-neutral tooling, and current SEO guidance."
+      }
+    }
+  }
+}

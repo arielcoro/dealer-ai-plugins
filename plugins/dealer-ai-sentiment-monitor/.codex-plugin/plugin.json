@@ -1,0 +1,52 @@
+{
+  "name": "dealer-ai-sentiment-monitor",
+  "version": "1.2.0",
+  "description": "Audit how AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, Copilot) describe and characterize a car dealership.",
+  "author": {
+    "name": "Dealer Growth Hackers",
+    "url": "https://dealergrowthhackers.com/"
+  },
+  "homepage": "https://dealeraiplugins.com/plugins/dealer-ai-sentiment-monitor/",
+  "repository": "https://github.com/arielcoro/dealer-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "ChatGPT for car dealers",
+    "Codex for car dealers",
+    "car dealership",
+    "automotive retail",
+    "dealer AI",
+    "dealer ai sentiment",
+    "audit ai brand sentiment",
+    "dealer-ai-sentiment-monitor"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Dealer AI Sentiment",
+    "shortDescription": "Audit AI brand sentiment",
+    "longDescription": "Audit how AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, Copilot) describe and characterize a car dealership. Use when a dealership, dealer group, or automotive agency needs to audit ai brand sentiment. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+    "developerName": "Dealer Growth Hackers",
+    "category": "Business & Operations",
+    "capabilities": [
+      "Audit AI brand sentiment"
+    ],
+    "websiteURL": "https://dealeraiplugins.com/plugins/dealer-ai-sentiment-monitor/",
+    "supportURL": "https://dealeraiplugins.com/support/",
+    "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
+    "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
+    "defaultPrompt": [
+      "Audit how AI assistants describe my dealership."
+    ],
+    "brandColor": "#0F62FE",
+    "brandColorDark": "#78A9FF",
+    "composerIcon": "./assets/icon.svg",
+    "logo": "./assets/icon.svg",
+    "screenshots": []
+  },
+  "extensions": {
+    "com.openai": {
+      "publication": {
+        "release_notes": "Version 1.1 aligns Dealer AI Sentiment with current OpenAI plugin packaging, provider-neutral tooling, and current SEO guidance."
+      }
+    }
+  }
+}

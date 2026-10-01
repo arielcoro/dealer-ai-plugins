@@ -1,0 +1,168 @@
+---
+import Layout from "../layouts/Layout.astro";
+import plugins from "../data/plugins.json";
+
+const categories = ["All", ...Array.from(new Set(plugins.map((plugin) => plugin.category)))];
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://dealeraiplugins.com/#publisher",
+      name: "Dealer Growth Hackers",
+      url: "https://dealergrowthhackers.com/",
+      logo: "https://dealeraiplugins.com/logo-mark.svg",
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://dealeraiplugins.com/#website",
+      name: "Dealer AI Plugins",
+      url: "https://dealeraiplugins.com/",
+      publisher: { "@id": "https://dealeraiplugins.com/#publisher" },
+      description: "Open-source ChatGPT and Codex plugins for dealership operations, SEO, analytics, and customer lifecycle workflows.",
+    },
+    {
+      "@type": "ItemList",
+      name: "Dealer AI Plugin Catalog",
+      numberOfItems: plugins.length,
+      itemListElement: plugins.map((plugin, index) => ({
+        "@type": "ListItem",
+        position: index + 1,
+        name: plugin.name,
+        url: `https://dealeraiplugins.com/plugins/${plugin.slug}/`,
+      })),
+    },
+  ],
+};
+---
+
+<Layout structuredData={structuredData}>
+  <section class="hero">
+    <div class="eyebrow"><span></span> 23 independent plugins · Built for ChatGPT + Codex</div>
+    <div class="hero-grid">
+      <div>
+        <h1>Dealer intelligence.<em>Operationalized.</em></h1>
+        <p class="hero-copy">Install rigorous, open-source dealership workflows in ChatGPT and Codex—for strategy, AI visibility, SEO, measurement, conversion, and customer lifecycle.</p>
+      </div>
+      <aside class="hero-stats" aria-label="Marketplace statistics">
+        <div><strong>23</strong><span>Plugins</span></div>
+        <div><strong>06</strong><span>Systems</span></div>
+        <div><strong>$0</strong><span>Forever</span></div>
+      </aside>
+    </div>
+    <a class="hero-action" href="#catalog">Browse the catalog <span aria-hidden="true">↓</span></a>
+  </section>
+
+  <section class="trust-strip" aria-label="Marketplace commitments">
+    <div><strong>Open source</strong><span>Every instruction is inspectable</span></div>
+    <div><strong>Vendor-neutral</strong><span>Built around dealer outcomes</span></div>
+    <div><strong>ChatGPT + Codex</strong><span>One package, both experiences</span></div>
+    <div><strong>MIT licensed</strong><span>Use, adapt, and extend</span></div>
+  </section>
+
+  <section class="platform-intro" aria-labelledby="platform-title">
+    <div>
+      <p class="kicker">ChatGPT plugins for car dealers</p>
+      <h2 id="platform-title">Dealership expertise your AI assistant can apply.</h2>
+    </div>
+    <div class="platform-copy">
+      <p><strong>In ChatGPT,</strong> each plugin adds a focused dealership workflow you can invoke in conversation—such as auditing Google Business Profile performance, building lifecycle email flows, or reviewing vehicle detail pages.</p>
+      <p><strong>In Codex,</strong> the same packages add reusable dealership skills for research, analysis, content, and implementation work. Every instruction and supporting reference remains inspectable.</p>
+    </div>
+  </section>
+
+  <section class="catalog" id="catalog">
+    <div class="section-heading">
+      <div>
+        <p class="kicker">Choose the job</p>
+      <h2>Choose the ChatGPT or Codex workflow your store needs.</h2>
+      </div>
+      <label class="search-box">
+        <span aria-hidden="true">⌕</span>
+        <span class="sr-only">Search plugins</span>
+        <input id="plugin-search" type="search" placeholder="Search audits, campaigns, analytics…" autocomplete="off" />
+      </label>
+    </div>
+
+    <div class="filters" role="group" aria-label="Filter by category">
+      {categories.map((category) => (
+        <button class:list={["filter", { active: category === "All" }]} type="button" data-category={category}>{category}</button>
+      ))}
+    </div>
+
+    <p class="result-count" aria-live="polite"><strong id="visible-count">23</strong> plugins available</p>
+
+    <div class="plugin-grid" id="plugin-grid">
+      {plugins.map((plugin, index) => (
+        <article class="plugin-card" data-category={plugin.category} data-search={`${plugin.name} ${plugin.shortDescription} ${plugin.description} ${plugin.tags.join(" ")}`.toLowerCase()} style={`--delay:${index % 8}`}>
+          <div class="card-topline">
+            <span class="card-number">{String(index + 1).padStart(2, "0")}</span>
+            <span class="category-pill">{plugin.category}</span>
+          </div>
+          <h3><a href={`/plugins/${plugin.slug}/`}>{plugin.name}</a></h3>
+          <p>{plugin.description}</p>
+          <div class="tags">
+            {plugin.tags.map((tag) => <span>{tag}</span>)}
+          </div>
+          <div class="card-actions">
+            <a class="text-link" href={`/plugins/${plugin.slug}/`}>View plugin</a>
+            <a class="download-link" href={plugin.download} download>Download ZIP</a>
+          </div>
+        </article>
+      ))}
+    </div>
+    <div class="empty-state" id="empty-state" hidden>
+      <strong>No matching plugins.</strong>
+      <p>Try a broader term or choose another system.</p>
+    </div>
+  </section>
+
+  <section class="install" id="install">
+    <div>
+      <p class="kicker">Two-minute setup</p>
+      <h2>Download. Inspect. Install.</h2>
+      <p>Every ZIP is a standalone, skills-only plugin for ChatGPT and Codex. It includes portable Agent Plugins metadata, Codex compatibility metadata, the complete workflow, and every supporting reference.</p>
+    </div>
+    <ol>
+      <li><span>01</span><div><strong>Pick a plugin</strong><p>Choose one job from the catalog and download its package.</p></div></li>
+      <li><span>02</span><div><strong>Review the source</strong><p>Every instruction and framework is readable, editable, and MIT licensed.</p></div></li>
+      <li><span>03</span><div><strong>Use it in ChatGPT or Codex</strong><p>Upload the ZIP in the ChatGPT plugin workflow, or add the repository marketplace in Codex.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="closing">
+    <p>Built for the people responsible for the number.</p>
+    <h2>Dealer principals. GMs. Marketing directors. Fixed ops. Agencies.</h2>
+    <a href="#catalog">Find your first plugin</a>
+  </section>
+
+  <script>
+    const search = document.querySelector<HTMLInputElement>("#plugin-search");
+    const cards = Array.from(document.querySelectorAll<HTMLElement>(".plugin-card"));
+    const filters = Array.from(document.querySelectorAll<HTMLButtonElement>(".filter"));
+    const count = document.querySelector<HTMLElement>("#visible-count");
+    const empty = document.querySelector<HTMLElement>("#empty-state");
+    let activeCategory = "All";
+
+    const applyFilters = () => {
+      const query = search?.value.trim().toLowerCase() ?? "";
+      let visible = 0;
+      cards.forEach((card) => {
+        const categoryMatch = activeCategory === "All" || card.dataset.category === activeCategory;
+        const searchMatch = !query || card.dataset.search?.includes(query);
+        const show = Boolean(categoryMatch && searchMatch);
+        card.hidden = !show;
+        if (show) visible += 1;
+      });
+      if (count) count.textContent = String(visible);
+      if (empty) empty.hidden = visible !== 0;
+    };
+
+    filters.forEach((button) => button.addEventListener("click", () => {
+      activeCategory = button.dataset.category ?? "All";
+      filters.forEach((candidate) => candidate.classList.toggle("active", candidate === button));
+      applyFilters();
+    }));
+    search?.addEventListener("input", applyFilters);
+  </script>
+</Layout>

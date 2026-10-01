@@ -1,0 +1,52 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dealer-seo-audit",
+  "version": "1.2.0",
+  "description": "Run a comprehensive traditional Google SEO audit on a car dealership website.",
+  "author": {
+    "name": "Dealer Growth Hackers",
+    "url": "https://dealergrowthhackers.com/"
+  },
+  "homepage": "https://dealeraiplugins.com/plugins/dealer-seo-audit/",
+  "repository": "https://github.com/arielcoro/dealer-ai-skills",
+  "license": "MIT",
+  "keywords": [
+    "ChatGPT for car dealers",
+    "Codex for car dealers",
+    "car dealership",
+    "automotive retail",
+    "dealer AI",
+    "dealer seo audit",
+    "audit dealership seo",
+    "dealer-seo-audit"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Dealer SEO Audit",
+        "shortDescription": "Audit dealership SEO",
+        "longDescription": "Run a comprehensive traditional Google SEO audit on a car dealership website. Use when a dealership, dealer group, or automotive agency needs to audit dealership seo. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+        "developerName": "Dealer Growth Hackers",
+        "category": "Business & Operations",
+        "capabilities": [
+          "Audit dealership SEO"
+        ],
+        "websiteURL": "https://dealeraiplugins.com/plugins/dealer-seo-audit/",
+        "supportURL": "https://dealeraiplugins.com/support/",
+        "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
+        "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
+        "defaultPrompt": [
+          "Run a traditional SEO audit on my dealership website."
+        ],
+        "brandColor": "#0F62FE",
+        "brandColorDark": "#78A9FF",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg",
+        "screenshots": []
+      },
+      "publication": {
+        "release_notes": "Version 1.2 identifies Dealer Growth Hackers as the publisher and expands discovery metadata for ChatGPT and Codex."
+      }
+    }
+  }
+}

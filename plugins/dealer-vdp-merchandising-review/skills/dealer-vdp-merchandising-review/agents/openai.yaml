@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer VDP Review"
+  short_description: "Review vehicle detail pages"
+  default_prompt: "Use $dealer-vdp-merchandising-review to review my dealership's VDP merchandising quality."

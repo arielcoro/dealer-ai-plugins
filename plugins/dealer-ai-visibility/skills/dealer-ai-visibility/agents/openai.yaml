@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer AI Visibility"
+  short_description: "Track dealer AI citations"
+  default_prompt: "Use $dealer-ai-visibility to measure my dealership's visibility across AI engines."

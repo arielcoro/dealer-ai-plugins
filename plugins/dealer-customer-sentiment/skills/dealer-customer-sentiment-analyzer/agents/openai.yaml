@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Review Sentiment"
+  short_description: "Analyze dealership reviews"
+  default_prompt: "Use $dealer-customer-sentiment-analyzer to analyze customer review sentiment for my dealership."

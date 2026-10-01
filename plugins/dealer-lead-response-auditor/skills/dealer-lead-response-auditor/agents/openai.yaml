@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer Lead Response Audit"
+  short_description: "Audit dealer lead handling"
+  default_prompt: "Use $dealer-lead-response-auditor to audit our dealership lead-response process."

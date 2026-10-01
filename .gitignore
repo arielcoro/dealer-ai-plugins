@@ -1,0 +1,17 @@
+.DS_Store
+.env
+.env.*
+!.env.example
+
+# Local dependencies and generated Astro output
+marketplace/node_modules/
+marketplace/dist/
+marketplace/.astro/
+
+# Cloudflare local state and logs
+.wrangler/
+marketplace/.wrangler/
+
+# Python cache files
+__pycache__/
+*.py[cod]

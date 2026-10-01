@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dots Assistant"
+  short_description: "Coordinate dealer AI work"
+  default_prompt: "Use $dots-assistant to use Dots to organize and complete this dealership task."
