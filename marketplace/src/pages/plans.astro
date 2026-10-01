@@ -15,7 +15,7 @@ const offers = [
       "Two live office-hours sessions each year",
       "Priority email support",
     ],
-    checkout: import.meta.env.PUBLIC_STRIPE_DEALER_URL,
+    checkout: import.meta.env.PUBLIC_STRIPE_DEALER_URL || "https://buy.stripe.com/bJe5kEe3Q8324gd6pg0kE0c",
   },
   {
     audience: "Dealer group",
@@ -29,7 +29,7 @@ const offers = [
       "Shared governance templates",
       "Quarterly group workshop",
     ],
-    checkout: import.meta.env.PUBLIC_STRIPE_GROUP_URL,
+    checkout: import.meta.env.PUBLIC_STRIPE_GROUP_URL || "https://buy.stripe.com/aFa4gA6BobfedQN14W0kE0d",
     featured: true,
   },
   {
@@ -44,7 +44,7 @@ const offers = [
       "White-label reporting templates",
       "Quarterly team enablement workshop",
     ],
-    checkout: import.meta.env.PUBLIC_STRIPE_AGENCY_URL,
+    checkout: import.meta.env.PUBLIC_STRIPE_AGENCY_URL || "https://buy.stripe.com/14A5kEaRE3MM6ol2900kE0e",
   },
 ];
 
@@ -127,7 +127,7 @@ const structuredData = {
         </article>
       ))}
     </div>
-    <p class="founding-note">Founding enrollment is reviewed manually while the implementation library is finalized. No payment is collected from this page unless a hosted Stripe link has been configured.</p>
+    <p class="founding-note">Founding enrollment uses secure, Stripe-hosted checkout. Annual subscriptions renew automatically until canceled. Delivery and onboarding details are sent after purchase.</p>
   </section>
 
   <section class="audit-offer">
