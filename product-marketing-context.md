@@ -21,7 +21,7 @@ The free plugins must remain complete, useful, inspectable, and MIT licensed. Pa
 ## Business model
 
 - **Free:** all public plugin packages, source, updates, and public documentation.
-- **Annual implementation programs:** proprietary implementation resources, rollout materials, live enablement, and priority support.
+- **Quarterly implementation programs:** proprietary implementation resources, rollout materials, live enablement, and priority support, with an optional discounted annual prepay.
 - **Professional services:** fixed-scope readiness audits and custom implementation work under separate written terms.
 - **Future authenticated MCP services:** existing paid customers may sign in to use entitled features. These services must follow the OpenAI plugin commerce rules in force at launch.
 
@@ -35,9 +35,9 @@ Hybrid motion:
 
 ## Pricing assumptions to validate
 
-- Dealer: $795/year per rooftop.
-- Dealer group: $2,995/year for up to five rooftops.
-- Agency: $5,995/year for up to ten active client rooftops.
+- Dealer: $249 every three months per rooftop, or $795/year (save 20%).
+- Dealer group: $899 every three months for up to five rooftops, or $2,995/year (save 17%).
+- Agency: $1,799 every three months for up to ten active client rooftops, or $5,995/year (save 17%).
 - Done-for-you readiness audit: starting at $2,500.
 
 These are founding-price hypotheses, not validated willingness-to-pay results. Validate with customer interviews and a Van Westendorp study before enabling self-serve checkout.

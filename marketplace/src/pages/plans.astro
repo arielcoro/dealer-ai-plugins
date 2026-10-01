@@ -6,8 +6,13 @@ const offers = [
   {
     audience: "Single dealership",
     name: "Dealer implementation",
-    price: "$795",
-    cadence: "per rooftop / year",
+    quarterlyPrice: "$249",
+    quarterlyCadence: "per rooftop / 3 months",
+    quarterlyCheckout: import.meta.env.PUBLIC_STRIPE_DEALER_QUARTERLY_URL || "https://buy.stripe.com/eVqdRabVI5UU6ol7tk0kE0f",
+    annualPrice: "$795",
+    annualCadence: "per rooftop / year",
+    annualCheckout: import.meta.env.PUBLIC_STRIPE_DEALER_URL || "https://buy.stripe.com/bJe5kEe3Q8324gd6pg0kE0c",
+    annualSavings: "Save 20%",
     scope: "For one store putting the free plugin catalog into daily use.",
     features: [
       "Premium implementation library",
@@ -15,13 +20,17 @@ const offers = [
       "Two live office-hours sessions each year",
       "Priority email support",
     ],
-    checkout: import.meta.env.PUBLIC_STRIPE_DEALER_URL || "https://buy.stripe.com/bJe5kEe3Q8324gd6pg0kE0c",
   },
   {
     audience: "Dealer group",
     name: "Group implementation",
-    price: "$2,995",
-    cadence: "up to 5 rooftops / year",
+    quarterlyPrice: "$899",
+    quarterlyCadence: "up to 5 rooftops / 3 months",
+    quarterlyCheckout: import.meta.env.PUBLIC_STRIPE_GROUP_QUARTERLY_URL || "https://buy.stripe.com/8x27sM9NA5UU1414h80kE0g",
+    annualPrice: "$2,995",
+    annualCadence: "up to 5 rooftops / year",
+    annualCheckout: import.meta.env.PUBLIC_STRIPE_GROUP_URL || "https://buy.stripe.com/aFa4gA6BobfedQN14W0kE0d",
+    annualSavings: "Save 17%",
     scope: "For centralized teams standardizing AI work across stores.",
     features: [
       "Everything in Dealer implementation",
@@ -29,14 +38,18 @@ const offers = [
       "Shared governance templates",
       "Quarterly group workshop",
     ],
-    checkout: import.meta.env.PUBLIC_STRIPE_GROUP_URL || "https://buy.stripe.com/aFa4gA6BobfedQN14W0kE0d",
     featured: true,
   },
   {
     audience: "Agency or consultant",
     name: "Agency implementation",
-    price: "$5,995",
-    cadence: "up to 10 client rooftops / year",
+    quarterlyPrice: "$1,799",
+    quarterlyCadence: "up to 10 client rooftops / 3 months",
+    quarterlyCheckout: import.meta.env.PUBLIC_STRIPE_AGENCY_QUARTERLY_URL || "https://buy.stripe.com/00w6oIcZMaba4gdaFw0kE0h",
+    annualPrice: "$5,995",
+    annualCadence: "up to 10 client rooftops / year",
+    annualCheckout: import.meta.env.PUBLIC_STRIPE_AGENCY_URL || "https://buy.stripe.com/14A5kEaRE3MM6ol2900kE0e",
+    annualSavings: "Save 17%",
     scope: "For teams implementing dealership AI workflows for clients.",
     features: [
       "Everything in Group implementation",
@@ -44,7 +57,6 @@ const offers = [
       "White-label reporting templates",
       "Quarterly team enablement workshop",
     ],
-    checkout: import.meta.env.PUBLIC_STRIPE_AGENCY_URL || "https://buy.stripe.com/14A5kEaRE3MM6ol2900kE0e",
   },
 ];
 
@@ -58,33 +70,44 @@ const structuredData = {
       "@type": "Service",
       "@id": "https://dealeraiplugins.com/plans/#implementation",
       name: "Dealer AI Plugin Implementation Programs",
-      description: "Annual implementation resources, enablement, and support for dealerships, dealer groups, and automotive agencies.",
+      description: "Quarterly and annual implementation resources, enablement, and support for dealerships, dealer groups, and automotive agencies.",
       provider: { "@type": "Organization", name: "Dealer Growth Hackers", url: "https://dealergrowthhackers.com/" },
       areaServed: "US",
       audience: offers.map((offer) => ({ "@type": "Audience", audienceType: offer.audience })),
       hasOfferCatalog: {
         "@type": "OfferCatalog",
         name: "Founding implementation plans",
-        itemListElement: offers.map((offer) => ({
-          "@type": "Offer",
-          name: offer.name,
-          price: offer.price.replace(/[$,]/g, ""),
-          priceCurrency: "USD",
-          description: offer.scope,
-        })),
+        itemListElement: offers.flatMap((offer) => [
+          {
+            "@type": "Offer",
+            name: `${offer.name} — quarterly`,
+            price: offer.quarterlyPrice.replace(/[$,]/g, ""),
+            priceCurrency: "USD",
+            description: `${offer.scope} Billed every three months.`,
+            url: offer.quarterlyCheckout,
+          },
+          {
+            "@type": "Offer",
+            name: `${offer.name} — annual`,
+            price: offer.annualPrice.replace(/[$,]/g, ""),
+            priceCurrency: "USD",
+            description: `${offer.scope} Billed annually.`,
+            url: offer.annualCheckout,
+          },
+        ]),
       },
     },
   ],
 };
 ---
 
-<Layout title="Implementation Plans" description="Annual Dealer AI implementation programs for dealerships, dealer groups, and agencies—plus free ChatGPT and Codex plugins for everyone." structuredData={structuredData}>
+<Layout title="Implementation Plans" description="Quarterly and annual Dealer AI implementation programs for dealerships, dealer groups, and agencies—plus free ChatGPT and Codex plugins for everyone." structuredData={structuredData}>
   <section class="plans-hero">
     <div class="eyebrow"><span></span> Free software · Paid implementation</div>
     <div class="plans-hero-grid">
       <div>
         <h1>Install for free.<br /><em>Operationalize with us.</em></h1>
-        <p>All 29 ChatGPT and Codex plugins remain open source and free. Annual plans add the rollout systems, enablement, and support required to make them part of dealership operations.</p>
+        <p>All 29 ChatGPT and Codex plugins remain open source and free. Paid plans add the rollout systems, enablement, and support required to make them part of dealership operations.</p>
       </div>
       <aside>
         <span>Founding principle</span>
@@ -107,10 +130,10 @@ const structuredData = {
   <section class="plans-section" aria-labelledby="plans-title">
     <div class="plans-heading">
       <div>
-        <p class="kicker">Annual implementation</p>
+        <p class="kicker">90-day implementation</p>
         <h2 id="plans-title">Choose how you deploy.</h2>
       </div>
-      <p>Founding prices are annual and tied to the unit that receives value: a rooftop or an active dealer client. Programs are sold independently by Dealer Growth Hackers and are not required to use the free plugins.</p>
+      <p>Start with a quarterly commitment, or prepay annually at a discount. Pricing is tied to the unit that receives value: a rooftop or an active dealer client. Programs are sold independently by Dealer Growth Hackers and are not required to use the free plugins.</p>
     </div>
     <div class="plan-grid">
       {offers.map((offer) => (
@@ -118,23 +141,26 @@ const structuredData = {
           {offer.featured && <span class="plan-flag">Recommended for groups</span>}
           <p class="plan-audience">{offer.audience}</p>
           <h3>{offer.name}</h3>
-          <div class="plan-price"><strong>{offer.price}</strong><span>{offer.cadence}</span></div>
+          <div class="plan-price"><strong>{offer.quarterlyPrice}</strong><span>{offer.quarterlyCadence}</span></div>
           <p class="plan-scope">{offer.scope}</p>
           <ul>{offer.features.map((feature) => <li>{feature}</li>)}</ul>
-          <a class="primary-button" href={offer.checkout || emailURL(offer)} rel={offer.checkout ? "external" : undefined}>
-            {offer.checkout ? "Start annual plan" : "Request founding access"}
-          </a>
+          <div class="plan-actions">
+            <a class="primary-button" href={offer.quarterlyCheckout || emailURL(offer)} rel={offer.quarterlyCheckout ? "external" : undefined}>Start quarterly plan</a>
+            <a class="annual-option" href={offer.annualCheckout} rel="external">
+              <span>Pay {offer.annualPrice} annually</span><strong>{offer.annualSavings}</strong>
+            </a>
+          </div>
         </article>
       ))}
     </div>
-    <p class="founding-note">Founding enrollment uses secure, Stripe-hosted checkout. Annual subscriptions renew automatically until canceled. Delivery and onboarding details are sent after purchase.</p>
+    <p class="founding-note">Enrollment uses secure, Stripe-hosted checkout. Quarterly and annual subscriptions renew automatically at the selected interval until canceled. Delivery and onboarding details are sent after purchase.</p>
   </section>
 
   <section class="audit-offer">
     <div>
       <p class="kicker">Need the baseline first?</p>
       <h2>Dealer AI readiness audit</h2>
-      <p>A fixed-scope engagement for organizations that want an evidence-backed starting point before committing to an annual program.</p>
+      <p>A fixed-scope engagement for organizations that want an evidence-backed starting point before committing to an implementation program.</p>
     </div>
     <div class="audit-price">
       <span>Starting at</span>
@@ -151,7 +177,7 @@ const structuredData = {
       <details open><summary>Are the plugins still free?</summary><p>Yes. All public plugin packages and source code remain free and MIT licensed. Paid plans cover separate implementation resources, enablement, and support.</p></details>
       <details><summary>Can I buy a plan inside ChatGPT?</summary><p>No. Dealer AI Plugins does not sell or promote digital subscriptions inside an OpenAI plugin. Plans are purchased independently from Dealer Growth Hackers.</p></details>
       <details><summary>What happens after I request access?</summary><p>We confirm audience, rooftop or client count, implementation goals, current capacity, deliverables, and fulfillment timing before asking for payment.</p></details>
-      <details><summary>Can I cancel an annual plan?</summary><p>Yes. A configured Stripe subscription can be canceled before renewal through the customer billing portal. Access continues through the paid term. Signed service agreements may contain separate terms.</p></details>
+      <details><summary>Can I cancel?</summary><p>Yes. A Stripe subscription can be canceled before its next quarterly or annual renewal through the customer billing portal. Access continues through the paid term. Signed service agreements may contain separate terms.</p></details>
       <details><summary>Do you offer custom implementation?</summary><p>Yes. Custom data connections, MCP services, governance work, and multi-rooftop rollouts are scoped separately after a discovery review.</p></details>
       <details><summary>Is this endorsed by OpenAI?</summary><p>No. Dealer AI Plugins is an independent project published by Dealer Growth Hackers and is not endorsed by OpenAI.</p></details>
     </div>
