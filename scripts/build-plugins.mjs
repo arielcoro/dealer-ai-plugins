@@ -186,7 +186,7 @@ for (const [sourceName, [displayName, shortDescription, prompt]] of Object.entri
       url: "https://dealergrowthhackers.com/",
     },
     homepage: `https://dealeraiplugins.com/plugins/${pluginName}/`,
-    repository: "https://github.com/arielcoro/dealer-ai-skills",
+    repository: "https://github.com/arielcoro/dealer-ai-plugins",
     license: "MIT",
     keywords: [
       "ChatGPT for car dealers",
@@ -215,7 +215,6 @@ for (const [sourceName, [displayName, shortDescription, prompt]] of Object.entri
     brandColorDark: "#78A9FF",
     composerIcon: "./assets/icon.svg",
     logo: "./assets/icon.svg",
-    screenshots: [],
   };
 
   writeJson(path.join(pluginDir, "plugin.json"), {

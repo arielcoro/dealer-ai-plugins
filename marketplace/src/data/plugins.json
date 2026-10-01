@@ -14,7 +14,7 @@
     ],
     "prompt": "Audit my dealership website for AEO and GEO visibility.",
     "download": "/downloads/dealer-aeo-audit.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-aeo-audit",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-aeo-audit/skills/dealer-aeo-audit",
     "version": "1.2.0"
   },
   {
@@ -32,7 +32,7 @@
     ],
     "prompt": "Create an AEO content brief for a dealership page.",
     "download": "/downloads/dealer-aeo-content-brief.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-aeo-content-brief",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-aeo-content-brief/skills/dealer-aeo-content-brief",
     "version": "1.2.0"
   },
   {
@@ -50,7 +50,7 @@
     ],
     "prompt": "Run an AI readiness audit for my dealership.",
     "download": "/downloads/dealer-ai-readiness-audit.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-ai-readiness-audit",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-ai-readiness-audit/skills/dealer-ai-readiness-audit",
     "version": "1.2.0"
   },
   {
@@ -68,7 +68,7 @@
     ],
     "prompt": "Audit my dealership's traffic from AI search engines.",
     "download": "/downloads/dealer-ai-referral-analytics.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-ai-referral-analytics",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-ai-referral-analytics/skills/dealer-ai-referral-analytics",
     "version": "1.2.0"
   },
   {
@@ -86,7 +86,7 @@
     ],
     "prompt": "Audit how AI assistants describe my dealership.",
     "download": "/downloads/dealer-ai-sentiment-monitor.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-ai-sentiment-monitor",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-ai-sentiment-monitor/skills/dealer-ai-sentiment-monitor",
     "version": "1.2.0"
   },
   {
@@ -104,7 +104,7 @@
     ],
     "prompt": "Measure my dealership's visibility across AI engines.",
     "download": "/downloads/dealer-ai-visibility.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-ai-visibility",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-ai-visibility/skills/dealer-ai-visibility",
     "version": "1.2.0"
   },
   {
@@ -122,7 +122,7 @@
     ],
     "prompt": "Audit my dealership's Spanish-language SEO presence.",
     "download": "/downloads/dealer-bilingual-seo.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-bilingual-seo",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-bilingual-seo/skills/dealer-bilingual-seo",
     "version": "1.2.0"
   },
   {
@@ -140,7 +140,7 @@
     ],
     "prompt": "Audit my dealership's call tracking configuration.",
     "download": "/downloads/dealer-call-tracking-audit.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-call-tracking-audit",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-call-tracking-audit/skills/dealer-call-tracking-audit",
     "version": "1.2.0"
   },
   {
@@ -158,7 +158,7 @@
     ],
     "prompt": "Classify these dealership call transcripts honestly.",
     "download": "/downloads/dealer-call-classifier.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-call-transcript-classifier",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-call-classifier/skills/dealer-call-transcript-classifier",
     "version": "1.2.0"
   },
   {
@@ -176,7 +176,7 @@
     ],
     "prompt": "Build a comparison page between my dealership and a competitor.",
     "download": "/downloads/dealer-comparison-page-builder.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-comparison-page-builder",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-comparison-page-builder/skills/dealer-comparison-page-builder",
     "version": "1.2.0"
   },
   {
@@ -194,7 +194,7 @@
     ],
     "prompt": "Audit the calls to action on my dealership website.",
     "download": "/downloads/dealer-cta-audit.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-cta-audit",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-cta-audit/skills/dealer-cta-audit",
     "version": "1.2.0"
   },
   {
@@ -212,7 +212,7 @@
     ],
     "prompt": "Analyze customer review sentiment for my dealership.",
     "download": "/downloads/dealer-customer-sentiment.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-customer-sentiment-analyzer",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-customer-sentiment/skills/dealer-customer-sentiment-analyzer",
     "version": "1.2.0"
   },
   {
@@ -230,7 +230,7 @@
     ],
     "prompt": "Build the lifecycle email flows for my dealership.",
     "download": "/downloads/dealer-email-flows.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-email-flows",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-email-flows/skills/dealer-email-flows",
     "version": "1.2.0"
   },
   {
@@ -248,7 +248,7 @@
     ],
     "prompt": "Build an equity mining campaign for my dealership.",
     "download": "/downloads/dealer-equity-mining.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-equity-mining-campaign-builder",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-equity-mining/skills/dealer-equity-mining-campaign-builder",
     "version": "1.2.0"
   },
   {
@@ -266,7 +266,7 @@
     ],
     "prompt": "Audit my dealership's GA4 and Google Ads tracking.",
     "download": "/downloads/dealer-ga4-tracking-audit.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-ga4-tracking-audit",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-ga4-tracking-audit/skills/dealer-ga4-tracking-audit",
     "version": "1.2.0"
   },
   {
@@ -284,7 +284,7 @@
     ],
     "prompt": "Audit my dealership's Google Business Profile.",
     "download": "/downloads/dealer-gbp-audit.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-gbp-audit",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-gbp-audit/skills/dealer-gbp-audit",
     "version": "1.2.0"
   },
   {
@@ -302,7 +302,7 @@
     ],
     "prompt": "Generate an llms.txt file for my dealership website.",
     "download": "/downloads/dealer-llms-txt-generator.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-llms-txt-generator",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-llms-txt-generator/skills/dealer-llms-txt-generator",
     "version": "1.2.0"
   },
   {
@@ -320,7 +320,7 @@
     ],
     "prompt": "Design a 90-day onboarding program for new customers.",
     "download": "/downloads/dealer-new-customer-onboarding.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-new-customer-onboarding",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-new-customer-onboarding/skills/dealer-new-customer-onboarding",
     "version": "1.2.0"
   },
   {
@@ -338,7 +338,7 @@
     ],
     "prompt": "Build a unified search strategy for my dealership.",
     "download": "/downloads/dealer-search-strategy.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-search-strategy",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-search-strategy/skills/dealer-search-strategy",
     "version": "1.2.0"
   },
   {
@@ -356,7 +356,7 @@
     ],
     "prompt": "Run a traditional SEO audit on my dealership website.",
     "download": "/downloads/dealer-seo-audit.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-seo-audit",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-seo-audit/skills/dealer-seo-audit",
     "version": "1.2.0"
   },
   {
@@ -374,7 +374,7 @@
     ],
     "prompt": "Grade the technical health of my dealership website.",
     "download": "/downloads/dealer-site-score.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-site-score",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-site-score/skills/dealer-site-score",
     "version": "1.2.0"
   },
   {
@@ -392,7 +392,7 @@
     ],
     "prompt": "Create a positioning and brand content kit for my dealership.",
     "download": "/downloads/dealer-store-positioning.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-store-positioning",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-store-positioning/skills/dealer-store-positioning",
     "version": "1.2.0"
   },
   {
@@ -410,7 +410,7 @@
     ],
     "prompt": "Review my dealership's VDP merchandising quality.",
     "download": "/downloads/dealer-vdp-merchandising-review.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-vdp-merchandising-review",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-vdp-merchandising-review/skills/dealer-vdp-merchandising-review",
     "version": "1.2.0"
   },
   {
@@ -428,7 +428,7 @@
     ],
     "prompt": "Create governance rules for our dealership AI assistants.",
     "download": "/downloads/dealer-agent-governance.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-agent-governance",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-agent-governance/skills/dealer-agent-governance",
     "version": "1.0.0"
   },
   {
@@ -446,16 +446,16 @@
     ],
     "prompt": "Route this dealership request to the right plugin.",
     "download": "/downloads/dealer-plugin-router.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-plugin-router",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-plugin-router/skills/dealer-plugin-router",
     "version": "1.0.0"
   },
   {
     "slug": "dots-assistant",
     "skillName": "dots-assistant",
-    "name": "Dots Assistant",
+    "name": "Dealer Dots Workflow",
     "shortDescription": "Coordinate dealer AI work",
     "description": "Coordinate interactive dealership work across available Dealer AI plugins while preserving user control and explicit approvals.",
-    "longDescription": "Coordinate interactive dealership work across available Dealer AI plugins while preserving user control and explicit approvals. Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.",
+    "longDescription": "An independent Dealer Growth Hackers workflow for coordinating dealership work with Dots and available Dealer AI plugins while preserving user control and explicit approvals. This plugin is not created by or endorsed by OpenAI.",
     "category": "Assistant Infrastructure",
     "categoryDescription": "Coordinate, govern, route, and review work across the Dealer AI plugin catalog.",
     "tags": [
@@ -464,7 +464,7 @@
     ],
     "prompt": "Use Dots to organize and complete this dealership task.",
     "download": "/downloads/dots-assistant.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dots-assistant",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dots-assistant/skills/dots-assistant",
     "version": "1.0.0"
   },
   {
@@ -482,7 +482,7 @@
     ],
     "prompt": "Audit my dealership for AI shopping readiness.",
     "download": "/downloads/dealer-shopping-readiness.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-ai-shopping-readiness-audit",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-shopping-readiness/skills/dealer-ai-shopping-readiness-audit",
     "version": "1.0.0"
   },
   {
@@ -500,16 +500,16 @@
     ],
     "prompt": "Audit our dealership lead-response process.",
     "download": "/downloads/dealer-lead-response-auditor.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/dealer-lead-response-auditor",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-lead-response-auditor/skills/dealer-lead-response-auditor",
     "version": "1.0.0"
   },
   {
     "slug": "muse-meta-assistant",
     "skillName": "muse-meta-assistant",
-    "name": "Muse Meta Assistant",
+    "name": "Dealer Muse Workflow",
     "shortDescription": "Orchestrate dealer AI work",
     "description": "Plan, sequence, review, and synthesize complex dealership work across Dots and available Dealer AI plugins.",
-    "longDescription": "Plan, sequence, review, and synthesize complex dealership work across Dots and available Dealer AI plugins. Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.",
+    "longDescription": "An independent Dealer Growth Hackers workflow for planning, sequencing, reviewing, and synthesizing complex dealership work across Muse, Dots, and available Dealer AI plugins. It does not claim affiliation with another Muse product or publisher.",
     "category": "Assistant Infrastructure",
     "categoryDescription": "Coordinate, govern, route, and review work across the Dealer AI plugin catalog.",
     "tags": [
@@ -518,7 +518,7 @@
     ],
     "prompt": "Use Muse to plan and coordinate this multi-plugin project.",
     "download": "/downloads/muse-meta-assistant.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/muse-meta-assistant",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/muse-meta-assistant/skills/muse-meta-assistant",
     "version": "1.0.0"
   }
 ]

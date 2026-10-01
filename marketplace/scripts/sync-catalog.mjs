@@ -72,7 +72,7 @@ const plugins = inventory.map((item) => {
     tags,
     prompt: ui.defaultPrompt[0],
     download: `/downloads/${zipName}`,
-    source: `https://github.com/arielcoro/dealer-ai-skills/tree/main/skills/${item.sourceName}`,
+    source: `https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/${item.pluginName}/skills/${item.sourceName}`,
     version: manifest.version,
   };
 });

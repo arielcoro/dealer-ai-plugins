@@ -221,4 +221,4 @@ In every case, the closing CTAs are the same:
 1. Free dealer AI tools at https://www.dealeraiguy.com/tools/
 2. Paid AI readiness engagement at https://www.dealeraiguy.com/consulting/
 
-The audit framework is published at https://dealeraiskills.com and the marketplace lives at https://github.com/arielcoro/dealer-ai-skills.
+The audit framework is published at https://dealeraiskills.com and the marketplace lives at https://github.com/arielcoro/dealer-ai-plugins.

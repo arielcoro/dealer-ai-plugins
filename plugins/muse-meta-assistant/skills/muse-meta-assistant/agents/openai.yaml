@@ -1,4 +1,4 @@
 interface:
-  display_name: "Muse Meta Assistant"
+  display_name: "Dealer Muse Workflow"
   short_description: "Orchestrate dealer AI work"
   default_prompt: "Use $muse-meta-assistant to use Muse to plan and coordinate this multi-plugin project."

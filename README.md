@@ -1,6 +1,6 @@
 # Dealer AI Plugins for ChatGPT and Codex
 
-This repository packages the 23 Dealer AI Skills as 23 independently installable plugins for ChatGPT and Codex using OpenAI's Agent Plugins format.
+This repository packages 29 independently installable Dealer AI plugins for ChatGPT and Codex using OpenAI's Agent Plugins format. It includes the original 23 Dealer AI Skills plus governance, routing, shopping-readiness, lead-response, Dots, and Muse workflows.
 
 Published by [Dealer Growth Hackers](https://dealergrowthhackers.com/).
 
@@ -12,6 +12,12 @@ Each plugin includes:
 - OpenAI skill interface metadata and distributable icon assets.
 
 The local marketplace catalog is located at `.agents/plugins/marketplace.json`.
+
+OpenAI public-directory ZIPs are located at `dist/openai-submissions/`. Validate the source packages before submission with:
+
+```bash
+node scripts/validate-openai-submissions.mjs
+```
 
 The public-directory submission and discovery plan is documented in `OPENAI_DISCOVERY.md`.
 
@@ -25,7 +31,7 @@ Run:
 node scripts/build-plugins.mjs
 ```
 
-The build recreates `plugins/`, `plugin-inventory.json`, and the marketplace catalog.
+The build refreshes the 23 imported packages, preserves the six locally authored packages, and updates `plugin-inventory.json` and the marketplace catalog.
 
 ## Identifier exceptions
 

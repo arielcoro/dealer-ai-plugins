@@ -270,9 +270,10 @@ This catalog describes routing intent, not installation state. Verify that a sel
     {
         "plugin": "dots-assistant",
         "skill": "dots-assistant",
-        "display": "Dots Assistant",
+        "display": "Dealer Dots Workflow",
         "short": "Coordinate dealer AI work",
         "description": "Coordinate interactive dealership work across available Dealer AI plugins while preserving user control and explicit approvals.",
+        "listing_description": "An independent Dealer Growth Hackers workflow for coordinating dealership work with Dots and available Dealer AI plugins while preserving user control and explicit approvals. This plugin is not created by or endorsed by OpenAI.",
         "prompt": "Use Dots to organize and complete this dealership task.",
         "category": "Assistant Infrastructure",
         "tags": ["Assistant", "Coordination"],
@@ -637,9 +638,10 @@ Use a documented stratified sample across source, department, outcome, business-
     {
         "plugin": "muse-meta-assistant",
         "skill": "muse-meta-assistant",
-        "display": "Muse Meta Assistant",
+        "display": "Dealer Muse Workflow",
         "short": "Orchestrate dealer AI work",
         "description": "Plan, sequence, review, and synthesize complex dealership work across Dots and available Dealer AI plugins.",
+        "listing_description": "An independent Dealer Growth Hackers workflow for planning, sequencing, reviewing, and synthesizing complex dealership work across Muse, Dots, and available Dealer AI plugins. It does not claim affiliation with another Muse product or publisher.",
         "prompt": "Use Muse to plan and coordinate this multi-plugin project.",
         "category": "Assistant Infrastructure",
         "tags": ["Orchestration", "Quality review"],
@@ -799,7 +801,7 @@ for spec in SPECS:
         "description": spec["description"],
         "author": {"name": "Dealer Growth Hackers", "url": "https://dealergrowthhackers.com/"},
         "homepage": f'https://dealeraiplugins.com/plugins/{spec["plugin"]}/',
-        "repository": "https://github.com/arielcoro/dealer-ai-skills",
+        "repository": "https://github.com/arielcoro/dealer-ai-plugins",
         "license": "MIT",
         "keywords": [
             "ChatGPT for car dealers",
@@ -814,7 +816,10 @@ for spec in SPECS:
     ui = {
         "displayName": spec["display"],
         "shortDescription": spec["short"],
-        "longDescription": f'{spec["description"]} Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.',
+        "longDescription": spec.get(
+            "listing_description",
+            f'{spec["description"]} Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.',
+        ),
         "developerName": "Dealer Growth Hackers",
         "category": "Business & Operations",
         "capabilities": [spec["capability"]],
@@ -827,7 +832,6 @@ for spec in SPECS:
         "brandColorDark": "#78A9FF",
         "composerIcon": "./assets/icon.svg",
         "logo": "./assets/icon.svg",
-        "screenshots": [],
     }
     write_json(
         plugin_root / "plugin.json",

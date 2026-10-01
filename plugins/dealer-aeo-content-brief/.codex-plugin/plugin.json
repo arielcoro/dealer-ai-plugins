@@ -7,7 +7,7 @@
     "url": "https://dealergrowthhackers.com/"
   },
   "homepage": "https://dealeraiplugins.com/plugins/dealer-aeo-content-brief/",
-  "repository": "https://github.com/arielcoro/dealer-ai-skills",
+  "repository": "https://github.com/arielcoro/dealer-ai-plugins",
   "license": "MIT",
   "keywords": [
     "ChatGPT for car dealers",
@@ -39,8 +39,7 @@
     "brandColor": "#0F62FE",
     "brandColorDark": "#78A9FF",
     "composerIcon": "./assets/icon.svg",
-    "logo": "./assets/icon.svg",
-    "screenshots": []
+    "logo": "./assets/icon.svg"
   },
   "extensions": {
     "com.openai": {
