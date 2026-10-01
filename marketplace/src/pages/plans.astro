@@ -1,0 +1,159 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const contact = "ariel@dealergrowthhackers.com";
+const offers = [
+  {
+    audience: "Single dealership",
+    name: "Dealer implementation",
+    price: "$795",
+    cadence: "per rooftop / year",
+    scope: "For one store putting the free plugin catalog into daily use.",
+    features: [
+      "Premium implementation library",
+      "90-day rollout planner",
+      "Two live office-hours sessions each year",
+      "Priority email support",
+    ],
+    checkout: import.meta.env.PUBLIC_STRIPE_DEALER_URL,
+  },
+  {
+    audience: "Dealer group",
+    name: "Group implementation",
+    price: "$2,995",
+    cadence: "up to 5 rooftops / year",
+    scope: "For centralized teams standardizing AI work across stores.",
+    features: [
+      "Everything in Dealer implementation",
+      "Group rollout and ownership workbook",
+      "Shared governance templates",
+      "Quarterly group workshop",
+    ],
+    checkout: import.meta.env.PUBLIC_STRIPE_GROUP_URL,
+    featured: true,
+  },
+  {
+    audience: "Agency or consultant",
+    name: "Agency implementation",
+    price: "$5,995",
+    cadence: "up to 10 client rooftops / year",
+    scope: "For teams implementing dealership AI workflows for clients.",
+    features: [
+      "Everything in Group implementation",
+      "Agency implementation playbook",
+      "White-label reporting templates",
+      "Quarterly team enablement workshop",
+    ],
+    checkout: import.meta.env.PUBLIC_STRIPE_AGENCY_URL,
+  },
+];
+
+const emailURL = (offer: typeof offers[number]) =>
+  `mailto:${contact}?subject=${encodeURIComponent(`Dealer AI Plugins — ${offer.audience} founding access`)}&body=${encodeURIComponent(`I am interested in the ${offer.name} program.\n\nOrganization:\nNumber of rooftops or dealer clients:\nPrimary implementation goal:\n`)}`;
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Service",
+      "@id": "https://dealeraiplugins.com/plans/#implementation",
+      name: "Dealer AI Plugin Implementation Programs",
+      description: "Annual implementation resources, enablement, and support for dealerships, dealer groups, and automotive agencies.",
+      provider: { "@type": "Organization", name: "Dealer Growth Hackers", url: "https://dealergrowthhackers.com/" },
+      areaServed: "US",
+      audience: offers.map((offer) => ({ "@type": "Audience", audienceType: offer.audience })),
+      hasOfferCatalog: {
+        "@type": "OfferCatalog",
+        name: "Founding implementation plans",
+        itemListElement: offers.map((offer) => ({
+          "@type": "Offer",
+          name: offer.name,
+          price: offer.price.replace(/[$,]/g, ""),
+          priceCurrency: "USD",
+          description: offer.scope,
+        })),
+      },
+    },
+  ],
+};
+---
+
+<Layout title="Implementation Plans" description="Annual Dealer AI implementation programs for dealerships, dealer groups, and agencies—plus free ChatGPT and Codex plugins for everyone." structuredData={structuredData}>
+  <section class="plans-hero">
+    <div class="eyebrow"><span></span> Free software · Paid implementation</div>
+    <div class="plans-hero-grid">
+      <div>
+        <h1>Install for free.<br /><em>Operationalize with us.</em></h1>
+        <p>All 29 ChatGPT and Codex plugins remain open source and free. Annual plans add the rollout systems, enablement, and support required to make them part of dealership operations.</p>
+      </div>
+      <aside>
+        <span>Founding principle</span>
+        <strong>Pay for implementation—not permission to read the playbook.</strong>
+      </aside>
+    </div>
+  </section>
+
+  <section class="free-foundation" aria-labelledby="free-title">
+    <div>
+      <p class="kicker">The permanent free tier</p>
+      <h2 id="free-title">Every plugin. Every source file. $0.</h2>
+    </div>
+    <div>
+      <p>Download any plugin, inspect its instructions, adapt it under the MIT license, and use it in ChatGPT or Codex. No account, trial, payment card, or deliberately limited edition is required.</p>
+      <a class="text-arrow" href="/#catalog">Browse all free plugins <span>→</span></a>
+    </div>
+  </section>
+
+  <section class="plans-section" aria-labelledby="plans-title">
+    <div class="plans-heading">
+      <div>
+        <p class="kicker">Annual implementation</p>
+        <h2 id="plans-title">Choose how you deploy.</h2>
+      </div>
+      <p>Founding prices are annual and tied to the unit that receives value: a rooftop or an active dealer client. Programs are sold independently by Dealer Growth Hackers and are not required to use the free plugins.</p>
+    </div>
+    <div class="plan-grid">
+      {offers.map((offer) => (
+        <article class:list={["plan-card", { featured: offer.featured }]}>
+          {offer.featured && <span class="plan-flag">Recommended for groups</span>}
+          <p class="plan-audience">{offer.audience}</p>
+          <h3>{offer.name}</h3>
+          <div class="plan-price"><strong>{offer.price}</strong><span>{offer.cadence}</span></div>
+          <p class="plan-scope">{offer.scope}</p>
+          <ul>{offer.features.map((feature) => <li>{feature}</li>)}</ul>
+          <a class="primary-button" href={offer.checkout || emailURL(offer)} rel={offer.checkout ? "external" : undefined}>
+            {offer.checkout ? "Start annual plan" : "Request founding access"}
+          </a>
+        </article>
+      ))}
+    </div>
+    <p class="founding-note">Founding enrollment is reviewed manually while the implementation library is finalized. No payment is collected from this page unless a hosted Stripe link has been configured.</p>
+  </section>
+
+  <section class="audit-offer">
+    <div>
+      <p class="kicker">Need the baseline first?</p>
+      <h2>Dealer AI readiness audit</h2>
+      <p>A fixed-scope engagement for organizations that want an evidence-backed starting point before committing to an annual program.</p>
+    </div>
+    <div class="audit-price">
+      <span>Starting at</span>
+      <strong>$2,500</strong>
+      <p>Public-evidence review, scored findings, executive readout, and prioritized 90-day plan. Final scope and price are confirmed in writing before work begins.</p>
+      <a class="secondary-button" href={`mailto:${contact}?subject=${encodeURIComponent("Dealer AI readiness audit")}&body=${encodeURIComponent("I would like to discuss a Dealer AI readiness audit.\n\nOrganization:\nNumber of rooftops:\nPrimary concern:\n")}`}>Discuss an audit</a>
+    </div>
+  </section>
+
+  <section class="plans-faq">
+    <p class="kicker">Questions</p>
+    <h2>Clear boundaries from day one.</h2>
+    <div class="faq-grid">
+      <details open><summary>Are the plugins still free?</summary><p>Yes. All public plugin packages and source code remain free and MIT licensed. Paid plans cover separate implementation resources, enablement, and support.</p></details>
+      <details><summary>Can I buy a plan inside ChatGPT?</summary><p>No. Dealer AI Plugins does not sell or promote digital subscriptions inside an OpenAI plugin. Plans are purchased independently from Dealer Growth Hackers.</p></details>
+      <details><summary>What happens after I request access?</summary><p>We confirm audience, rooftop or client count, implementation goals, current capacity, deliverables, and fulfillment timing before asking for payment.</p></details>
+      <details><summary>Can I cancel an annual plan?</summary><p>Yes. A configured Stripe subscription can be canceled before renewal through the customer billing portal. Access continues through the paid term. Signed service agreements may contain separate terms.</p></details>
+      <details><summary>Do you offer custom implementation?</summary><p>Yes. Custom data connections, MCP services, governance work, and multi-rooftop rollouts are scoped separately after a discovery review.</p></details>
+      <details><summary>Is this endorsed by OpenAI?</summary><p>No. Dealer AI Plugins is an independent project published by Dealer Growth Hackers and is not endorsed by OpenAI.</p></details>
+    </div>
+  </section>
+</Layout>

@@ -21,6 +21,8 @@ node scripts/validate-openai-submissions.mjs
 
 The public-directory submission and discovery plan is documented in `OPENAI_DISCOVERY.md`.
 
+The separate free-plugin and paid-implementation business model is documented in `MONETIZATION.md`. The marketplace plans page uses optional hosted Stripe Payment Links configured from `marketplace/.env.example`; when no link is configured, it falls back to a manual founding-access request.
+
 ## Rebuild
 
 The source skills were imported from local commit `1a1df863b0b5a64cfd1951b50ae767b4029cdea9` of `arielcoro/dealer-ai-skills`.
