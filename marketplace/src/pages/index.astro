@@ -3,6 +3,7 @@ import Layout from "../layouts/Layout.astro";
 import plugins from "../data/plugins.json";
 
 const categories = ["All", ...Array.from(new Set(plugins.map((plugin) => plugin.category)))];
+const departments = ["All departments", "Sales & BDC", "Fixed Operations", "Marketing", "Customer Experience", "Executive & Operations", "Analytics & Technology"];
 const structuredData = {
   "@context": "https://schema.org",
   "@graph": [
@@ -46,7 +47,7 @@ const structuredData = {
       </div>
       <aside class="hero-stats" aria-label="Marketplace statistics">
         <div><strong>29</strong><span>Plugins</span></div>
-        <div><strong>06</strong><span>Systems</span></div>
+        <div><strong>06</strong><span>Departments</span></div>
         <div><strong>$0</strong><span>Forever</span></div>
       </aside>
     </div>
@@ -84,20 +85,36 @@ const structuredData = {
       </label>
     </div>
 
-    <div class="filters" role="group" aria-label="Filter by category">
-      {categories.map((category) => (
-        <button class:list={["filter", { active: category === "All" }]} type="button" data-category={category}>{category}</button>
-      ))}
+    <div class="filter-panel">
+      <div class="filter-row">
+        <p>Dealer department</p>
+        <div class="filters" role="group" aria-label="Filter by dealer department">
+          {departments.map((department) => (
+            <button class:list={["filter", { active: department === "All departments" }]} type="button" data-department={department}>{department}</button>
+          ))}
+        </div>
+      </div>
+      <div class="filter-row">
+        <p>Workflow type</p>
+        <div class="filters" role="group" aria-label="Filter by workflow type">
+          {categories.map((category) => (
+            <button class:list={["filter", { active: category === "All" }]} type="button" data-category={category}>{category}</button>
+          ))}
+        </div>
+      </div>
     </div>
 
     <p class="result-count" aria-live="polite"><strong id="visible-count">29</strong> plugins available</p>
 
     <div class="plugin-grid" id="plugin-grid">
       {plugins.map((plugin, index) => (
-        <article class="plugin-card" data-category={plugin.category} data-search={`${plugin.name} ${plugin.shortDescription} ${plugin.description} ${plugin.tags.join(" ")}`.toLowerCase()} style={`--delay:${index % 8}`}>
+        <article class="plugin-card" data-category={plugin.category} data-departments={plugin.departments.join("|")} data-search={`${plugin.name} ${plugin.shortDescription} ${plugin.description} ${plugin.departments.join(" ")} ${plugin.tags.join(" ")}`.toLowerCase()} style={`--delay:${index % 8}`}>
           <div class="card-topline">
             <span class="card-number">{String(index + 1).padStart(2, "0")}</span>
-            <span class="category-pill">{plugin.category}</span>
+            <div class="card-classification">
+              <span class="department-pill">{plugin.departments[0]}</span>
+              <span class="category-pill">{plugin.category}</span>
+            </div>
           </div>
           <h3><a href={`/plugins/${plugin.slug}/`}>{plugin.name}</a></h3>
           <p>{plugin.description}</p>
@@ -150,18 +167,21 @@ const structuredData = {
   <script>
     const search = document.querySelector<HTMLInputElement>("#plugin-search");
     const cards = Array.from(document.querySelectorAll<HTMLElement>(".plugin-card"));
-    const filters = Array.from(document.querySelectorAll<HTMLButtonElement>(".filter"));
+    const categoryFilters = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-category]"));
+    const departmentFilters = Array.from(document.querySelectorAll<HTMLButtonElement>("[data-department]"));
     const count = document.querySelector<HTMLElement>("#visible-count");
     const empty = document.querySelector<HTMLElement>("#empty-state");
     let activeCategory = "All";
+    let activeDepartment = "All departments";
 
     const applyFilters = () => {
       const query = search?.value.trim().toLowerCase() ?? "";
       let visible = 0;
       cards.forEach((card) => {
         const categoryMatch = activeCategory === "All" || card.dataset.category === activeCategory;
+        const departmentMatch = activeDepartment === "All departments" || card.dataset.departments?.split("|").includes(activeDepartment);
         const searchMatch = !query || card.dataset.search?.includes(query);
-        const show = Boolean(categoryMatch && searchMatch);
+        const show = Boolean(categoryMatch && departmentMatch && searchMatch);
         card.hidden = !show;
         if (show) visible += 1;
       });
@@ -169,9 +189,14 @@ const structuredData = {
       if (empty) empty.hidden = visible !== 0;
     };
 
-    filters.forEach((button) => button.addEventListener("click", () => {
+    categoryFilters.forEach((button) => button.addEventListener("click", () => {
       activeCategory = button.dataset.category ?? "All";
-      filters.forEach((candidate) => candidate.classList.toggle("active", candidate === button));
+      categoryFilters.forEach((candidate) => candidate.classList.toggle("active", candidate === button));
+      applyFilters();
+    }));
+    departmentFilters.forEach((button) => button.addEventListener("click", () => {
+      activeDepartment = button.dataset.department ?? "All departments";
+      departmentFilters.forEach((candidate) => candidate.classList.toggle("active", candidate === button));
       applyFilters();
     }));
     search?.addEventListener("input", applyFilters);

@@ -45,7 +45,7 @@ const structuredData = {
     <a class="back-link" href="/#catalog">← All plugins</a>
     <div class="detail-grid">
       <div>
-        <div class="eyebrow"><span></span> {plugin.category} · Version {plugin.version}</div>
+        <div class="eyebrow"><span></span> {plugin.departments[0]} · {plugin.category} · Version {plugin.version}</div>
         <h1>{plugin.name}</h1>
         <p>{plugin.description}</p>
         <div class="tags large">{plugin.tags.map((tag: string) => <span>{tag}</span>)}</div>
@@ -74,6 +74,7 @@ const structuredData = {
     </div>
     <aside class="spec-list">
       <div><span>Works with</span><strong>ChatGPT + Codex</strong></div>
+      <div><span>Dealer departments</span><strong>{plugin.departments.join(" · ")}</strong></div>
       <div><span>License</span><strong>MIT</strong></div>
       <div><span>Authentication</span><strong>None required</strong></div>
       <div><span>Publisher</span><strong>Dealer Growth Hackers</strong></div>

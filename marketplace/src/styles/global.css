@@ -140,7 +140,11 @@ h1, h2, h3, p { margin-top: 0; }
 .search-box span[aria-hidden] { color: var(--blue); font-size: 1.5rem; }
 .search-box input { width: 100%; border: 0; outline: 0; background: transparent; color: var(--text); font-size: 1rem; }
 .search-box input::placeholder { color: var(--subtle); }
-.filters { display: flex; flex-wrap: wrap; gap: .55rem; margin: 3rem 0 1.2rem; }
+.filter-panel { display: grid; gap: 1rem; margin: 3rem 0 1.2rem; padding: 1.2rem; border: 1px solid var(--line); background: var(--blue-pale); }
+.filter-row { display: grid; grid-template-columns: 150px 1fr; gap: 1rem; align-items: start; }
+.filter-row + .filter-row { padding-top: 1rem; border-top: 1px solid var(--line); }
+.filter-row > p { margin: .5rem 0 0; color: var(--navy); font-family: var(--mono); font-size: .66rem; font-weight: 500; letter-spacing: .05em; text-transform: uppercase; }
+.filters { display: flex; flex-wrap: wrap; gap: .55rem; margin: 0; }
 .filter { padding: .62rem 1rem; color: #34445a; border: 1px solid var(--line-strong); border-radius: var(--pill-radius); background: var(--white); cursor: pointer; font-family: var(--mono); font-size: .68rem; letter-spacing: .03em; text-transform: uppercase; transition: all .18s ease; }
 .filter:hover, .filter:focus-visible { color: var(--blue); border-color: var(--blue); }
 .filter.active { color: var(--white); background: var(--blue); border-color: var(--blue); }
@@ -156,6 +160,8 @@ h1, h2, h3, p { margin-top: 0; }
 @keyframes reveal { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: none; } }
 .card-topline { display: flex; align-items: center; justify-content: space-between; gap: 1rem; }
 .card-number { color: var(--blue); font-family: var(--mono); font-size: .84rem; font-weight: 500; }
+.card-classification { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: .4rem; }
+.department-pill { padding: .28rem .55rem; color: var(--white); border: 1px solid var(--navy); background: var(--navy); font-family: var(--mono); font-size: .6rem; text-transform: uppercase; letter-spacing: .05em; }
 .category-pill { padding: .28rem .55rem; color: #3b4e68; border: 1px solid var(--line); background: var(--blue-pale); font-family: var(--mono); font-size: .6rem; text-transform: uppercase; letter-spacing: .05em; }
 .plugin-card h3 { margin: 2rem 0 1rem; color: var(--navy); font-family: var(--display); font-size: 1.8rem; font-weight: 500; line-height: 1.08; letter-spacing: -.025em; }
 .plugin-card h3 a::after { content: ""; position: absolute; inset: 0; }
@@ -272,6 +278,8 @@ footer a { color: var(--blue); text-decoration: underline; text-underline-offset
   .hero-action { left: 1.25rem; }
   .catalog, .implementation-bridge, .install, .closing, .detail-hero, .detail-content, .detail-install, .plans-hero, .free-foundation, .plans-section, .audit-offer, .plans-faq { padding-left: 1.25rem; padding-right: 1.25rem; }
   .section-heading { grid-template-columns: 1fr; gap: 2rem; }
+  .filter-row { grid-template-columns: 1fr; gap: .5rem; }
+  .filter-row > p { margin-top: 0; }
   .plugin-grid { grid-template-columns: 1fr; }
   .plugin-card { min-height: 370px; }
   .hero::after { display: none; }

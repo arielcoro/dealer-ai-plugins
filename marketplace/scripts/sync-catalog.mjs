@@ -50,6 +50,38 @@ const categoryDescriptions = {
   "Sales Operations": "Improve lead handling, appointment conversion, ownership, and operational follow-through.",
 };
 
+const departments = {
+  "dealer-aeo-audit": ["Marketing"],
+  "dealer-aeo-content-brief": ["Marketing"],
+  "dealer-ai-readiness-audit": ["Executive & Operations"],
+  "dealer-ai-referral-analytics": ["Marketing", "Analytics & Technology"],
+  "dealer-ai-sentiment-monitor": ["Marketing", "Customer Experience"],
+  "dealer-ai-visibility": ["Marketing"],
+  "dealer-bilingual-seo": ["Marketing"],
+  "dealer-call-tracking-audit": ["Sales & BDC", "Fixed Operations", "Analytics & Technology"],
+  "dealer-call-transcript-classifier": ["Sales & BDC", "Fixed Operations"],
+  "dealer-comparison-page-builder": ["Marketing", "Sales & BDC"],
+  "dealer-cta-audit": ["Marketing", "Sales & BDC", "Fixed Operations"],
+  "dealer-customer-sentiment-analyzer": ["Customer Experience", "Fixed Operations"],
+  "dealer-email-flows": ["Customer Experience", "Fixed Operations", "Sales & BDC"],
+  "dealer-equity-mining-campaign-builder": ["Sales & BDC"],
+  "dealer-ga4-tracking-audit": ["Marketing", "Analytics & Technology"],
+  "dealer-gbp-audit": ["Marketing"],
+  "dealer-llms-txt-generator": ["Marketing", "Analytics & Technology"],
+  "dealer-new-customer-onboarding": ["Customer Experience", "Sales & BDC", "Fixed Operations"],
+  "dealer-search-strategy": ["Marketing", "Executive & Operations"],
+  "dealer-seo-audit": ["Marketing"],
+  "dealer-site-score": ["Marketing", "Analytics & Technology"],
+  "dealer-store-positioning": ["Marketing", "Executive & Operations"],
+  "dealer-vdp-merchandising-review": ["Sales & BDC", "Marketing"],
+  "dealer-agent-governance": ["Executive & Operations", "Analytics & Technology"],
+  "dealer-plugin-router": ["Executive & Operations", "Analytics & Technology"],
+  "dots-assistant": ["Executive & Operations", "Analytics & Technology"],
+  "dealer-ai-shopping-readiness-audit": ["Marketing", "Sales & BDC"],
+  "dealer-lead-response-auditor": ["Sales & BDC"],
+  "muse-meta-assistant": ["Executive & Operations", "Analytics & Technology"],
+};
+
 const downloadDir = path.join(siteRoot, "public", "downloads");
 fs.mkdirSync(downloadDir, { recursive: true });
 
@@ -60,6 +92,8 @@ const plugins = inventory.map((item) => {
   const zipName = `${item.pluginName}.zip`;
   fs.copyFileSync(path.join(repoRoot, "dist", zipName), path.join(downloadDir, zipName));
   const [category, ...tags] = categories[item.sourceName];
+  const pluginDepartments = departments[item.sourceName];
+  if (!pluginDepartments) throw new Error(`Missing department classification for ${item.sourceName}`);
   return {
     slug: item.pluginName,
     skillName: item.sourceName,
@@ -69,6 +103,7 @@ const plugins = inventory.map((item) => {
     longDescription: ui.longDescription,
     category,
     categoryDescription: categoryDescriptions[category],
+    departments: pluginDepartments,
     tags,
     prompt: ui.defaultPrompt[0],
     download: `/downloads/${zipName}`,
