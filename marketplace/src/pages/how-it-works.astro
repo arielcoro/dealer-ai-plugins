@@ -1,0 +1,212 @@
+---
+import Layout from "../layouts/Layout.astro";
+
+const faqs = [
+  {
+    question: "What is an AI plugin?",
+    answer: "A plugin is a focused set of instructions, references, and examples that teaches ChatGPT or Codex how to complete a specific job. Think of it as giving your AI assistant a dealership playbook instead of asking it to invent the process from scratch.",
+  },
+  {
+    question: "Is a plugin the same thing as an app or software subscription?",
+    answer: "Not here. Dealer AI Plugins are portable workflow packages. Most do not add a new dashboard or require a separate login. They improve how your AI assistant approaches a dealership task. A plugin may recommend using tools you already have, but it does not automatically connect to them.",
+  },
+  {
+    question: "What is a skill?",
+    answer: "A skill is the main operating procedure inside a plugin. The plugin is the complete package; the skill is the part that tells the AI when to use the workflow, what information to ask for, which steps to follow, and what a good result should contain.",
+  },
+  {
+    question: "How do I use a plugin after installing it?",
+    answer: "Talk to ChatGPT or Codex normally. Describe the dealership job and provide the information the workflow needs. For example: “Audit our Google Business Profile for our Miami Toyota store” or “Review these VDPs and prioritize the merchandising fixes.” The AI should recognize the task, use the relevant plugin, ask for missing inputs, and produce the defined deliverable.",
+  },
+  {
+    question: "Do I have to memorize special commands?",
+    answer: "No. Plain English is enough. Every plugin page includes a sample prompt if you want a reliable starting point. You can also name the plugin directly when you want to make the choice explicit.",
+  },
+  {
+    question: "Will a plugin automatically access my CRM, website, analytics, or call-tracking account?",
+    answer: "No. Installing a workflow does not grant access to your systems. If a task needs private data or a connected service, you decide what to provide and which approved tools to connect. The plugin can still work from exported reports, pasted text, uploaded files, or public information when appropriate.",
+  },
+  {
+    question: "What information should I give the AI?",
+    answer: "Start with the dealership or group, the goal, the market, the time period, and any evidence that matters. A plugin will ask for missing essentials. Do not include passwords, API keys, payment information, or customer data unless you are using an approved environment and the task truly requires it.",
+  },
+  {
+    question: "Can I install more than one plugin?",
+    answer: "Yes. Each plugin handles a distinct job, so a dealership can combine several without turning them into one oversized workflow. The Dealer Plugin Router can help select the right plugin, while Dots and Muse can coordinate broader work across multiple specialized plugins.",
+  },
+  {
+    question: "What are Dots, Muse, and the Dealer Plugin Router?",
+    answer: "The Dealer Plugin Router helps match a request to the right dealership workflow. Dots acts as a dealership assistant that keeps work organized across tasks. Muse is a meta-assistant for planning and coordinating more complex, multi-step work. They guide other workflows; they do not replace the specialized plugins.",
+  },
+  {
+    question: "Can I inspect or change what a plugin tells the AI to do?",
+    answer: "Yes. Every package is open source and MIT licensed. You can read the manifest, skill instructions, references, checks, and templates before installing it. You may adapt the files for your organization, subject to the license and any laws or vendor policies that apply to your work.",
+  },
+  {
+    question: "Are the plugins free?",
+    answer: "Yes. All public plugin packages and source files are free. Dealer Growth Hackers separately offers paid implementation programs for teams that want rollout planning, governance templates, enablement, and priority support. Payment is for implementation help, not permission to read the plugins.",
+  },
+  {
+    question: "Are the answers guaranteed to be correct?",
+    answer: "No. Plugins make the process more consistent, but AI can still misunderstand information or make mistakes. Treat results as working analysis. Verify facts, numbers, legal claims, compliance decisions, customer communications, and changes that affect live systems before acting on them.",
+  },
+  {
+    question: "Do these plugins replace dealership employees, agencies, or professional advisers?",
+    answer: "No. They help people work faster and more consistently. Judgment, approvals, vendor coordination, customer care, legal review, and responsibility for business decisions remain with the dealership and its qualified professionals.",
+  },
+  {
+    question: "How do updates work?",
+    answer: "The source repository and marketplace pages show the current packages. When a plugin changes, download or install the newer version through the same channel you used originally. Review release notes and your own customizations before replacing a modified copy.",
+  },
+];
+
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "HowTo",
+      name: "How to use Dealer AI Plugins in ChatGPT or Codex",
+      description: "Choose, inspect, install, prompt, and verify an open-source dealership workflow for ChatGPT or Codex.",
+      totalTime: "PT2M",
+      step: [
+        { "@type": "HowToStep", position: 1, name: "Choose a job", text: "Select the plugin that matches the dealership task you need to complete." },
+        { "@type": "HowToStep", position: 2, name: "Inspect the package", text: "Review the readable instructions, references, examples, and permissions." },
+        { "@type": "HowToStep", position: 3, name: "Install the plugin", text: "Add the package to ChatGPT or Codex using the supported plugin workflow." },
+        { "@type": "HowToStep", position: 4, name: "Ask in plain English", text: "Describe the dealership, objective, market, and available evidence." },
+        { "@type": "HowToStep", position: 5, name: "Review before acting", text: "Verify important facts and approve any customer-facing or live-system action." },
+      ],
+    },
+    {
+      "@type": "FAQPage",
+      mainEntity: faqs.map((faq) => ({
+        "@type": "Question",
+        name: faq.question,
+        acceptedAnswer: { "@type": "Answer", text: faq.answer },
+      })),
+    },
+  ],
+};
+---
+
+<Layout title="How Dealer AI Plugins Work" description="A plain-English guide to Dealer AI Plugins: what plugins and skills are, how to install and use them in ChatGPT or Codex, privacy, safety, costs, and FAQs." structuredData={structuredData}>
+  <section class="how-hero">
+    <div class="eyebrow"><span></span> No technical background required</div>
+    <div class="how-hero-grid">
+      <div>
+        <h1>How does it<br /><em>all work?</em></h1>
+        <p>A Dealer AI Plugin gives ChatGPT or Codex a proven dealership playbook for one specific job. You choose the job, add the plugin, explain what you need, and review the result.</p>
+      </div>
+      <aside class="plain-language-card">
+        <span>The simplest explanation</span>
+        <strong>ChatGPT is the assistant.<br />The plugin is the playbook.<br />You are still the decision-maker.</strong>
+      </aside>
+    </div>
+  </section>
+
+  <section class="what-is-plugin" aria-labelledby="plugin-definition">
+    <div>
+      <p class="kicker">Start here</p>
+      <h2 id="plugin-definition">A plugin teaches the AI <em>how</em> to do a dealership job.</h2>
+    </div>
+    <div class="definition-copy">
+      <p>Imagine hiring a capable assistant who understands language but has never seen your store’s operating playbooks. A plugin hands that assistant a clear procedure: when to use it, what to ask for, which checks to run, and what the finished work should look like.</p>
+      <p>That makes the work more repeatable. It does not make the AI infallible, connect private systems automatically, or remove the need for human review.</p>
+    </div>
+  </section>
+
+  <section class="package-anatomy" aria-labelledby="package-title">
+    <div class="section-heading compact-heading">
+      <div>
+        <p class="kicker">Inside every package</p>
+        <h2 id="package-title">Nothing hidden. Everything has a job.</h2>
+      </div>
+      <p>The exact files vary by plugin, but the same four-part structure keeps each workflow understandable and portable.</p>
+    </div>
+    <div class="anatomy-grid">
+      <article><span>01</span><h3>Manifest</h3><p>The label on the box: name, description, version, publisher, and compatibility information.</p></article>
+      <article><span>02</span><h3>Skill</h3><p>The operating procedure: when the workflow applies, the steps to follow, and the expected output.</p></article>
+      <article><span>03</span><h3>References</h3><p>The supporting checklists, scoring rules, templates, standards, and definitions the workflow can use.</p></article>
+      <article><span>04</span><h3>Examples</h3><p>Starter prompts and output guidance that show you how to ask for the work and judge the result.</p></article>
+    </div>
+  </section>
+
+  <section class="how-flow" aria-labelledby="flow-title">
+    <div class="flow-heading">
+      <p class="kicker">From download to useful work</p>
+      <h2 id="flow-title">Five steps. One person stays in control.</h2>
+      <p>You do not need to write code or learn a command language. The process is designed to feel like briefing a capable team member.</p>
+    </div>
+    <ol class="flow-list">
+      <li><span>01</span><div><strong>Choose the job</strong><p>Start with the outcome: audit local visibility, review VDP merchandising, classify calls, build an email flow, or another job in the catalog.</p></div></li>
+      <li><span>02</span><div><strong>Inspect and install</strong><p>Read the package if you want to understand the method, then add it through the supported ChatGPT or Codex plugin workflow.</p></div></li>
+      <li><span>03</span><div><strong>Brief the assistant</strong><p>Use plain English. Include the store, market, goal, time period, and available reports or examples.</p></div></li>
+      <li><span>04</span><div><strong>Let the workflow guide the work</strong><p>The plugin identifies missing inputs, follows its checks, and structures the answer around a dealership-ready deliverable.</p></div></li>
+      <li><span>05</span><div><strong>Verify and approve</strong><p>Review evidence and recommendations. A person approves anything that affects customers, money, compliance, or live systems.</p></div></li>
+    </ol>
+  </section>
+
+  <section class="prompt-example" aria-labelledby="prompt-title">
+    <div>
+      <p class="kicker">What you actually type</p>
+      <h2 id="prompt-title">Talk to it like a team member.</h2>
+    </div>
+    <div class="conversation-card">
+      <span>You</span>
+      <blockquote>“Review the VDP merchandising for our used inventory. I’m uploading a sample of 20 listings. Prioritize the five fixes most likely to improve shopper confidence.”</blockquote>
+      <div class="conversation-result">
+        <span>The plugin helps ChatGPT or Codex</span>
+        <p>Confirm the goal → check the required evidence → apply the merchandising framework → explain the highest-priority fixes → flag anything that needs human verification.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="control-grid" aria-label="What plugins can and cannot do">
+    <article class="can-card">
+      <p class="kicker">What a plugin can do</p>
+      <h2>Make the process smarter.</h2>
+      <ul>
+        <li>Bring dealership-specific steps into the conversation</li>
+        <li>Ask for missing information before analyzing</li>
+        <li>Use consistent checks, rubrics, and templates</li>
+        <li>Turn evidence into an organized recommendation</li>
+        <li>Help teams repeat a useful workflow</li>
+      </ul>
+    </article>
+    <article class="cannot-card">
+      <p class="kicker">What it cannot do by itself</p>
+      <h2>Replace judgment or permission.</h2>
+      <ul>
+        <li>Log into private systems without an approved connection</li>
+        <li>Guarantee that every fact or recommendation is correct</li>
+        <li>Make legal, compliance, or financial decisions for you</li>
+        <li>Change a website, CRM, ad account, or customer record silently</li>
+        <li>Replace the people accountable for the result</li>
+      </ul>
+    </article>
+  </section>
+
+  <section class="how-faq" id="faqs" aria-labelledby="faq-title">
+    <div class="faq-heading">
+      <p class="kicker">Frequently asked questions</p>
+      <h2 id="faq-title">The questions people ask before installing.</h2>
+      <p>Short answers first, with enough detail to make an informed decision.</p>
+    </div>
+    <div class="faq-stack">
+      {faqs.map((faq, index) => (
+        <details open={index === 0}>
+          <summary><span>{String(index + 1).padStart(2, "0")}</span>{faq.question}</summary>
+          <p>{faq.answer}</p>
+        </details>
+      ))}
+    </div>
+  </section>
+
+  <section class="how-cta">
+    <p class="kicker">Ready to try one?</p>
+    <h2>Choose one job your dealership needs done.</h2>
+    <div>
+      <a class="primary-button" href="/#catalog">Browse the plugin catalog</a>
+      <a class="secondary-button" href="/support/">Get installation help</a>
+    </div>
+  </section>
+</Layout>

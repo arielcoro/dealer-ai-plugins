@@ -5,7 +5,7 @@ export const prerender = true;
 export function GET() {
   const base = "https://dealeraiplugins.com";
   const reviewed = "2026-10-01";
-  const pages = ["/", "/about/", "/plans/", "/support/", "/privacy/", "/terms/"];
+  const pages = ["/", "/about/", "/how-it-works/", "/plans/", "/support/", "/privacy/", "/terms/"];
   const urls = [
     ...pages.map((pathname) => ({ pathname, priority: pathname === "/" ? "1.0" : "0.5" })),
     ...plugins.map((plugin) => ({ pathname: `/plugins/${plugin.slug}/`, priority: "0.8" })),
