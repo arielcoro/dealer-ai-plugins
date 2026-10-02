@@ -1,5 +1,32 @@
 [
   {
+    "slug": "website-ai-readiness",
+    "skillName": "website-ai-readiness",
+    "name": "Website AI Readiness",
+    "shortDescription": "Assess website AI readiness",
+    "description": "Assess website AI readiness with reproducible evidence, coverage-aware scores, and prioritized technical and content fixes.",
+    "longDescription": "Assess any website for AI search access, answerable content, data integrity, customer handoffs, and optional connected assistants. Produces evidence-backed findings, score ranges, and prioritized fixes. Published by Dealer Growth Hackers for ChatGPT and Codex.",
+    "category": "Technical",
+    "categoryDescription": "Strengthen the website, conversion layer, and inventory experience.",
+    "departments": [
+      "Marketing",
+      "Analytics & Technology"
+    ],
+    "workflow": {
+      "input": "Website URL, business goal and representative pages",
+      "process": "AI search access, content, data integrity and customer handoffs",
+      "output": "Evidence-backed score range and vendor-ready fix plan"
+    },
+    "tags": [
+      "AI readiness",
+      "Evidence-backed audit"
+    ],
+    "prompt": "Assess this website's AI readiness and give me an evidence-backed fix plan.",
+    "download": "/downloads/website-ai-readiness.zip",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/website-ai-readiness/skills/website-ai-readiness",
+    "version": "1.0.0"
+  },
+  {
     "slug": "dealer-aeo-audit",
     "skillName": "dealer-aeo-audit",
     "name": "Dealer AEO Audit",

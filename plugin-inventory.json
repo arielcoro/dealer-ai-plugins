@@ -1,5 +1,13 @@
 [
   {
+    "pluginName": "website-ai-readiness",
+    "sourceName": "website-ai-readiness",
+    "displayName": "Website AI Readiness",
+    "prompt": "Assess this website's AI readiness and give me an evidence-backed fix plan.",
+    "category": "Technical",
+    "tags": ["AI readiness", "Evidence-backed audit"]
+  },
+  {
     "pluginName": "dealer-aeo-audit",
     "sourceName": "dealer-aeo-audit",
     "displayName": "Dealer AEO Audit",

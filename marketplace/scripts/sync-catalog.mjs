@@ -8,6 +8,7 @@ const repoRoot = path.resolve(siteRoot, "..");
 const inventory = JSON.parse(fs.readFileSync(path.join(repoRoot, "plugin-inventory.json"), "utf8"));
 
 const categories = {
+  "website-ai-readiness": ["Technical", "AI readiness", "Evidence-backed audit"],
   "dealer-ai-readiness-audit": ["Strategy", "Diagnostic", "75-point audit"],
   "dealer-search-strategy": ["Strategy", "SEO + AEO + GEO", "90-day roadmap"],
   "dealer-store-positioning": ["Strategy", "Brand", "Positioning"],
@@ -51,6 +52,7 @@ const categoryDescriptions = {
 };
 
 const departments = {
+  "website-ai-readiness": ["Marketing", "Analytics & Technology"],
   "dealer-aeo-audit": ["Marketing"],
   "dealer-aeo-content-brief": ["Marketing"],
   "dealer-ai-readiness-audit": ["Executive & Operations"],
@@ -83,6 +85,7 @@ const departments = {
 };
 
 const workflowBlueprints = {
+  "website-ai-readiness": ["Website URL, business goal and representative pages", "AI search access, content, data integrity and customer handoffs", "Evidence-backed score range and vendor-ready fix plan"],
   "dealer-aeo-audit": ["Dealer website, market and priority services", "30 AEO and GEO visibility checks", "Prioritized findings and remediation plan"],
   "dealer-aeo-content-brief": ["Target topic, audience and dealership context", "Answer intent, entities, evidence and citations", "Structured AEO/GEO content brief"],
   "dealer-ai-readiness-audit": ["Current systems, processes and AI usage", "75 readiness controls across the dealership", "Scorecard, gaps and 90-day priorities"],
