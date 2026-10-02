@@ -89,6 +89,11 @@ const structuredData = {
   </section>
 
   <section class="plugin-workflow" aria-labelledby="workflow-title">
+    {plugin.includedSkills.length > 1 && <div class="plugin-workflow-heading">
+      <p class="kicker">One installation</p>
+      <h2>Included specialist workflows</h2>
+      <p>{plugin.slug === 'dealer-plugin-router' ? 'Router selects the right specialist, Dots guides the working session, and Muse plans and reviews complex work. All three are included in this package.' : 'Visibility measures mentions and citations. Sentiment checks tone, claims, and factual accuracy. Both reuse the same evidence where appropriate.'}</p>
+    </div>}
     <div class="plugin-workflow-heading">
       <p class="kicker">The job at a glance</p>
       <h2 id="workflow-title">From evidence to action.</h2>
@@ -128,7 +133,7 @@ const structuredData = {
         <div class:list={["architecture-node", { active: architectureStage === "muse" }]}><span>Plan + review</span><strong>Muse</strong></div>
         <div class:list={["architecture-node", { active: architectureStage === "dots" }]}><span>Coordinate</span><strong>Dots</strong></div>
         <div class:list={["architecture-node", { active: architectureStage === "router" }]}><span>Select</span><strong>Plugin Router</strong></div>
-        <div class="specialist-node">29 specialist plugins</div>
+        <div class="specialist-node">specialist workflows</div>
       </div>
     </section>
   )}

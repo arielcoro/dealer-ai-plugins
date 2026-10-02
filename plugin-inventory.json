@@ -5,13 +5,10 @@
     "displayName": "Website AI Readiness",
     "prompt": "Assess this website's AI readiness and give me an evidence-backed fix plan.",
     "category": "Technical",
-    "tags": ["AI readiness", "Evidence-backed audit"]
-  },
-  {
-    "pluginName": "dealer-aeo-audit",
-    "sourceName": "dealer-aeo-audit",
-    "displayName": "Dealer AEO Audit",
-    "prompt": "Audit my dealership website for AEO and GEO visibility."
+    "tags": [
+      "AI readiness",
+      "Evidence-backed audit"
+    ]
   },
   {
     "pluginName": "dealer-aeo-content-brief",
@@ -22,7 +19,7 @@
   {
     "pluginName": "dealer-ai-readiness-audit",
     "sourceName": "dealer-ai-readiness-audit",
-    "displayName": "Dealer AI Readiness Audit",
+    "displayName": "Dealer AI Operations Readiness",
     "prompt": "Run an AI readiness audit for my dealership."
   },
   {
@@ -30,12 +27,6 @@
     "sourceName": "dealer-ai-referral-analytics",
     "displayName": "Dealer AI Referral Analytics",
     "prompt": "Audit my dealership's traffic from AI search engines."
-  },
-  {
-    "pluginName": "dealer-ai-sentiment-monitor",
-    "sourceName": "dealer-ai-sentiment-monitor",
-    "displayName": "Dealer AI Sentiment",
-    "prompt": "Audit how AI assistants describe my dealership."
   },
   {
     "pluginName": "dealer-ai-visibility",
@@ -159,7 +150,7 @@
   {
     "pluginName": "dealer-plugin-router",
     "sourceName": "dealer-plugin-router",
-    "displayName": "Dealer Plugin Router",
+    "displayName": "Dealer AI Workflow Coordinator",
     "prompt": "Route this dealership request to the right plugin.",
     "category": "Assistant Infrastructure",
     "tags": [
@@ -168,20 +159,9 @@
     ]
   },
   {
-    "pluginName": "dots-assistant",
-    "sourceName": "dots-assistant",
-    "displayName": "Dots Assistant",
-    "prompt": "Use Dots to organize and complete this dealership task.",
-    "category": "Assistant Infrastructure",
-    "tags": [
-      "Assistant",
-      "Coordination"
-    ]
-  },
-  {
     "pluginName": "dealer-shopping-readiness",
     "sourceName": "dealer-ai-shopping-readiness-audit",
-    "displayName": "Dealer Shopping Readiness",
+    "displayName": "Dealer AI Shopping Readiness",
     "prompt": "Audit my dealership for AI shopping readiness.",
     "category": "AI Search",
     "tags": [
@@ -198,17 +178,6 @@
     "tags": [
       "Lead handling",
       "100-point audit"
-    ]
-  },
-  {
-    "pluginName": "muse-meta-assistant",
-    "sourceName": "muse-meta-assistant",
-    "displayName": "Muse Meta Assistant",
-    "prompt": "Use Muse to plan and coordinate this multi-plugin project.",
-    "category": "Assistant Infrastructure",
-    "tags": [
-      "Orchestration",
-      "Quality review"
     ]
   }
 ]

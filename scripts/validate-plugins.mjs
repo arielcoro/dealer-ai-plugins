@@ -22,7 +22,7 @@ for (const pluginName of fs.readdirSync(pluginsRoot).sort()) {
   if (!/^[a-z0-9]+(?:-[a-z0-9]+)*$/.test(manifest.name) || manifest.name.length > 64) fail(pluginName, "invalid plugin name");
   if (!/^\d+\.\d+\.\d+$/.test(manifest.version)) fail(pluginName, "version is not semantic");
   if (manifest.author?.name !== "Dealer Growth Hackers" || manifest.author?.url !== "https://dealergrowthhackers.com/") fail(pluginName, "publisher identity must be Dealer Growth Hackers");
-  if (!Array.isArray(manifest.keywords) || !manifest.keywords.some((keyword) => /ChatGPT/i.test(keyword)) || !manifest.keywords.some((keyword) => /Codex/i.test(keyword))) fail(pluginName, "discovery keywords must cover ChatGPT and Codex");
+  if (!Array.isArray(manifest.keywords) || manifest.keywords.length === 0) fail(pluginName, "discovery keywords must describe the workflow");
   if (!ui) fail(pluginName, "missing extensions.com.openai.interface");
   if (ui?.displayName?.length > 30) fail(pluginName, "displayName exceeds 30 characters");
   if (!ui?.shortDescription || ui.shortDescription.length > 30) fail(pluginName, "shortDescription must be 1-30 characters");
@@ -38,9 +38,9 @@ for (const pluginName of fs.readdirSync(pluginsRoot).sort()) {
     if (!relative?.startsWith("./") || !fs.existsSync(path.join(pluginRoot, relative))) fail(pluginName, `${field} is missing or invalid`);
   }
   if (codex.skills !== "./skills/") fail(pluginName, "Codex manifest must declare ./skills/");
-  if (skillNames.length !== 1) fail(pluginName, `expected one skill, found ${skillNames.length}`);
+  if (skillNames.length < 1) fail(pluginName, 'expected at least one skill');
 
-  const skillName = skillNames[0];
+  for (const skillName of skillNames) {
   const skillRoot = path.join(pluginRoot, "skills", skillName);
   const skillFile = path.join(skillRoot, "SKILL.md");
   const skillText = fs.readFileSync(skillFile, "utf8");
@@ -64,6 +64,7 @@ for (const pluginName of fs.readdirSync(pluginsRoot).sort()) {
   const references = rootReferences + nestedReferences;
   if (references === 0) warn(pluginName, "skill has no supporting Markdown reference files");
   results.push({ plugin: pluginName, skill: skillName, version: manifest.version, references, status: "reviewed" });
+  }
 }
 
 console.log(JSON.stringify({ reviewed: results.length, errors, warnings, plugins: results }, null, 2));

@@ -1,6 +1,6 @@
 ---
 name: dealer-ai-visibility
-description: Monitor what AI engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode) are actually saying about a car dealership, track citation share against competitors, and surface where competitors are stealing visibility inside the AI answer. Use when a dealership, dealer group, or automotive agency needs to track dealer ai citations.
+description: Assess how AI-powered search represents a dealership using documented tests of brand mentions, source citations, factual accuracy, and competitor visibility. Use when a dealership, dealer group, or automotive agency needs a visibility benchmark and prioritized improvements.
 ---
 
 # Dealer AI Visibility
@@ -268,3 +268,9 @@ When the runtime supports it and the user asks, produce a live HTML dashboard us
 If the dealer serves a Spanish-speaking market or the user runs the skill in Spanish, include the Spanish-language query variants from QUERY_TAXONOMY.md. Run the queries against each engine in Spanish. Report separately on the Spanish-language results because the citation patterns differ significantly. Spanish-language AEO is typically less competitive; first-mover advantages are real.
 
 When generating the Spanish-language report, preserve English technical terms (engine names like ChatGPT/Perplexity/Gemini/Claude, source bucket names like OEM/Cars.com/DealerRater/Reddit, schema, AEO, GEO) because these are the working vocabulary regardless of language.
+
+## Consolidated workflow contract
+
+Reuse supplied evidence only when its URLs, dates, scope, and collection conditions match this task. Collect store facts, representative pages, and AI answers once; give each record an evidence ID, date, source, observation, confidence, and limitation. Do not run duplicate research merely because another module needs the same evidence. Unknown is not a confirmed failure. Never fabricate platform access, answers, citations, or causal conclusions.
+
+This package includes dealer-ai-sentiment-monitor. Use visibility for mentions, source citations and competitor share; use sentiment for tone, unsupported claims and factual accuracy. For a combined assessment, use one agreed prompt bank and response log, including repeat observations when needed by the sentiment rubric. Keep the two metrics separate; do not count responses twice or average unlike scores.

@@ -36,3 +36,9 @@ Use [REPORT.md](references/REPORT.md). Lead with practical findings, not a grade
 Prioritize blockers to discovery, materially wrong facts, and broken customer paths before optional enhancements. Give example fixes grounded in the affected page; don't generate a generic list. Retesting repeats the baseline scenario after implementation, using the same conditions where practical and documenting changes. Retesting is a proposed next step unless requested and possible.
 
 For dealerships add VIN/trim/mileage/availability consistency, incentive conditions and fees, policy clarity, store identity, and VDP-to-BDC handoff. Keep organizational readiness and legal compliance out of this website score.
+
+## Consolidated workflow contract
+
+Reuse supplied evidence only when its URLs, dates, scope, and collection conditions match this task. Collect store facts, representative pages, and AI answers once; give each record an evidence ID, date, source, observation, confidence, and limitation. Do not run duplicate research merely because another module needs the same evidence. Unknown is not a confirmed failure. Never fabricate platform access, answers, citations, or causal conclusions.
+
+For a dealership shopping assessment, use Dealer Shopping Readiness as the primary workflow and pass this foundation evidence to it; do not issue competing readiness grades for the same engagement. Keep the general website assessment standalone for non-dealer sites or explicitly requested website-only work.

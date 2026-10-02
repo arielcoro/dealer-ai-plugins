@@ -1,0 +1,31 @@
+{
+  "packages": 26,
+  "aliases": {
+    "dealer-aeo-audit": "dealer-shopping-readiness",
+    "dealer-ai-sentiment-monitor": "dealer-ai-visibility",
+    "dots-assistant": "dealer-plugin-router",
+    "muse-meta-assistant": "dealer-plugin-router"
+  },
+  "retainedNames": {
+    "dealer-ai-visibility": [
+      "Dealer AI Visibility",
+      "Track visibility and sentiment",
+      "Measure dealership AI search visibility, citations, sentiment, factual accuracy, and competitor differences using a shared evidence log. Includes separate visibility and sentiment workflows; no guaranteed recommendations or traffic."
+    ],
+    "dealer-shopping-readiness": [
+      "Dealer AI Shopping Readiness",
+      "Audit AI shopping readiness",
+      "Audit dealership website AI readiness, inventory accuracy, pricing clarity, business identity, reputation evidence, and shopper handoffs. Consolidates AEO and shopping-readiness checks into one evidence-backed assessment and prioritized fix plan."
+    ],
+    "dealer-plugin-router": [
+      "Dealer AI Workflow Coordinator",
+      "Coordinate dealer AI workflows",
+      "Coordinate dealership work with three included workflows: Router selects specialists, Dots guides interactive work, and Muse plans and reviews multi-workstream tasks. Preserves user control, explicit approval boundaries, and evidence-backed handoffs."
+    ],
+    "dealer-ai-readiness-audit": [
+      "Dealer AI Operations Readiness",
+      "Assess AI adoption readiness",
+      "Assess dealership operational AI readiness across systems, people, processes, data, and governance. This is an organizational adoption assessment, not a website or AI-shopping audit."
+    ]
+  }
+}

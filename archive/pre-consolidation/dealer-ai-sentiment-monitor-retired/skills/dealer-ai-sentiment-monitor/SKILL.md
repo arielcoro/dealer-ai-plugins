@@ -1,6 +1,6 @@
 ---
 name: dealer-ai-sentiment-monitor
-description: Audit how AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, Copilot) describe and characterize a car dealership. Use when a dealership, dealer group, or automotive agency needs to audit ai brand sentiment.
+description: Assess how AI-powered search describes a dealership using documented tests of sentiment, factual accuracy, recurring claims, and competitor differences. Use when a dealership, dealer group, or automotive agency needs an evidence-backed sentiment summary and correction priorities.
 ---
 
 # Dealer AI Sentiment Monitor

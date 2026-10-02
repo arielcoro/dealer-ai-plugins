@@ -3,6 +3,9 @@
     "slug": "website-ai-readiness",
     "skillName": "website-ai-readiness",
     "name": "Website AI Readiness",
+    "includedSkills": [
+      "website-ai-readiness"
+    ],
     "shortDescription": "Assess website AI readiness",
     "description": "Assess website AI readiness with reproducible evidence, coverage-aware scores, and prioritized technical and content fixes.",
     "longDescription": "Assess any website for AI search access, answerable content, data integrity, customer handoffs, and optional connected assistants. Produces evidence-backed findings, score ranges, and prioritized fixes. Published by Dealer Growth Hackers for ChatGPT and Codex.",
@@ -27,35 +30,12 @@
     "version": "1.0.0"
   },
   {
-    "slug": "dealer-aeo-audit",
-    "skillName": "dealer-aeo-audit",
-    "name": "Dealer AEO Audit",
-    "shortDescription": "Audit dealer AI visibility",
-    "description": "Run the Dealer AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) Audit on a franchise or independent car dealership website to find every gap stopping the dealership from being cited by ChatGPT, Perplexity, Gemini, Claude, Copilot, and other AI search engines.",
-    "longDescription": "Run the Dealer AEO (Answer Engine Optimization) and GEO (Generative Engine Optimization) Audit on a franchise or independent car dealership website to find every gap stopping the dealership from being cited by ChatGPT, Perplexity, Gemini, Claude, Copilot, and other AI search engines. Use when a dealership, dealer group, or automotive agency needs to audit dealer ai visibility. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
-    "category": "AI Search",
-    "categoryDescription": "Become visible, accurate, and citeable inside answer engines.",
-    "departments": [
-      "Marketing"
-    ],
-    "workflow": {
-      "input": "Dealer website, market and priority services",
-      "process": "30 AEO and GEO visibility checks",
-      "output": "Prioritized findings and remediation plan"
-    },
-    "tags": [
-      "AEO/GEO",
-      "30 checks"
-    ],
-    "prompt": "Audit my dealership website for AEO and GEO visibility.",
-    "download": "/downloads/dealer-aeo-audit.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-aeo-audit/skills/dealer-aeo-audit",
-    "version": "1.2.0"
-  },
-  {
     "slug": "dealer-aeo-content-brief",
     "skillName": "dealer-aeo-content-brief",
     "name": "Dealer AEO Content Brief",
+    "includedSkills": [
+      "dealer-aeo-content-brief"
+    ],
     "shortDescription": "Create an AI search brief",
     "description": "Generate an Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) content brief for a car dealership page or post.",
     "longDescription": "Generate an Answer Engine Optimization (AEO) and Generative Engine Optimization (GEO) content brief for a car dealership page or post. Use when a dealership, dealer group, or automotive agency needs to create an ai search brief. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -81,10 +61,13 @@
   {
     "slug": "dealer-ai-readiness-audit",
     "skillName": "dealer-ai-readiness-audit",
-    "name": "Dealer AI Readiness Audit",
-    "shortDescription": "Score dealership AI readiness",
-    "description": "Run the 75-point Dealer AI Readiness Audit on a franchise or independent car dealership.",
-    "longDescription": "Run the 75-point Dealer AI Readiness Audit on a franchise or independent car dealership. Use when a dealership, dealer group, or automotive agency needs to score dealership ai readiness. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+    "name": "Dealer AI Operations Readiness",
+    "includedSkills": [
+      "dealer-ai-readiness-audit"
+    ],
+    "shortDescription": "Assess AI adoption readiness",
+    "description": "Assess dealership operational AI readiness across systems, people, processes, data, and governance. This is an organizational adoption assessment, not a website or AI-shopping audit.",
+    "longDescription": "Assess dealership operational AI readiness across systems, people, processes, data, and governance. This is an organizational adoption assessment, not a website or AI-shopping audit. Published by Dealer Growth Hackers.",
     "category": "Strategy",
     "categoryDescription": "Decide what to fix, fund, and sequence before buying another tool.",
     "departments": [
@@ -99,15 +82,18 @@
       "Diagnostic",
       "75-point audit"
     ],
-    "prompt": "Run an AI readiness audit for my dealership.",
+    "prompt": "Use Dealer AI Operations Readiness for my dealership.",
     "download": "/downloads/dealer-ai-readiness-audit.zip",
     "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-ai-readiness-audit/skills/dealer-ai-readiness-audit",
-    "version": "1.2.0"
+    "version": "2.0.0"
   },
   {
     "slug": "dealer-ai-referral-analytics",
     "skillName": "dealer-ai-referral-analytics",
     "name": "Dealer AI Referral Analytics",
+    "includedSkills": [
+      "dealer-ai-referral-analytics"
+    ],
     "shortDescription": "Measure AI referral traffic",
     "description": "Audit a car dealership's AI-referrer traffic across GA4, Google Search Console, and server logs.",
     "longDescription": "Audit a car dealership's AI-referrer traffic across GA4, Google Search Console, and server logs. Use when a dealership, dealer group, or automotive agency needs to measure ai referral traffic. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -132,62 +118,42 @@
     "version": "1.2.0"
   },
   {
-    "slug": "dealer-ai-sentiment-monitor",
-    "skillName": "dealer-ai-sentiment-monitor",
-    "name": "Dealer AI Sentiment",
-    "shortDescription": "Audit AI brand sentiment",
-    "description": "Audit how AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, Copilot) describe and characterize a car dealership.",
-    "longDescription": "Audit how AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, Copilot) describe and characterize a car dealership. Use when a dealership, dealer group, or automotive agency needs to audit ai brand sentiment. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
-    "category": "AI Search",
-    "categoryDescription": "Become visible, accurate, and citeable inside answer engines.",
-    "departments": [
-      "Marketing",
-      "Customer Experience"
-    ],
-    "workflow": {
-      "input": "Dealership identity, market and comparison set",
-      "process": "AI descriptions, claims, tone and hallucinations",
-      "output": "Sentiment findings and correction priorities"
-    },
-    "tags": [
-      "Sentiment",
-      "Hallucination detection"
-    ],
-    "prompt": "Audit how AI assistants describe my dealership.",
-    "download": "/downloads/dealer-ai-sentiment-monitor.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-ai-sentiment-monitor/skills/dealer-ai-sentiment-monitor",
-    "version": "1.2.0"
-  },
-  {
     "slug": "dealer-ai-visibility",
     "skillName": "dealer-ai-visibility",
     "name": "Dealer AI Visibility",
-    "shortDescription": "Track dealer AI citations",
-    "description": "Monitor what AI engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode) are actually saying about a car dealership, track citation share against competitors, and surface where competitors are stealing visibility inside the AI answer.",
-    "longDescription": "Monitor what AI engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode) are actually saying about a car dealership, track citation share against competitors, and surface where competitors are stealing visibility inside the AI answer. Use when a dealership, dealer group, or automotive agency needs to track dealer ai citations. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+    "includedSkills": [
+      "dealer-ai-sentiment-monitor",
+      "dealer-ai-visibility"
+    ],
+    "shortDescription": "Track visibility and sentiment",
+    "description": "Measure dealership AI search visibility, citations, sentiment, factual accuracy, and competitor differences using a shared evidence log. Includes separate visibility and sentiment workflows; no guaranteed recommendations or traffic.",
+    "longDescription": "Measure dealership AI search visibility, citations, sentiment, factual accuracy, and competitor differences using a shared evidence log. Includes separate visibility and sentiment workflows; no guaranteed recommendations or traffic. Published by Dealer Growth Hackers.",
     "category": "AI Search",
     "categoryDescription": "Become visible, accurate, and citeable inside answer engines.",
     "departments": [
       "Marketing"
     ],
     "workflow": {
-      "input": "Brand, competitors, market and buyer questions",
-      "process": "Mentions, citations and answer-share patterns",
-      "output": "Visibility benchmark and opportunity map"
+      "input": "Brand, competitors and documented AI answers",
+      "process": "Shared tests for citations, sentiment and factual accuracy",
+      "output": "Visibility benchmark and reputation correction priorities"
     },
     "tags": [
-      "Monitoring",
-      "Citation share"
+      "Visibility + Sentiment",
+      "Citation monitoring"
     ],
-    "prompt": "Measure my dealership's visibility across AI engines.",
+    "prompt": "Use Dealer AI Visibility for my dealership.",
     "download": "/downloads/dealer-ai-visibility.zip",
     "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-ai-visibility/skills/dealer-ai-visibility",
-    "version": "1.2.0"
+    "version": "2.0.0"
   },
   {
     "slug": "dealer-bilingual-seo",
     "skillName": "dealer-bilingual-seo",
     "name": "Dealer Bilingual SEO",
+    "includedSkills": [
+      "dealer-bilingual-seo"
+    ],
     "shortDescription": "Improve Spanish dealer SEO",
     "description": "Build, audit, or remediate a Spanish-language SEO presence for a US car dealership targeting Hispanic buyers.",
     "longDescription": "Build, audit, or remediate a Spanish-language SEO presence for a US car dealership targeting Hispanic buyers. Use when a dealership, dealer group, or automotive agency needs to improve spanish dealer seo. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -214,6 +180,9 @@
     "slug": "dealer-call-tracking-audit",
     "skillName": "dealer-call-tracking-audit",
     "name": "Dealer Call Tracking Audit",
+    "includedSkills": [
+      "dealer-call-tracking-audit"
+    ],
     "shortDescription": "Audit call attribution",
     "description": "Audit a car dealership's call tracking platform configuration (CallRail, Invoca, Marchex) for attribution accuracy, conversation intelligence, and integration with GA4 and Google Ads.",
     "longDescription": "Audit a car dealership's call tracking platform configuration (CallRail, Invoca, Marchex) for attribution accuracy, conversation intelligence, and integration with GA4 and Google Ads. Use when a dealership, dealer group, or automotive agency needs to audit call attribution. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -242,6 +211,9 @@
     "slug": "dealer-call-classifier",
     "skillName": "dealer-call-transcript-classifier",
     "name": "Dealer Call Classifier",
+    "includedSkills": [
+      "dealer-call-transcript-classifier"
+    ],
     "shortDescription": "Classify dealership calls",
     "description": "Classify car dealership call transcripts into five categories with strict honesty rules.",
     "longDescription": "Classify car dealership call transcripts into five categories with strict honesty rules. Use when a dealership, dealer group, or automotive agency needs to classify dealership calls. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -269,6 +241,9 @@
     "slug": "dealer-comparison-page-builder",
     "skillName": "dealer-comparison-page-builder",
     "name": "Dealer Comparison Builder",
+    "includedSkills": [
+      "dealer-comparison-page-builder"
+    ],
     "shortDescription": "Build a fair comparison page",
     "description": "Build one in-depth comparison page between a car dealership and a single named competitor for SEO, AEO, GEO, and sales enablement.",
     "longDescription": "Build one in-depth comparison page between a car dealership and a single named competitor for SEO, AEO, GEO, and sales enablement. Use when a dealership, dealer group, or automotive agency needs to build a fair comparison page. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -296,6 +271,9 @@
     "slug": "dealer-cta-audit",
     "skillName": "dealer-cta-audit",
     "name": "Dealer CTA Audit",
+    "includedSkills": [
+      "dealer-cta-audit"
+    ],
     "shortDescription": "Audit website calls to action",
     "description": "Audit calls-to-action (CTAs) on car dealership website pages for conversion effectiveness.",
     "longDescription": "Audit calls-to-action (CTAs) on car dealership website pages for conversion effectiveness. Use when a dealership, dealer group, or automotive agency needs to audit website calls to action. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -324,6 +302,9 @@
     "slug": "dealer-customer-sentiment",
     "skillName": "dealer-customer-sentiment-analyzer",
     "name": "Dealer Review Sentiment",
+    "includedSkills": [
+      "dealer-customer-sentiment-analyzer"
+    ],
     "shortDescription": "Analyze dealership reviews",
     "description": "Analyze car dealership customer reviews across multiple dimensions and surface honest patterns, themes, and named-staff mentions.",
     "longDescription": "Analyze car dealership customer reviews across multiple dimensions and surface honest patterns, themes, and named-staff mentions. Use when a dealership, dealer group, or automotive agency needs to analyze dealership reviews. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -351,6 +332,9 @@
     "slug": "dealer-email-flows",
     "skillName": "dealer-email-flows",
     "name": "Dealer Email Flows",
+    "includedSkills": [
+      "dealer-email-flows"
+    ],
     "shortDescription": "Build dealer lifecycle email",
     "description": "Build comprehensive lifecycle email flows for a car dealership covering the full customer relationship from purchase through year 5+.",
     "longDescription": "Build comprehensive lifecycle email flows for a car dealership covering the full customer relationship from purchase through year 5+. Use when a dealership, dealer group, or automotive agency needs to build dealer lifecycle email. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -379,6 +363,9 @@
     "slug": "dealer-equity-mining",
     "skillName": "dealer-equity-mining-campaign-builder",
     "name": "Dealer Equity Campaigns",
+    "includedSkills": [
+      "dealer-equity-mining-campaign-builder"
+    ],
     "shortDescription": "Build an equity campaign",
     "description": "Build a complete equity mining campaign for a car dealership.",
     "longDescription": "Build a complete equity mining campaign for a car dealership. Use when a dealership, dealer group, or automotive agency needs to build an equity campaign. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -405,6 +392,9 @@
     "slug": "dealer-ga4-tracking-audit",
     "skillName": "dealer-ga4-tracking-audit",
     "name": "Dealer GA4 Tracking Audit",
+    "includedSkills": [
+      "dealer-ga4-tracking-audit"
+    ],
     "shortDescription": "Audit dealer conversion data",
     "description": "Audit a car dealership's GA4 and Google Ads conversion tracking stack end-to-end.",
     "longDescription": "Audit a car dealership's GA4 and Google Ads conversion tracking stack end-to-end. Use when a dealership, dealer group, or automotive agency needs to audit dealer conversion data. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -432,6 +422,9 @@
     "slug": "dealer-gbp-audit",
     "skillName": "dealer-gbp-audit",
     "name": "Dealer GBP Audit",
+    "includedSkills": [
+      "dealer-gbp-audit"
+    ],
     "shortDescription": "Audit a dealer's GBP",
     "description": "Audit a car dealership's Google Business Profile (GBP) for local SEO and local pack performance.",
     "longDescription": "Audit a car dealership's Google Business Profile (GBP) for local SEO and local pack performance. Use when a dealership, dealer group, or automotive agency needs to audit a dealer's gbp. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -458,6 +451,9 @@
     "slug": "dealer-llms-txt-generator",
     "skillName": "dealer-llms-txt-generator",
     "name": "Dealer llms.txt Generator",
+    "includedSkills": [
+      "dealer-llms-txt-generator"
+    ],
     "shortDescription": "Generate dealer llms.txt",
     "description": "Generate a curated llms.txt file for a car dealership website to improve AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), and AI search visibility.",
     "longDescription": "Generate a curated llms.txt file for a car dealership website to improve AEO (Answer Engine Optimization), GEO (Generative Engine Optimization), and AI search visibility. Use when a dealership, dealer group, or automotive agency needs to generate dealer llms.txt. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -485,6 +481,9 @@
     "slug": "dealer-new-customer-onboarding",
     "skillName": "dealer-new-customer-onboarding",
     "name": "Dealer Customer Onboarding",
+    "includedSkills": [
+      "dealer-new-customer-onboarding"
+    ],
     "shortDescription": "Design a 90-day journey",
     "description": "Design a comprehensive 90-day post-sale customer onboarding program for a car dealership.",
     "longDescription": "Design a comprehensive 90-day post-sale customer onboarding program for a car dealership. Use when a dealership, dealer group, or automotive agency needs to design a 90-day journey. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -513,6 +512,9 @@
     "slug": "dealer-search-strategy",
     "skillName": "dealer-search-strategy",
     "name": "Dealer Search Strategy",
+    "includedSkills": [
+      "dealer-search-strategy"
+    ],
     "shortDescription": "Plan SEO, AEO, and GEO",
     "description": "Generate a comprehensive search strategy document for a car dealership covering SEO (Search Engine Optimization), AEO (Answer Engine Optimization), and GEO (Generative Engine Optimization).",
     "longDescription": "Generate a comprehensive search strategy document for a car dealership covering SEO (Search Engine Optimization), AEO (Answer Engine Optimization), and GEO (Generative Engine Optimization). Use when a dealership, dealer group, or automotive agency needs to plan seo, aeo, and geo. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -540,6 +542,9 @@
     "slug": "dealer-seo-audit",
     "skillName": "dealer-seo-audit",
     "name": "Dealer SEO Audit",
+    "includedSkills": [
+      "dealer-seo-audit"
+    ],
     "shortDescription": "Audit dealership SEO",
     "description": "Run a comprehensive traditional Google SEO audit on a car dealership website.",
     "longDescription": "Run a comprehensive traditional Google SEO audit on a car dealership website. Use when a dealership, dealer group, or automotive agency needs to audit dealership seo. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -566,6 +571,9 @@
     "slug": "dealer-site-score",
     "skillName": "dealer-site-score",
     "name": "Dealer Site Score",
+    "includedSkills": [
+      "dealer-site-score"
+    ],
     "shortDescription": "Grade a dealership website",
     "description": "Run Dealer Site Score, the dealer website grader, on a franchise or independent car dealership site.",
     "longDescription": "Run Dealer Site Score, the dealer website grader, on a franchise or independent car dealership site. Use when a dealership, dealer group, or automotive agency needs to grade a dealership website. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -593,6 +601,9 @@
     "slug": "dealer-store-positioning",
     "skillName": "dealer-store-positioning",
     "name": "Dealer Store Positioning",
+    "includedSkills": [
+      "dealer-store-positioning"
+    ],
     "shortDescription": "Define dealer positioning",
     "description": "Generate a comprehensive positioning and brand content kit for a car dealership.",
     "longDescription": "Generate a comprehensive positioning and brand content kit for a car dealership. Use when a dealership, dealer group, or automotive agency needs to define dealer positioning. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -620,6 +631,9 @@
     "slug": "dealer-vdp-merchandising-review",
     "skillName": "dealer-vdp-merchandising-review",
     "name": "Dealer VDP Review",
+    "includedSkills": [
+      "dealer-vdp-merchandising-review"
+    ],
     "shortDescription": "Review vehicle detail pages",
     "description": "Review a sample of Vehicle Detail Pages (VDPs) on a car dealership website for merchandising quality.",
     "longDescription": "Review a sample of Vehicle Detail Pages (VDPs) on a car dealership website for merchandising quality. Use when a dealership, dealer group, or automotive agency needs to review vehicle detail pages. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
@@ -647,6 +661,9 @@
     "slug": "dealer-agent-governance",
     "skillName": "dealer-agent-governance",
     "name": "Dealer Agent Governance",
+    "includedSkills": [
+      "dealer-agent-governance"
+    ],
     "shortDescription": "Govern dealer AI actions",
     "description": "Define approval, evidence, privacy, and escalation rules for dealership assistants and agent workflows.",
     "longDescription": "Define approval, evidence, privacy, and escalation rules for dealership assistants and agent workflows. Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.",
@@ -673,10 +690,15 @@
   {
     "slug": "dealer-plugin-router",
     "skillName": "dealer-plugin-router",
-    "name": "Dealer Plugin Router",
-    "shortDescription": "Route dealer AI requests",
-    "description": "Route dealership requests to the smallest suitable Dealer AI plugin or a clearly scoped multi-plugin sequence.",
-    "longDescription": "Route dealership requests to the smallest suitable Dealer AI plugin or a clearly scoped multi-plugin sequence. Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.",
+    "name": "Dealer AI Workflow Coordinator",
+    "includedSkills": [
+      "dealer-plugin-router",
+      "dots-assistant",
+      "muse-meta-assistant"
+    ],
+    "shortDescription": "Coordinate dealer AI workflows",
+    "description": "Coordinate dealership work with three included workflows: Router selects specialists, Dots guides interactive work, and Muse plans and reviews multi-workstream tasks. Preserves user control, explicit approval boundaries, and evidence-backed handoffs.",
+    "longDescription": "Coordinate dealership work with three included workflows: Router selects specialists, Dots guides interactive work, and Muse plans and reviews multi-workstream tasks. Preserves user control, explicit approval boundaries, and evidence-backed handoffs. Published by Dealer Growth Hackers.",
     "category": "Assistant Infrastructure",
     "categoryDescription": "Coordinate, govern, route, and review work across the Dealer AI plugin catalog.",
     "departments": [
@@ -684,53 +706,29 @@
       "Analytics & Technology"
     ],
     "workflow": {
-      "input": "Dealership request, goal and available inputs",
-      "process": "Scope, risk and smallest suitable workflow",
-      "output": "Plugin selection or bounded sequence"
+      "input": "Objective, constraints and available workflows",
+      "process": "Router selects; Dots guides; Muse plans and reviews",
+      "output": "One coordinated plan, evidence log and final result"
     },
     "tags": [
-      "Routing",
-      "Catalog"
-    ],
-    "prompt": "Route this dealership request to the right plugin.",
-    "download": "/downloads/dealer-plugin-router.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-plugin-router/skills/dealer-plugin-router",
-    "version": "1.0.0"
-  },
-  {
-    "slug": "dots-assistant",
-    "skillName": "dots-assistant",
-    "name": "Dealer Dots Workflow",
-    "shortDescription": "Coordinate dealer AI work",
-    "description": "Coordinate interactive dealership work across available Dealer AI plugins while preserving user control and explicit approvals.",
-    "longDescription": "An independent Dealer Growth Hackers workflow for coordinating dealership work with Dots and available Dealer AI plugins while preserving user control and explicit approvals. This plugin is not created by or endorsed by OpenAI.",
-    "category": "Assistant Infrastructure",
-    "categoryDescription": "Coordinate, govern, route, and review work across the Dealer AI plugin catalog.",
-    "departments": [
-      "Executive & Operations",
-      "Analytics & Technology"
-    ],
-    "workflow": {
-      "input": "Goal, current context and approved plugin access",
-      "process": "Task state, dependencies, approvals and handoffs",
-      "output": "Coordinated work with visible next steps"
-    },
-    "tags": [
-      "Assistant",
+      "Dots + Muse + Router",
       "Coordination"
     ],
-    "prompt": "Use Dots to organize and complete this dealership task.",
-    "download": "/downloads/dots-assistant.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dots-assistant/skills/dots-assistant",
-    "version": "1.0.0"
+    "prompt": "Use Dealer AI Workflow Coordinator for my dealership.",
+    "download": "/downloads/dealer-plugin-router.zip",
+    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-plugin-router/skills/dealer-plugin-router",
+    "version": "2.0.0"
   },
   {
     "slug": "dealer-shopping-readiness",
     "skillName": "dealer-ai-shopping-readiness-audit",
-    "name": "Dealer Shopping Readiness",
+    "name": "Dealer AI Shopping Readiness Audit",
+    "includedSkills": [
+      "dealer-ai-shopping-readiness-audit"
+    ],
     "shortDescription": "Audit AI shopping readiness",
-    "description": "Audit whether AI shopping systems can access, understand, compare, and accurately represent a dealership and its inventory.",
-    "longDescription": "Audit whether AI shopping systems can access, understand, compare, and accurately represent a dealership and its inventory. Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.",
+    "description": "Audit dealership website AI readiness, inventory accuracy, pricing clarity, business identity, reputation evidence, and shopper handoffs. Consolidates AEO and shopping-readiness checks into one evidence-backed assessment and prioritized fix plan.",
+    "longDescription": "Audit dealership website AI readiness, inventory accuracy, pricing clarity, business identity, reputation evidence, and shopper handoffs. Consolidates AEO and shopping-readiness checks into one evidence-backed assessment and prioritized fix plan. Published by Dealer Growth Hackers.",
     "category": "AI Search",
     "categoryDescription": "Become visible, accurate, and citeable inside answer engines.",
     "departments": [
@@ -746,15 +744,18 @@
       "Shopping AI",
       "100-point audit"
     ],
-    "prompt": "Audit my dealership for AI shopping readiness.",
+    "prompt": "Use Dealer AI Shopping Readiness for my dealership.",
     "download": "/downloads/dealer-shopping-readiness.zip",
     "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-shopping-readiness/skills/dealer-ai-shopping-readiness-audit",
-    "version": "1.0.0"
+    "version": "2.0.0"
   },
   {
     "slug": "dealer-lead-response-auditor",
     "skillName": "dealer-lead-response-auditor",
     "name": "Dealer Lead Response Audit",
+    "includedSkills": [
+      "dealer-lead-response-auditor"
+    ],
     "shortDescription": "Audit dealer lead handling",
     "description": "Audit dealership lead-response speed, quality, cadence, appointment conversion, handoffs, consent, and measurement.",
     "longDescription": "Audit dealership lead-response speed, quality, cadence, appointment conversion, handoffs, consent, and measurement. Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.",
@@ -775,33 +776,6 @@
     "prompt": "Audit our dealership lead-response process.",
     "download": "/downloads/dealer-lead-response-auditor.zip",
     "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/dealer-lead-response-auditor/skills/dealer-lead-response-auditor",
-    "version": "1.0.0"
-  },
-  {
-    "slug": "muse-meta-assistant",
-    "skillName": "muse-meta-assistant",
-    "name": "Dealer Muse Workflow",
-    "shortDescription": "Orchestrate dealer AI work",
-    "description": "Plan, sequence, review, and synthesize complex dealership work across Dots and available Dealer AI plugins.",
-    "longDescription": "An independent Dealer Growth Hackers workflow for planning, sequencing, reviewing, and synthesizing complex dealership work across Muse, Dots, and available Dealer AI plugins. It does not claim affiliation with another Muse product or publisher.",
-    "category": "Assistant Infrastructure",
-    "categoryDescription": "Coordinate, govern, route, and review work across the Dealer AI plugin catalog.",
-    "departments": [
-      "Executive & Operations",
-      "Analytics & Technology"
-    ],
-    "workflow": {
-      "input": "Complex objective, constraints and available workflows",
-      "process": "Plan quality, sequencing, evidence and review gates",
-      "output": "Orchestrated plan and synthesized result"
-    },
-    "tags": [
-      "Orchestration",
-      "Quality review"
-    ],
-    "prompt": "Use Muse to plan and coordinate this multi-plugin project.",
-    "download": "/downloads/muse-meta-assistant.zip",
-    "source": "https://github.com/arielcoro/dealer-ai-plugins/tree/main/plugins/muse-meta-assistant/skills/muse-meta-assistant",
     "version": "1.0.0"
   }
 ]

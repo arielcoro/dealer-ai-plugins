@@ -1,6 +1,6 @@
 # Dealer AI Plugins for ChatGPT and Codex
 
-This repository packages 29 independently installable Dealer AI plugins for ChatGPT and Codex using OpenAI's Agent Plugins format. It includes the original 23 Dealer AI Skills plus governance, routing, shopping-readiness, lead-response, Dots, and Muse workflows.
+This repository packages 26 independently installable Dealer AI plugins for ChatGPT and Codex using OpenAI's Agent Plugins format. It preserves specialist workflows while consolidating AEO into Shopping Readiness, Sentiment into AI Visibility, and Dots/Muse/Router into Workflow Coordinator. Historical sources are retained in archive/pre-consolidation; they are not active packages.
 
 Published by [Dealer Growth Hackers](https://dealergrowthhackers.com/).
 

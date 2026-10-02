@@ -1,7 +1,7 @@
 {
   "name": "dealer-ai-readiness-audit",
-  "version": "1.2.0",
-  "description": "Run the 75-point Dealer AI Readiness Audit on a franchise or independent car dealership.",
+  "version": "2.0.0",
+  "description": "Assess dealership operational AI readiness across systems, people, processes, data, and governance. This is an organizational adoption assessment, not a website or AI-shopping audit.",
   "author": {
     "name": "Dealer Growth Hackers",
     "url": "https://dealergrowthhackers.com/"
@@ -10,31 +10,27 @@
   "repository": "https://github.com/arielcoro/dealer-ai-plugins",
   "license": "MIT",
   "keywords": [
-    "ChatGPT for car dealers",
-    "Codex for car dealers",
     "car dealership",
     "automotive retail",
-    "dealer AI",
-    "dealer ai readiness audit",
-    "score dealership ai readiness",
-    "dealer-ai-readiness-audit"
+    "dealer ai operations readiness",
+    "assess ai adoption readiness"
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Dealer AI Readiness Audit",
-    "shortDescription": "Score dealership AI readiness",
-    "longDescription": "Run the 75-point Dealer AI Readiness Audit on a franchise or independent car dealership. Use when a dealership, dealer group, or automotive agency needs to score dealership ai readiness. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+    "displayName": "Dealer AI Operations Readiness",
+    "shortDescription": "Assess AI adoption readiness",
+    "longDescription": "Assess dealership operational AI readiness across systems, people, processes, data, and governance. This is an organizational adoption assessment, not a website or AI-shopping audit. Published by Dealer Growth Hackers.",
     "developerName": "Dealer Growth Hackers",
     "category": "Business & Operations",
     "capabilities": [
-      "Score dealership AI readiness"
+      "Assess AI adoption readiness"
     ],
     "websiteURL": "https://dealeraiplugins.com/plugins/dealer-ai-readiness-audit/",
     "supportURL": "https://dealeraiplugins.com/support/",
     "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
     "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
     "defaultPrompt": [
-      "Run an AI readiness audit for my dealership."
+      "Use Dealer AI Operations Readiness for my dealership."
     ],
     "brandColor": "#0F62FE",
     "brandColorDark": "#78A9FF",
@@ -44,7 +40,7 @@
   "extensions": {
     "com.openai": {
       "publication": {
-        "release_notes": "Version 1.1 aligns Dealer AI Readiness Audit with current OpenAI plugin packaging, provider-neutral tooling, and current SEO guidance."
+        "release_notes": "Version 2.0 consolidates overlapping workflows with shared evidence and clear specialist boundaries."
       }
     }
   }

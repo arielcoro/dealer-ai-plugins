@@ -1,7 +1,7 @@
 {
   "name": "dealer-shopping-readiness",
-  "version": "1.0.0",
-  "description": "Audit whether AI shopping systems can access, understand, compare, and accurately represent a dealership and its inventory.",
+  "version": "2.0.0",
+  "description": "Audit dealership website AI readiness, inventory accuracy, pricing clarity, business identity, reputation evidence, and shopper handoffs. Consolidates AEO and shopping-readiness checks into one evidence-backed assessment and prioritized fix plan.",
   "author": {
     "name": "Dealer Growth Hackers",
     "url": "https://dealergrowthhackers.com/"
@@ -10,19 +10,16 @@
   "repository": "https://github.com/arielcoro/dealer-ai-plugins",
   "license": "MIT",
   "keywords": [
-    "ChatGPT for car dealers",
-    "Codex for car dealers",
     "car dealership",
     "automotive retail",
-    "dealer AI",
-    "dealer shopping readiness",
-    "dealer-ai-shopping-readiness-audit"
+    "dealer ai shopping readiness",
+    "audit ai shopping readiness"
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Dealer Shopping Readiness",
+    "displayName": "Dealer AI Shopping Readiness",
     "shortDescription": "Audit AI shopping readiness",
-    "longDescription": "Audit whether AI shopping systems can access, understand, compare, and accurately represent a dealership and its inventory. Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.",
+    "longDescription": "Audit dealership website AI readiness, inventory accuracy, pricing clarity, business identity, reputation evidence, and shopper handoffs. Consolidates AEO and shopping-readiness checks into one evidence-backed assessment and prioritized fix plan. Published by Dealer Growth Hackers.",
     "developerName": "Dealer Growth Hackers",
     "category": "Business & Operations",
     "capabilities": [
@@ -33,7 +30,7 @@
     "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
     "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
     "defaultPrompt": [
-      "Audit my dealership for AI shopping readiness."
+      "Use Dealer AI Shopping Readiness for my dealership."
     ],
     "brandColor": "#0F62FE",
     "brandColorDark": "#78A9FF",
@@ -43,7 +40,7 @@
   "extensions": {
     "com.openai": {
       "publication": {
-        "release_notes": "Initial Dealer Growth Hackers release for ChatGPT and Codex."
+        "release_notes": "Version 2.0 consolidates overlapping workflows with shared evidence and clear specialist boundaries."
       }
     }
   }

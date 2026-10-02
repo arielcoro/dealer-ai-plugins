@@ -1,0 +1,49 @@
+{
+  "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
+  "name": "dealer-ai-sentiment-monitor",
+  "version": "1.2.1",
+  "description": "Assess how AI-powered search describes a dealership, identify sentiment patterns and unsupported claims, and prioritize evidence-backed corrections.",
+  "author": {
+    "name": "Dealer Growth Hackers",
+    "url": "https://dealergrowthhackers.com/"
+  },
+  "homepage": "https://dealeraiplugins.com/plugins/dealer-ai-sentiment-monitor/",
+  "repository": "https://github.com/arielcoro/dealer-ai-plugins",
+  "license": "MIT",
+  "keywords": [
+    "car dealership",
+    "automotive retail",
+    "AI search sentiment",
+    "brand reputation",
+    "factual accuracy",
+    "sentiment assessment"
+  ],
+  "extensions": {
+    "com.openai": {
+      "interface": {
+        "displayName": "Dealer AI Sentiment",
+        "shortDescription": "Audit AI brand sentiment",
+        "longDescription": "Assess how AI-powered search describes your dealership. Review tone, factual accuracy, recurring claims, and differences from selected competitors using documented tests. Produce an evidence-backed sentiment summary and correction priorities. Results depend on available tools and source material; this workflow does not guarantee recommendations or reputation changes. Published by Dealer Growth Hackers.",
+        "developerName": "Dealer Growth Hackers",
+        "category": "Business & Operations",
+        "capabilities": [
+          "Audit AI brand sentiment"
+        ],
+        "websiteURL": "https://dealeraiplugins.com/plugins/dealer-ai-sentiment-monitor/",
+        "supportURL": "https://dealeraiplugins.com/support/",
+        "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
+        "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
+        "defaultPrompt": [
+          "Audit how AI assistants describe my dealership."
+        ],
+        "brandColor": "#0F62FE",
+        "brandColorDark": "#78A9FF",
+        "composerIcon": "./assets/icon.svg",
+        "logo": "./assets/icon.svg"
+      },
+      "publication": {
+        "release_notes": "Version 1.2.1 uses provider-neutral listing metadata and clarifies assessment limitations."
+      }
+    }
+  }
+}

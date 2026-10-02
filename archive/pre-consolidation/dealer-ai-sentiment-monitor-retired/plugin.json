@@ -1,8 +1,8 @@
 {
   "$schema": "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
   "name": "dealer-ai-sentiment-monitor",
-  "version": "1.2.0",
-  "description": "Audit how AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, Copilot) describe and characterize a car dealership.",
+  "version": "1.2.1",
+  "description": "Assess how AI-powered search describes a dealership, identify sentiment patterns and unsupported claims, and prioritize evidence-backed corrections.",
   "author": {
     "name": "Dealer Growth Hackers",
     "url": "https://dealergrowthhackers.com/"
@@ -11,21 +11,19 @@
   "repository": "https://github.com/arielcoro/dealer-ai-plugins",
   "license": "MIT",
   "keywords": [
-    "ChatGPT for car dealers",
-    "Codex for car dealers",
     "car dealership",
     "automotive retail",
-    "dealer AI",
-    "dealer ai sentiment",
-    "audit ai brand sentiment",
-    "dealer-ai-sentiment-monitor"
+    "AI search sentiment",
+    "brand reputation",
+    "factual accuracy",
+    "sentiment assessment"
   ],
   "extensions": {
     "com.openai": {
       "interface": {
         "displayName": "Dealer AI Sentiment",
         "shortDescription": "Audit AI brand sentiment",
-        "longDescription": "Audit how AI search engines (ChatGPT, Perplexity, Gemini, Claude, Google AI Mode, Copilot) describe and characterize a car dealership. Use when a dealership, dealer group, or automotive agency needs to audit ai brand sentiment. Works in ChatGPT and Codex and includes a complete dealership workflow curated by Dealer Growth Hackers, with supporting references.",
+        "longDescription": "Assess how AI-powered search describes your dealership. Review tone, factual accuracy, recurring claims, and differences from selected competitors using documented tests. Produce an evidence-backed sentiment summary and correction priorities. Results depend on available tools and source material; this workflow does not guarantee recommendations or reputation changes. Published by Dealer Growth Hackers.",
         "developerName": "Dealer Growth Hackers",
         "category": "Business & Operations",
         "capabilities": [
@@ -44,7 +42,7 @@
         "logo": "./assets/icon.svg"
       },
       "publication": {
-        "release_notes": "Version 1.2 identifies Dealer Growth Hackers as the publisher and expands discovery metadata for ChatGPT and Codex."
+        "release_notes": "Version 1.2.1 uses provider-neutral listing metadata and clarifies assessment limitations."
       }
     }
   }

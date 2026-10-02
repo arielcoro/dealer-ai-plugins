@@ -5,18 +5,6 @@
   },
   "plugins": [
     {
-      "name": "dealer-aeo-audit",
-      "source": {
-        "source": "local",
-        "path": "./plugins/dealer-aeo-audit"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Business & Operations"
-    },
-    {
       "name": "dealer-aeo-content-brief",
       "source": {
         "source": "local",
@@ -45,18 +33,6 @@
       "source": {
         "source": "local",
         "path": "./plugins/dealer-ai-referral-analytics"
-      },
-      "policy": {
-        "installation": "AVAILABLE",
-        "authentication": "ON_INSTALL"
-      },
-      "category": "Business & Operations"
-    },
-    {
-      "name": "dealer-ai-sentiment-monitor",
-      "source": {
-        "source": "local",
-        "path": "./plugins/dealer-ai-sentiment-monitor"
       },
       "policy": {
         "installation": "AVAILABLE",

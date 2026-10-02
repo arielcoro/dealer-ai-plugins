@@ -4,6 +4,10 @@ import path from "node:path";
 const SOURCE = "/Users/arielcoro/Claude/DealerAIGuy/dealer-ai-skills/skills";
 const ROOT = process.cwd();
 const PLUGINS = path.join(ROOT, "plugins");
+if (fs.existsSync(path.join(ROOT, 'plugin-consolidation.json'))) {
+  console.error('The catalog is consolidated and maintained in plugins/. Do not overwrite it with the legacy Claude importer. Build the site with npm run build --prefix marketplace.');
+  process.exit(1);
+}
 
 const config = {
   "dealer-aeo-audit": ["Dealer AEO Audit", "Audit dealer AI visibility", "Audit my dealership website for AEO and GEO visibility."],
@@ -217,6 +221,23 @@ for (const [sourceName, [displayName, shortDescription, prompt]] of Object.entri
     logo: "./assets/icon.svg",
   };
 
+  if (pluginName === "dealer-ai-visibility") {
+    pluginBase.version = "1.2.1";
+    pluginBase.description = "Assess how AI-powered search represents a dealership, track mentions and source citations, and compare visibility with competitors using documented tests.";
+    pluginBase.keywords = ["car dealership", "automotive retail", "AI search visibility", "brand mentions", "source citations", "competitor benchmarking"];
+    interfaceData.shortDescription = "Assess dealer AI visibility";
+    interfaceData.longDescription = "Assess how AI-powered search represents your dealership. Track brand mentions, source citations, factual accuracy, and competitor visibility using documented tests. Produce a visibility benchmark and prioritized improvements. Results depend on available tools and evidence; this workflow does not guarantee rankings, recommendations, or traffic. Published by Dealer Growth Hackers.";
+    fs.writeFileSync(skillFile, rewritten.replace(/^description:.*$/m, "description: Assess how AI-powered search represents a dealership using documented tests of brand mentions, source citations, factual accuracy, and competitor visibility. Use when a dealership, dealer group, or automotive agency needs a visibility benchmark and prioritized improvements."));
+  }
+
+  if (pluginName === "dealer-ai-sentiment-monitor") {
+    pluginBase.version = "1.2.1";
+    pluginBase.description = "Assess how AI-powered search describes a dealership, identify sentiment patterns and unsupported claims, and prioritize evidence-backed corrections.";
+    pluginBase.keywords = ["car dealership", "automotive retail", "AI search sentiment", "brand reputation", "factual accuracy", "sentiment assessment"];
+    interfaceData.longDescription = "Assess how AI-powered search describes your dealership. Review tone, factual accuracy, recurring claims, and differences from selected competitors using documented tests. Produce an evidence-backed sentiment summary and correction priorities. Results depend on available tools and source material; this workflow does not guarantee recommendations or reputation changes. Published by Dealer Growth Hackers.";
+    fs.writeFileSync(skillFile, rewritten.replace(/^description:.*$/m, "description: Assess how AI-powered search describes a dealership using documented tests of sentiment, factual accuracy, recurring claims, and competitor differences. Use when a dealership, dealer group, or automotive agency needs an evidence-backed sentiment summary and correction priorities."));
+  }
+
   writeJson(path.join(pluginDir, "plugin.json"), {
     $schema: "https://agent-plugins.org/schemas/1.0.0/plugin.schema.json",
     ...pluginBase,
@@ -224,7 +245,7 @@ for (const [sourceName, [displayName, shortDescription, prompt]] of Object.entri
       "com.openai": {
         interface: interfaceData,
         publication: {
-          release_notes: `Version 1.2 identifies Dealer Growth Hackers as the publisher and expands discovery metadata for ChatGPT and Codex.`,
+          release_notes: ["dealer-ai-visibility", "dealer-ai-sentiment-monitor"].includes(pluginName) ? "Version 1.2.1 uses provider-neutral listing metadata and clarifies assessment limitations." : `Version 1.2 identifies Dealer Growth Hackers as the publisher and expands discovery metadata for ChatGPT and Codex.`,
         },
       },
     },
@@ -237,7 +258,7 @@ for (const [sourceName, [displayName, shortDescription, prompt]] of Object.entri
     extensions: {
       "com.openai": {
         publication: {
-          release_notes: `Version 1.1 aligns ${displayName} with current OpenAI plugin packaging, provider-neutral tooling, and current SEO guidance.`,
+          release_notes: ["dealer-ai-visibility", "dealer-ai-sentiment-monitor"].includes(pluginName) ? "Version 1.2.1 uses provider-neutral listing metadata and clarifies assessment limitations." : `Version 1.1 aligns ${displayName} with current OpenAI plugin packaging, provider-neutral tooling, and current SEO guidance.`,
         },
       },
     },

@@ -1,7 +1,7 @@
 {
   "name": "dealer-plugin-router",
-  "version": "1.0.0",
-  "description": "Route dealership requests to the smallest suitable Dealer AI plugin or a clearly scoped multi-plugin sequence.",
+  "version": "2.0.0",
+  "description": "Coordinate dealership work with three included workflows: Router selects specialists, Dots guides interactive work, and Muse plans and reviews multi-workstream tasks. Preserves user control, explicit approval boundaries, and evidence-backed handoffs.",
   "author": {
     "name": "Dealer Growth Hackers",
     "url": "https://dealergrowthhackers.com/"
@@ -10,30 +10,27 @@
   "repository": "https://github.com/arielcoro/dealer-ai-plugins",
   "license": "MIT",
   "keywords": [
-    "ChatGPT for car dealers",
-    "Codex for car dealers",
     "car dealership",
     "automotive retail",
-    "dealer AI",
-    "dealer plugin router",
-    "dealer-plugin-router"
+    "dealer ai workflow coordinator",
+    "coordinate dealer ai workflows"
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Dealer Plugin Router",
-    "shortDescription": "Route dealer AI requests",
-    "longDescription": "Route dealership requests to the smallest suitable Dealer AI plugin or a clearly scoped multi-plugin sequence. Works in ChatGPT and Codex and is published by Dealer Growth Hackers with documented evidence and approval boundaries.",
+    "displayName": "Dealer AI Workflow Coordinator",
+    "shortDescription": "Coordinate dealer AI workflows",
+    "longDescription": "Coordinate dealership work with three included workflows: Router selects specialists, Dots guides interactive work, and Muse plans and reviews multi-workstream tasks. Preserves user control, explicit approval boundaries, and evidence-backed handoffs. Published by Dealer Growth Hackers.",
     "developerName": "Dealer Growth Hackers",
     "category": "Business & Operations",
     "capabilities": [
-      "Route dealer AI requests"
+      "Coordinate dealer AI workflows"
     ],
     "websiteURL": "https://dealeraiplugins.com/plugins/dealer-plugin-router/",
     "supportURL": "https://dealeraiplugins.com/support/",
     "privacyPolicyURL": "https://dealeraiplugins.com/privacy/",
     "termsOfServiceURL": "https://dealeraiplugins.com/terms/",
     "defaultPrompt": [
-      "Route this dealership request to the right plugin."
+      "Use Dealer AI Workflow Coordinator for my dealership."
     ],
     "brandColor": "#0F62FE",
     "brandColorDark": "#78A9FF",
@@ -43,7 +40,7 @@
   "extensions": {
     "com.openai": {
       "publication": {
-        "release_notes": "Initial Dealer Growth Hackers release for ChatGPT and Codex."
+        "release_notes": "Version 2.0 consolidates overlapping workflows with shared evidence and clear specialist boundaries."
       }
     }
   }

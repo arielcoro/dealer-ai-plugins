@@ -1,0 +1,4 @@
+interface:
+  display_name: "Dealer AEO Audit"
+  short_description: "Audit dealer AI visibility"
+  default_prompt: "Use $dealer-aeo-audit to audit my dealership website for AEO and GEO visibility."

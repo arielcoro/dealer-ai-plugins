@@ -43,3 +43,9 @@ One deliverable per selected plugin, plus the final synthesis if Muse is used.
 
 ### Not included
 Adjacent work deliberately excluded to prevent scope drift.
+
+## Consolidated workflow contract
+
+Reuse supplied evidence only when its URLs, dates, scope, and collection conditions match this task. Collect store facts, representative pages, and AI answers once; give each record an evidence ID, date, source, observation, confidence, and limitation. Do not run duplicate research merely because another module needs the same evidence. Unknown is not a confirmed failure. Never fabricate platform access, answers, citations, or causal conclusions.
+
+Router, Dots and Muse are included in Dealer AI Workflow Coordinator. Use Router only to select the smallest workflow; Dots owns interactive execution and the session brief; Muse owns multi-workstream dependencies and final review. Do not repeat intake or routing between modules. These are instruction workflows, not independently connected external assistants.

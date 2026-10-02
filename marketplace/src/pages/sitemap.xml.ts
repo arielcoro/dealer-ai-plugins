@@ -4,7 +4,7 @@ export const prerender = true;
 
 export function GET() {
   const base = "https://dealeraiplugins.com";
-  const reviewed = "2026-10-01";
+  const reviewed = "2026-10-02";
   const pages = ["/", "/about/", "/how-it-works/", "/plans/", "/support/", "/privacy/", "/terms/"];
   const urls = [
     ...pages.map((pathname) => ({ pathname, priority: pathname === "/" ? "1.0" : "0.5" })),

@@ -44,3 +44,9 @@ Search visibility, AI referrals when identifiable, landing behavior, form or cal
 
 ### Caveats
 AI answers vary by platform, location, account, session, and date. llms.txt and any individual schema type are descriptive implementation choices, not guaranteed ranking or citation mechanisms. Legal, pricing, and advertising conclusions require qualified review.
+
+## Consolidated workflow contract
+
+Reuse supplied evidence only when its URLs, dates, scope, and collection conditions match this task. Collect store facts, representative pages, and AI answers once; give each record an evidence ID, date, source, observation, confidence, and limitation. Do not run duplicate research merely because another module needs the same evidence. Unknown is not a confirmed failure. Never fabricate platform access, answers, citations, or causal conclusions.
+
+This workflow replaces the standalone Dealer AEO Audit. Website AI Readiness is the general public-site foundation; do not run it again when equivalent evidence is already available. Add dealership-specific inventory, offer, reputation, location and buyer-journey checks. Verify business identity against OEM/location listings and reputation sources; identify useful buying, financing and service answers and third-party citation gaps using observed evidence. Include local profile inconsistencies in the remediation backlog. These checks extend the existing categories rather than creating extra points. Do not import the retired AEO score bands, treat unknowns as failures, require llms.txt, conflate training crawlers with search access, or infer actual citation presence from a technical score.
